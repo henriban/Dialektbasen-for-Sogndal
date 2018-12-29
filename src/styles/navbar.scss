@@ -1,0 +1,22 @@
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 1px 1px 1px #888888;
+  background-color: #FFF;
+  min-height: 25px;
+
+  .item{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+  }
+
+  .item:hover{
+    background-color: #bababa;
+  }
+}
+
+
+

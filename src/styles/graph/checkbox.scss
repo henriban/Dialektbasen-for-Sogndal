@@ -1,0 +1,27 @@
+.checkboxSearchWrapper{
+    display: flex;
+    flex-wrap: wrap;
+
+    position: relative;
+    left: 15px;
+
+}
+ 
+.checkboxItem{
+    margin: 10px;  
+    width: 18%; 
+    min-width: 160px;
+}
+   
+.childCheckbox{
+    position: relative;
+    left: 12px;
+}
+
+.traitsSelection{
+    margin: 10px 10px;
+
+    background: #fafafa;
+    box-shadow: 0 0 5px #888888;
+    border-radius: 5px;
+}

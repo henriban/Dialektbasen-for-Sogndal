@@ -1,0 +1,18 @@
+.selectWrapper{
+  position: relative;
+  margin: 10px 0;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  background: #fafafa;
+  box-shadow: 0 0 5px #888888;
+  border-radius: 5px;
+}
+
+.selectItem{
+  margin: 10px;
+  width: 25%;
+  min-width: 150px;
+}

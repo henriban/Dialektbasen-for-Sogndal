@@ -1,0 +1,20 @@
+.radioButtonsWrapper{
+
+    margin: 10px auto;
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    background: #fafafa;
+    box-shadow: 0 0 5px #888888;
+    border-radius: 5px;
+}
+
+.radioButtonsWrapper label{
+    min-width: 5%;
+    padding: 25px;
+
+    cursor: pointer;
+}
