@@ -10,35 +10,6 @@ import SearchVariables from "../../data/searchVariables";
 
 import '../../styles/graph/graph.scss';
 
-// Test result from graphSearch
-let graphSearchResult = [
-    {label: "Kvinne", value: ["inf01", "inf01p", "inf02", "inf02p", "inf05", "inf06", "inf05p", "inf06p"] },
-    {label: "Mann",   value: ["inf03", "inf04"]}
-];
-
-
-// let data = [
-//     [
-//         {x: 1, y: 5},
-//         {x: 2, y: 3},
-//         {x: 3, y: 1},
-//         {x: 4, y: 2}
-//     ],
-//     [
-//         {x: 1, y: 1},
-//         {x: 2, y: 2},
-//         {x: 3, y: 4},
-//         {x: 4, y: 2}
-//     ],
-//     [
-//         {x: 1, y: 2},
-//         {x: 2, y: 5},
-//         {x: 3, y: 2},
-//         {x: 4, y: 2}
-//     ],
-//
-// ];
-
 let informersData = {};
 
 class GraphPage extends React.Component {
@@ -47,6 +18,9 @@ class GraphPage extends React.Component {
         super(props);
 
         this.state = {
+            filters: [],
+            filteredInformers: [],
+
             tickFormat: [], // labels for Victory Axis
             tickValues: [], // number of different labels ex: [1,2,3]
 
@@ -63,15 +37,51 @@ class GraphPage extends React.Component {
         this.generateDataFromLocalStorage();
     }
 
-    getFilter(filteredInfList, filterRows){
-        let listOfInf = [];
-        filteredInfList.map(inf => listOfInf.push(inf.id));
+    setFilter(filters){
+        // this.setState({
+        //     filters: filters
+        // });
 
-
-        // console.log("FilterRows", filters);
-        // console.log("List of all IDs", listOfInf);
+        console.log(this.getFilteredInformers(filters));
     }
 
+    getFilteredInformers(filters){
+
+        return this.getAllInformers()
+            .filter(inf => filters.place.length > 0 ? filters.place.includes(inf.place) : inf)
+            .filter(inf => filters.gender.length > 0 ? filters.gender.includes(inf.gender) : inf)
+            .filter(inf => filters.age.length > 0 ? filters.age.includes(inf.age) : inf)
+            .filter(inf => filters.birth.length > 0 ? filters.birth.includes(inf.birth) : inf)
+            .filter(inf => filters.date_of_recording.length > 0 ? filters.date_of_recording.includes(inf.date_of_recording) : inf)
+            .filter(inf => filters.education.length > 0 ? filters.education.includes(inf.education) : inf)
+            .filter(inf => filters.occupation.length > 0 ? filters.occupation.includes(inf.occupation) : inf)
+            .filter(inf => filters.parents_background.length > 0 ? filters.parents_background.includes(inf.parents_background) : inf)
+            .filter(inf => filters.panel.length > 0 ? filters.panel.includes(inf.panel) : inf);
+
+        // this.setState({
+        //     filteredInformers: filteredInformers
+        // });
+    }
+
+    getAllInformers(){
+        let informers = [];
+        Informers.map(inf =>
+            informers.push({
+                id: inf.id,
+                place: inf.place.trim(),
+                gender: inf.gender.trim(),
+                age: inf.age.trim(),
+                birth: inf.birth.trim(),
+                date_of_recording: inf.date_of_recording.trim(),
+                education: inf.education.trim(),
+                occupation: inf.occupation.trim(),
+                parents_background: inf.parents_background.trim(),
+                panel: inf.panel.trim()
+            })
+        );
+
+        return informers;
+    }
 
     generateDataFromLocalStorage(){
 
@@ -135,16 +145,10 @@ class GraphPage extends React.Component {
 
     render(){
 
-        for (let i in graphSearchResult){
-            if(graphSearchResult.hasOwnProperty(i)){
-
-            }
-        }
-
         return(
             <div>
                 <RadioButtons setSearchLabels={this.setSearchLabels.bind(this)}/>
-                <GraphSearch setFilter={this.getFilter.bind(this)}/>
+                <GraphSearch setFilter={this.setFilter.bind(this)}/>
 
                 <div className="graphPage">
                     <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.data1} title="Infinitiv"/>

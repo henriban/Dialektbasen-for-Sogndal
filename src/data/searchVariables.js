@@ -9,10 +9,10 @@ const variables = {
         { value: 'mann',    label: 'Mann' },
     ],
     age: [
-        { value: 'Ungdom',      label: 'Ungdom \n13 – 25' },
-        { value: 'Ung ',         label: 'Ung \n26 – 40' },
-        { value: 'Middelaldra', label: 'Middelaldra \n41 - 60' },
-        { value: 'Eldre',          label: 'Eldre \n61 –' },
+        { value: 'Ungdom 13 - 25',      label: 'Ungdom \n13 - 25' },
+        { value: 'Ung 26 - 40',         label: 'Ung \n26 - 40' },
+        { value: 'Middelaldra 41 - 60', label: 'Middelaldra \n41 - 60' },
+        { value: 'Eldre 61 -',          label: 'Eldre \n61 -' },
     ],
     date_of_recording: [
         { value: '1996',       label: '1996' },
@@ -39,10 +39,10 @@ const variables = {
         { value: 'begge',   label: 'Begge frå \nSogndal' }
     ],
     birth: [
-        { value: '1911',       label: '1911 – 1940' },
-        { value: '1941',       label: '1941 – 1970' },
-        { value: '1971',       label: '1971 – 2000' },
-        { value: '2001',       label: '2001 –' }
+        { value: '1911',       label: '1911 - 1940' },
+        { value: '1941',       label: '1941 - 1970' },
+        { value: '1971',       label: '1971 - 2000' },
+        { value: '2001',       label: '2001 -' }
     ],
     panel: [
         { value: 'panel',     label: 'Panel' },

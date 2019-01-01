@@ -42,23 +42,23 @@ class Database extends React.Component {
         return rows;
     }
 
-    filterTable(searchList){
+    filterTable(filters){
         this.setState({filteredList: this.state.rows
-                .filter(x => x.place.toLowerCase().includes(searchList.place.toLowerCase()))
-                .filter(x => x.gender.toLowerCase().includes(searchList.gender.toLowerCase()))
-                .filter(x => x.age.toLowerCase().includes(searchList.age.toLowerCase()))
-                .filter(x => x.birth.toLowerCase().includes(searchList.birth.toLowerCase()))
-                .filter(x => x.date_of_recording.toLowerCase().includes(searchList.date_of_recording.toLowerCase()))
-                .filter(x => x.education.toLowerCase().includes(searchList.education.toLowerCase()))
-                .filter(x => x.occupation.toLowerCase().includes(searchList.occupation.toLowerCase()))
-                .filter(x => x.parents_background.toLowerCase().includes(searchList.parents_background.toLowerCase()))
-                .filter(x => x.panel.toLowerCase().includes(searchList.panel.toLowerCase()))
+                .filter(x => x.place.toLowerCase().includes(filters.place.toLowerCase()))
+                .filter(x => x.gender.toLowerCase().includes(filters.gender.toLowerCase()))
+                .filter(x => x.age.toLowerCase().includes(filters.age.toLowerCase()))
+                .filter(x => x.birth.toLowerCase().includes(filters.birth.toLowerCase()))
+                .filter(x => x.date_of_recording.toLowerCase().includes(filters.date_of_recording.toLowerCase()))
+                .filter(x => x.education.toLowerCase().includes(filters.education.toLowerCase()))
+                .filter(x => x.occupation.toLowerCase().includes(filters.occupation.toLowerCase()))
+                .filter(x => x.parents_background.toLowerCase().includes(filters.parents_background.toLowerCase()))
+                .filter(x => x.panel.toLowerCase().includes(filters.panel.toLowerCase()))
         });
     }
 
-    onSearchChange(list){
-        this.filterTable(list);
-        this.setState({ searchList: list});
+    onSearchChange(filters){
+        this.filterTable(filters);
+        this.setState({ searchList: filters});
     }
 
     onShowResultChange(id) {

@@ -27,7 +27,6 @@ class RadioButtons extends React.Component{
             <form className="radioButtonsWrapper" onChange={this.setSearchLabels.bind(this)}>
                 {this.generateRadioButtons()}
             </form>
-
         );
     }
 }

@@ -91,11 +91,8 @@ class Result extends React.Component {
         localStorage.setItem(infID, JSON.stringify(wordList));
     }
 
-    generateText(){
+    generateText(inf1){
 
-        const id = this.props.inf;
-
-        let inf1 = Informers.find(inf => inf.id === id);
         const text = inf1.text;
 
         let key = 0;
@@ -103,9 +100,7 @@ class Result extends React.Component {
         clickableWordCountInf2 = 0;
 
         let index = 0;
-
         let infNumber = "";
-
 
         return(
             // Splits the line on br and check if line contains a symbol.
@@ -151,12 +146,8 @@ class Result extends React.Component {
     }
 
     render(){
-        // const {x, y} = this.state;
         const id = this.props.inf;
-
         let inf1 = Informers.find(x => x.id === id);
-
-        // const text = inf1.text;
 
         const url = require("../../../static/" + inf1.audio);
 
@@ -174,7 +165,7 @@ class Result extends React.Component {
             <div className="resultBackground" >
 
                 <div className="resultContainer" onMouseDown={this._onMouseMove.bind(this)}>
-                    {/*<h1>Mouse coordinates: \n { x } { y }</h1>*/}
+
                     <div className="textWindowHeader">
                         <button className="closeButton" onClick={this.onCloseClick} href='#'>x</button>
                     </div>
@@ -198,7 +189,7 @@ class Result extends React.Component {
                         </div>
 
                         <div className="text">
-                            {this.generateText()}
+                            {this.generateText(inf1)}
                             {needBuildWordList = false}
                         </div>
                     </div>
