@@ -11,10 +11,10 @@ export default class checkboxComponent extends React.Component{
             isChecked: false,
             res: this.props.res,
             checkStr: [],
-            label: this.props.label
+            label: this.props.label,
+            variables: this.props.variables
         };
     }
-     
    
     setLabelCheckStr(label){
         let checked = this.state.checkStr;
@@ -29,23 +29,23 @@ export default class checkboxComponent extends React.Component{
         let checked = this.state.checkStr;
         let index = checked.indexOf(label);
         checked.splice(index, 1);
-    } 
+    }
 
-    toggleCheckbox = (label, res, isChecked) => {
+    toggleCheckbox = (label, res) => {
         if(label.includes(this.props.label)){
             this.setState({
                 isChecked: !this.state.isChecked
             });
             // Remove checked labels from checkStr in cluster (when cluster label clicked or add/remove single labels
             this.state.isChecked ?
-                this.props.data.map(item => this.removeLabelCheckStr(item.label)) :
-                this.props.data.map(item => this.setLabelCheckStr(item.label));
+                this.state.variables.map(item => this.removeLabelCheckStr(item.label)) :
+                this.state.variables.map(item => this.setLabelCheckStr(item.label));
         }else{
             this.setLabelCheckStr(label)
         }
 
         console.log(label);
-        this.props.onCheckUpdate(this.state.checkStr, res, isChecked);
+        this.props.onCheckUpdate(this.state.checkStr, res);
     };
 
     render(){
@@ -54,12 +54,14 @@ export default class checkboxComponent extends React.Component{
                 {/*<Checkbox label={this.props.label} handleCheckboxChange={this.toggleCheckbox} checked={this.state.isChecked} res={this.props.res}/>*/}
                 <span>{this.state.label}</span>
                 <div className="childCheckbox">
-                    {this.props.data.map(item => {
+                    {this.state.variables.map(item => {
                         return(
-                            <Checkbox label={item.label} handleCheckboxChange={this.toggleCheckbox} key={key++} checked={this.state.isChecked} res={this.props.res}/>
+                            <Checkbox key={key++} label={item.label} handleCheckboxChange={this.toggleCheckbox}  res={this.props.res}/>
                         );})}
                 </div>
             </div>
         );
     }
-}   
+}
+
+/*<Checkbox label={item.label} handleCheckboxChange={this.toggleCheckbox} key={key++} checked={this.state.isChecked} res={this.props.res}/>*/

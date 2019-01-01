@@ -16,6 +16,10 @@
 .childCheckbox{
     position: relative;
     left: 12px;
+
+    label, input{
+        cursor: pointer;
+    }
 }
 
 .traitsSelection{
