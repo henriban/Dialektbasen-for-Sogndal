@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Search from './search/SearchComponent';
-import Result from './textWindow/TextWindowComponent';
+import TextWindow from './textWindow/TextWindowComponent';
 import Table from './TableComponent';
 
 import Informers from '../../data/informers';
@@ -15,7 +15,7 @@ class Database extends React.Component {
         this.onShowResultChange = this.onShowResultChange.bind(this);
 
         this.state = {
-            showResult: false,
+            showTextWindow: false,
             resultId: 0,
             rows: this.getRows(),
             filteredList: this.getRows(),
@@ -62,13 +62,13 @@ class Database extends React.Component {
     }
 
     onShowResultChange(id) {
-        this.setState({showResult: !this.state.showResult, resultId: id});
+        this.setState({showTextWindow: !this.state.showTextWindow, resultId: id});
     }
 
     render(){
         return(
             <div>
-                {this.state.showResult && <Result onCloseClick={this.onShowResultChange} inf={this.state.resultId}/>}
+                {this.state.showTextWindow && <TextWindow onCloseClick={this.onShowResultChange} inf={this.state.resultId}/>}
                 <div className="main">
                     <Search onSearchChange={this.onSearchChange} />
                     <Table rows={this.state.filteredList} onRowClick={this.onShowResultChange} searchList={this.state.searchList} />

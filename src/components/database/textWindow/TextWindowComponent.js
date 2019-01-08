@@ -167,7 +167,7 @@ class Result extends React.Component {
                 <div className="resultContainer" onMouseDown={this._onMouseMove.bind(this)}>
 
                     <div className="textWindowHeader">
-                        <button className="closeButton" onClick={this.onCloseClick} href='#'>x</button>
+                        <button className="closeButton" onClick={this.onCloseClick}>x</button>
                     </div>
 
                     <div className="textWindowContent">

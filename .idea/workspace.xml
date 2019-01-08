@@ -3,19 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="92406c54-c6dc-4d55-b76a-7b6f13eb8c44" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/database/DatabasePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/database/DatabasePage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/database/textWindow/TextWindowComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/database/textWindow/TextWindowComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/graph/CheckboxClusterComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/graph/CheckboxClusterComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/graph/CheckboxComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/graph/CheckboxComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/graph/FilterViewComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/graph/FilterViewComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/graph/GraphPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/graph/GraphPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/graph/GraphSearchComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/graph/GraphSearchComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/graph/RadioButtonComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/graph/RadioButtonComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/informers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/informers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/searchVariables.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/searchVariables.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/database/table.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/database/table.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/graph/checkbox.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/graph/checkbox.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/graph/radiobuttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/graph/radiobuttons.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,20 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/graph/GraphPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="44" column="55" selection-start-line="44" selection-start-column="55" selection-end-line="44" selection-end-column="55" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/graph/GraphSearchComponent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-34">
-              <caret line="4" column="51" lean-forward="true" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+            <state relative-caret-position="172">
+              <caret line="158" lean-forward="true" selection-start-line="158" selection-end-line="158" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -55,56 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/informers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="421" column="36" selection-start-line="421" selection-start-column="36" selection-end-line="421" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data/informersText.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="4028" column="47" selection-start-line="4028" selection-start-column="47" selection-end-line="4028" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data/searchVariables.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/graph/FilterViewComponent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/graph/CheckboxClusterComponent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/graph/CheckboxComponent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="34" column="74" lean-forward="true" selection-start-line="34" selection-start-column="74" selection-end-line="34" selection-end-column="74" />
+            <state relative-caret-position="357">
+              <caret line="120" column="28" selection-start-line="120" selection-start-column="28" selection-end-line="120" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -137,6 +73,7 @@
       <find>31</find>
       <find>.tolowercase()</find>
       <find>get</find>
+      <find>1971 - 2001</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -174,25 +111,26 @@
         <option value="$PROJECT_DIR$/src/data/informersText.js" />
         <option value="$PROJECT_DIR$/src/components/database/search/SearchComponent.js" />
         <option value="$PROJECT_DIR$/src/components/graph/RadioButtonComponent.js" />
-        <option value="$PROJECT_DIR$/src/data/informers.js" />
         <option value="$PROJECT_DIR$/src/styles/graph/radiobuttons.scss" />
-        <option value="$PROJECT_DIR$/src/components/database/textWindow/TextWindowComponent.js" />
         <option value="$PROJECT_DIR$/src/styles/database/table.scss" />
         <option value="$PROJECT_DIR$/src/styles/graph/checkbox.scss" />
+        <option value="$PROJECT_DIR$/src/components/graph/FilterViewComponent.js" />
         <option value="$PROJECT_DIR$/src/components/database/DatabasePage.js" />
+        <option value="$PROJECT_DIR$/src/components/database/textWindow/TextWindowComponent.js" />
         <option value="$PROJECT_DIR$/src/components/graph/CheckboxComponent.js" />
         <option value="$PROJECT_DIR$/src/components/graph/CheckboxClusterComponent.js" />
-        <option value="$PROJECT_DIR$/src/components/graph/FilterViewComponent.js" />
         <option value="$PROJECT_DIR$/src/components/graph/GraphSearchComponent.js" />
         <option value="$PROJECT_DIR$/src/data/searchVariables.js" />
+        <option value="$PROJECT_DIR$/src/data/informers.js" />
         <option value="$PROJECT_DIR$/src/components/graph/GraphPage.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="697" />
-    <option name="height" value="735" />
+    <option name="x" value="953" />
+    <option name="y" value="4" />
+    <option name="width" value="965" />
+    <option name="height" value="731" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -200,88 +138,60 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="dialektbasen_sogndal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dialektbasen_sogndal" type="462c0819:PsiDirectoryNode" />
+              <item name="Dialektbasen-for-Sogndal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dialektbasen-for-Sogndal" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="dialektbasen_sogndal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dialektbasen_sogndal" type="462c0819:PsiDirectoryNode" />
+              <item name="Dialektbasen-for-Sogndal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dialektbasen-for-Sogndal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="dialektbasen_sogndal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dialektbasen_sogndal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dialektbasen_sogndal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dialektbasen_sogndal" type="462c0819:PsiDirectoryNode" />
+              <item name="Dialektbasen-for-Sogndal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dialektbasen-for-Sogndal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="dialektbasen_sogndal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dialektbasen_sogndal" type="462c0819:PsiDirectoryNode" />
+              <item name="Dialektbasen-for-Sogndal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dialektbasen-for-Sogndal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="dialektbasen_sogndal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dialektbasen_sogndal" type="462c0819:PsiDirectoryNode" />
+              <item name="Dialektbasen-for-Sogndal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dialektbasen-for-Sogndal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="graph" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="dialektbasen_sogndal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dialektbasen_sogndal" type="462c0819:PsiDirectoryNode" />
+              <item name="Dialektbasen-for-Sogndal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dialektbasen-for-Sogndal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dialektbasen_sogndal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dialektbasen_sogndal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dialektbasen_sogndal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dialektbasen_sogndal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dialektbasen_sogndal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dialektbasen_sogndal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-              <item name="graph" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/node_modules/eslint" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
-    <property name="node.js.selected.package.eslint" value="C:\Users\henrik\WebstormProjects\dialektbasen_sogndal\node_modules\eslint" />
-    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.eslint" value="C:\Users\henri\WebstormProjects\Dialektbasen-for-Sogndal\node_modules\eslint" />
+    <property name="node.js.selected.package.standard" value="C:\Users\henri\WebstormProjects\Dialektbasen-for-Sogndal\node_modules\eslint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -315,6 +225,18 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -334,11 +256,16 @@
       <workItem from="1546190988537" duration="4364000" />
       <workItem from="1546258982544" duration="15625000" />
       <workItem from="1546340017112" duration="3866000" />
+      <workItem from="1546528713528" duration="588000" />
+      <workItem from="1546529333300" duration="130000" />
+      <workItem from="1546897059801" duration="1762000" />
+      <workItem from="1546914436202" duration="6902000" />
+      <workItem from="1546935235858" duration="929000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64288000" />
+    <option name="totallyTimeSpent" value="74599000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -350,24 +277,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20833333" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1406744" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.29069766" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34019503" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.18418202" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.33878887" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.2383532" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -485,29 +412,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/database/textWindow/TextWindowWordComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/graph/GraphComponent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="101" selection-start-line="1" selection-start-column="101" selection-end-line="1" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/graph/GraphTraitsSelectionComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -596,16 +504,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/database/textWindow/TextWindowComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-714">
-          <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/database/database.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -637,16 +535,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/database/DatabasePage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="73" column="22" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/database/search/SearchComponent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -664,23 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/graph/CheckboxComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="34" column="74" lean-forward="true" selection-start-line="34" selection-start-column="74" selection-end-line="34" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/graph/CheckboxClusterComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/graph/FilterViewComponent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -688,41 +559,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/informers.js">
+    <entry file="file://$PROJECT_DIR$/src/components/database/textWindow/TextWindowWordComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="421" column="36" selection-start-line="421" selection-start-column="36" selection-end-line="421" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/informersText.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="4028" column="47" selection-start-line="4028" selection-start-column="47" selection-end-line="4028" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/searchVariables.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/graph/GraphSearchComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="4" column="51" lean-forward="true" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+        <state relative-caret-position="280">
+          <caret line="59" column="6" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="6" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/database/DatabasePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="70" column="49" selection-start-line="70" selection-start-column="49" selection-end-line="70" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/database/textWindow/TextWindowComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2788">
+          <caret line="171" selection-start-line="171" selection-end-line="171" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/graph/GraphTraitsSelectionComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/graph/CheckboxComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/graph/CheckboxClusterComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="64" column="1" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/graph/GraphSearchComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="688">
+          <caret line="50" column="10" lean-forward="true" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/searchVariables.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/informersText.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="4028" column="47" selection-start-line="4028" selection-start-column="47" selection-end-line="4028" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/informers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="120" column="28" selection-start-line="120" selection-start-column="28" selection-end-line="120" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/graph/GraphPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="44" column="55" selection-start-line="44" selection-start-column="55" selection-end-line="44" selection-end-column="55" />
+        <state relative-caret-position="172">
+          <caret line="158" lean-forward="true" selection-start-line="158" selection-end-line="158" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

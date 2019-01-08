@@ -5,39 +5,20 @@ class Checkbox extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            // isChecked: this.props.checked,
-            isChecked: false,
+            isChecked: this.props.isChecked,
+            // isChecked: false,
             label: this.props.label
         };
     }
 
-
-    // toggleCheckboxChange = () => {
-    //     // this.setState(({ isChecked }) => ({
-    //     //         isChecked: !isChecked
-    //     //     }
-    //     // ));
-    //
-    //     this.setState({
-    //         isChecked: !this.state.isChecked
-    //     });
-    //
-    //
-    //     this.props.handleCheckboxChange(this.props.label, this.props.res, !this.state.isChecked);
-    // };
-
     toggleCheckboxChange() {
-
-        this.setState({
-            isChecked: !this.state.isChecked
-        });
-
         this.props.handleCheckboxChange(this.props.label, this.props.res);
     };
 
     render() {
         const { label } = this.props;
         const { isChecked } = this.state;
+
         return (
             <div>
                 <label>

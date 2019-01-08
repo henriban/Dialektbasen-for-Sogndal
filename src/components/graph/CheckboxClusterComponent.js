@@ -56,12 +56,10 @@ export default class checkboxComponent extends React.Component{
                 <div className="childCheckbox">
                     {this.state.variables.map(item => {
                         return(
-                            <Checkbox key={key++} label={item.label} handleCheckboxChange={this.toggleCheckbox}  res={this.props.res}/>
+                            <Checkbox key={key++} label={item.label} handleCheckboxChange={this.toggleCheckbox}  res={this.props.res} isChecked={this.state.checkStr.includes(item.label)}/>
                         );})}
                 </div>
             </div>
         );
     }
 }
-
-/*<Checkbox label={item.label} handleCheckboxChange={this.toggleCheckbox} key={key++} checked={this.state.isChecked} res={this.props.res}/>*/

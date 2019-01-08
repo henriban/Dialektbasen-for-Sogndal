@@ -38,11 +38,10 @@ class GraphPage extends React.Component {
     }
 
     setFilter(filters){
-        // this.setState({
-        //     filters: filters
-        // });
-
-        console.log(this.getFilteredInformers(filters));
+        this.setState({
+            filters: filters,
+            filteredInformers: this.getFilteredInformers(filters)
+        });
     }
 
     getFilteredInformers(filters){
@@ -57,10 +56,6 @@ class GraphPage extends React.Component {
             .filter(inf => filters.occupation.length > 0 ? filters.occupation.includes(inf.occupation) : inf)
             .filter(inf => filters.parents_background.length > 0 ? filters.parents_background.includes(inf.parents_background) : inf)
             .filter(inf => filters.panel.length > 0 ? filters.panel.includes(inf.panel) : inf);
-
-        // this.setState({
-        //     filteredInformers: filteredInformers
-        // });
     }
 
     getAllInformers(){
@@ -143,7 +138,24 @@ class GraphPage extends React.Component {
 
     }
 
+    testFilteredInformers(){
+
+        // console.log("Not include", this.getAllInformers().filter(inf => !this.state.filteredInformers.includes(inf)));
+
+        let filteredInformersId = [];
+        this.state.filteredInformers.map(inf => filteredInformersId.push(inf.id));
+
+        let allInformersId = [];
+        this.getAllInformers().map(inf => allInformersId.push(inf.id));
+
+        console.log("Not include", allInformersId.filter(n => !filteredInformersId.includes(n)));
+    }
+
+
+
     render(){
+
+        // this.testFilteredInformers();
 
         return(
             <div>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import CheckboxComponent from './CheckboxClusterComponent';
-// import FilterViewer from './FilterViewComponent';
+import FilterViewer from './FilterViewComponent';
 import Variables from '../../data/searchVariables';
 
 import '../../styles/graph/checkbox.scss';
@@ -29,17 +29,13 @@ class graphSearchComponent extends React.Component{
         let newFilters = this.state.filters;
         newFilters[resLabel] = checkedValues;
 
-        // this.setState({
-        //     filters: newFilters
-        // });
-
         this.props.setFilter(this.state.filters);
     };
 
     render(){
         return(
             <div className="graphSearchArea">
-                {/*<FilterViewer filters={this.state.filters}/>*/}
+                <FilterViewer filters={this.state.filters}/>
                 <div className="checkboxSearchWrapper">
                     <CheckboxComponent onCheckUpdate={this.toggleCheckbox} label="Stad"               variables={Variables.place}              res="place"/>
                     <CheckboxComponent onCheckUpdate={this.toggleCheckbox} label="Kjønn"              variables={Variables.gender}             res="gender"/>
