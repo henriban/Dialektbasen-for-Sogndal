@@ -86,8 +86,8 @@ class Home extends React.Component {
                     <p>
                         Alle lydopptaka er transkriberte, dvs. at lyden er overført til tekst. Lydopptaka
                         er nedteikna på nynorsk. Bøyingsformer og ordval er difor så langt det let seg
-                        gjera på nynorsk. Det vil likevel finnast avvik frå nynorsknorma, t.d. vil uttrykket
-                        <i>i hvert fall</i>, og bruken av <i>då</i> og <i>når</i> avvika frå norma.
+                        gjera på nynorsk. Det vil likevel finnast avvik frå nynorsknorma, t.d. vil uttrykket <i>i hvert fall</i>,
+                        og bruken av <i>då</i> og <i>når</i> avvika frå norma.
                     </p>
 
                     <h2 name="eksempel">4) Eksempel på trekk du kan analysera:</h2>

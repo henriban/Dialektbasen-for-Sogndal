@@ -25,9 +25,18 @@ class Result extends React.Component {
 
         infToStore = Informers.find(x => x.id === this.props.inf).audio.split(".")[0];
         let splitInfToStore = infToStore.split("inf_")[1].split("og");
-        let inf1 = splitInfToStore[0];
-        let inf2 = splitInfToStore[1];
+        let inf1 = Informers.find(inf => inf.id === splitInfToStore[0]);
+        let inf2 = Informers.find(inf => inf.id === splitInfToStore[1]);
 
+        if(inf1.id !== this.props.inf){
+            let switchInf = inf1;
+            inf1 = inf2;
+            inf2 = switchInf;
+        }
+
+        // let switchInf = inf1;
+        // inf1 = inf1.id === this.props.inf ? inf1 : inf2;
+        // inf2 = inf2.id === this.props.inf ? inf2 : switchInf;
 
         this.state = {
             showSecondInf: false,
@@ -40,8 +49,8 @@ class Result extends React.Component {
         isLocalStorageSet = this.isInformersLocalStorageSet();
 
         if(!isLocalStorageSet){
-            localStorage.setItem(this.state.inf1, JSON.stringify([]));
-            localStorage.setItem(this.state.inf2, JSON.stringify([]));
+            localStorage.setItem(this.state.inf1.id, JSON.stringify([]));
+            localStorage.setItem(this.state.inf2.id, JSON.stringify([]));
             needBuildWordList = true;
         }
     }
@@ -81,8 +90,8 @@ class Result extends React.Component {
     };
 
     isInformersLocalStorageSet() {
-        return localStorage.getItem(this.state.inf1) != null && localStorage.getItem(this.state.inf1).length > 0 &&
-            localStorage.getItem(this.state.inf2) != null && localStorage.getItem(this.state.inf2).length > 0;
+        return localStorage.getItem(this.state.inf1.id) != null && localStorage.getItem(this.state.inf1.id).length > 0 &&
+            localStorage.getItem(this.state.inf2.id) != null && localStorage.getItem(this.state.inf2.id).length > 0;
     }
 
     addWordInLocalStorage(infID){
@@ -91,9 +100,9 @@ class Result extends React.Component {
         localStorage.setItem(infID, JSON.stringify(wordList));
     }
 
-    generateText(inf1){
+    generateText(){
 
-        const text = inf1.text;
+        const text = this.state.inf1.text;
 
         let key = 0;
         clickableWordCountInf1 = 0;
@@ -107,22 +116,19 @@ class Result extends React.Component {
             <div>{text.split("\n").map(line => {
                 if(line.match(REGEX)) {
 
-                    // Find the informant number to the line or use the last registered inf id
-                    if(line.split(":")[0] != null && line.split(":")[0].trim().split(" ").length === 1){
-                        infNumber = line.split(":")[0].trim();
-                        infNumber = this.state.inf1.includes(infNumber) ? this.state.inf1 : this.state.inf2;
-                    }
+                    infNumber = this.findInformerNumber(line, infNumber);
 
                     return <div key={key++}>{
                         line.split(" ")
                             .map(word => {
-                                if(word.indexOf(word.match(REGEX)) !== -1){
+                                // if(word.indexOf(word.match(REGEX)) !== -1){
+                                if(this.doWordContainSymbol(word)){
 
                                     if(needBuildWordList){
                                         this.addWordInLocalStorage(infNumber);
                                     }
 
-                                    index = this.state.inf1.includes(infNumber) ? ++clickableWordCountInf1 : ++clickableWordCountInf2;
+                                    index = this.state.inf1.id.includes(infNumber) ? ++clickableWordCountInf1 : ++clickableWordCountInf2;
 
                                     return <Word key={key++}
                                                  wordIndex={index - 1}
@@ -145,21 +151,20 @@ class Result extends React.Component {
         );
     }
 
-    render(){
-        const id = this.props.inf;
-        let inf1 = Informers.find(x => x.id === id);
-
-        const url = require("../../../static/" + inf1.audio);
-
-        let idString = inf1.audio.split("_")[1].split("og");
-        let id2 = "";
-        if(id === idString[0]) {
-            id2 = idString[1].split(".")[0];
-        }else{
-            id2 = idString[0];
+    findInformerNumber(line, previousInfNumber) {
+        if(line.split(":")[0] != null && line.split(":")[0].trim().split(" ").length === 1){
+            return this.state.inf1.id.includes(line.split(":")[0].trim()) ? this.state.inf1.id : this.state.inf2.id;
         }
+        return previousInfNumber;
+    }
 
-        let inf2 = Informers.find(x => x.id === id2);
+    doWordContainSymbol(word){
+        return word.indexOf(word.match(REGEX)) !== -1;
+    }
+
+    render(){
+
+        const url = require("../../../static/" + this.state.inf1.audio);
 
         return(
             <div className="resultBackground" >
@@ -172,24 +177,15 @@ class Result extends React.Component {
 
                     <div className="textWindowContent">
                         <div className="firstInfPanel">
-                            <h2 id="headline">{inf1.age.split(" ")[0]} {inf1.gender.toLowerCase()} frå {inf1.place}</h2>
-                            <InformantInfoText informant={inf1}/>
+                            <h2 id="headline">{this.state.inf1.age.split(" ")[0]} {this.state.inf1.gender.toLowerCase()} frå {this.state.inf1.place}</h2>
+                            <InformantInfoText informant={this.state.inf1}/>
 
-                            {
-                                !this.state.showSecondInf &&
-                                <span className="secondInfPanel" onClick={() => this.onInfClick()}><b>{inf2.id.split("p")[0]}: {inf2.age.split(" ")[0]} {inf2.gender.toLowerCase()} frå {inf2.place}</b></span>
-                            }
-                            {
-                                this.state.showSecondInf &&
-                                <div className="secondInfPanel" onClick={() => this.onInfClick()}>
-                                    <span><b>{inf2.id.split("p")[0]}: {inf2.age.split(" ")[0]} {inf2.gender.toLowerCase()} frå {inf2.place}</b></span>
-                                    <InformantInfoText informant={inf2}/>
-                                </div>
-                            }
+                            {this.showSecondInformer(this.state.showSecondInf)}
+
                         </div>
 
                         <div className="text">
-                            {this.generateText(inf1)}
+                            {this.generateText()}
                             {needBuildWordList = false}
                         </div>
                     </div>
@@ -201,6 +197,17 @@ class Result extends React.Component {
                 </div>
             </div>
         )
+    }
+
+    showSecondInformer(showSecondInf) {
+        if(showSecondInf){
+            return <div className="secondInfPanel" onClick={() => this.onInfClick()}>
+                <span><b>{this.state.inf2.id.split("p")[0]}: {this.state.inf2.age.split(" ")[0]} {this.state.inf2.gender.toLowerCase()} frå {this.state.inf2.place}</b></span>
+                <InformantInfoText informant={this.state.inf2}/>
+            </div>
+        }else {
+            return <span className="secondInfPanel" onClick={() => this.onInfClick()}><b>{this.state.inf2.id.split("p")[0]}: {this.state.inf2.age.split(" ")[0]} {this.state.inf2.gender.toLowerCase()} frå {this.state.inf2.place}</b></span>
+        }
     }
 }
 

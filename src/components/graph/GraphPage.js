@@ -4,6 +4,8 @@ import Graph from './GraphComponent';
 import GraphSearch from './GraphSearchComponent';
 import RadioButtons  from './RadioButtonComponent';
 
+import { TestDataFromInformersText }from './TestDataFromInformersText';
+
 import Informers from "../../data/informers";
 import SearchVariables from "../../data/searchVariables";
 // import GraphTraitsSelection from './graphTraitsSelectionComponent';
@@ -11,6 +13,7 @@ import SearchVariables from "../../data/searchVariables";
 import '../../styles/graph/graph.scss';
 
 let informersData = {};
+// const REGEX = new RegExp("([@#*¤%¨‘~+§{}])", "g");
 
 class GraphPage extends React.Component {
 
@@ -134,9 +137,6 @@ class GraphPage extends React.Component {
         });
     }
 
-    generateDataFromInformersData(){
-
-    }
 
     testFilteredInformers(){
 
@@ -151,16 +151,16 @@ class GraphPage extends React.Component {
         console.log("Not include", allInformersId.filter(n => !filteredInformersId.includes(n)));
     }
 
-
-
     render(){
 
         // this.testFilteredInformers();
+        // this.generateDataFromInformersText();
 
         return(
             <div>
                 <RadioButtons setSearchLabels={this.setSearchLabels.bind(this)}/>
                 <GraphSearch setFilter={this.setFilter.bind(this)}/>
+                <button onClick={() => TestDataFromInformersText()}>GenerateData</button>
 
                 <div className="graphPage">
                     <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.data1} title="Infinitiv"/>
