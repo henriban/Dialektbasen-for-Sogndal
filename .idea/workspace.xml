@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92406c54-c6dc-4d55-b76a-7b6f13eb8c44" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/graph/TestDataFromInformersText.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/inf_19og20.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/inf_21og22.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/inf_23og24.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/inf_51og60.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/inf_53og63.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/inf_59.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/database/textWindow/TextWindowComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/database/textWindow/TextWindowComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/graph/GraphPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/graph/GraphPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/HomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/informers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/informers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/informersText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/informersText.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,43 +24,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/graph/GraphPage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-680">
-              <caret line="38" column="24" lean-forward="true" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/graph/TestDataFromInformersText.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/informersText.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73474">
-              <caret line="4322" column="36" selection-start-line="4322" selection-start-column="36" selection-end-line="4322" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/database/textWindow/TextWindowComponent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="801">
+              <caret line="1585" column="77" selection-start-line="1585" selection-start-column="77" selection-end-line="1585" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -64,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/informers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2040">
-              <caret line="120" column="28" selection-start-line="120" selection-start-column="28" selection-end-line="120" selection-end-column="28" />
+            <state relative-caret-position="346">
+              <caret line="819" column="25" selection-start-line="819" selection-start-column="20" selection-end-line="819" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -101,6 +72,7 @@
       <find>1971 - 2001</find>
       <find>this.state.inf</find>
       <find>går</find>
+      <find>48</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -134,7 +106,6 @@
         <option value="$PROJECT_DIR$/src/components/Navbar.js" />
         <option value="$PROJECT_DIR$/src/styles/navbar.scss" />
         <option value="$PROJECT_DIR$/src/components/database/search/SelectComponent.js" />
-        <option value="$PROJECT_DIR$/src/data/informersText.js" />
         <option value="$PROJECT_DIR$/src/components/database/search/SearchComponent.js" />
         <option value="$PROJECT_DIR$/src/components/graph/RadioButtonComponent.js" />
         <option value="$PROJECT_DIR$/src/styles/graph/radiobuttons.scss" />
@@ -146,17 +117,17 @@
         <option value="$PROJECT_DIR$/src/components/graph/CheckboxClusterComponent.js" />
         <option value="$PROJECT_DIR$/src/components/graph/GraphSearchComponent.js" />
         <option value="$PROJECT_DIR$/src/data/searchVariables.js" />
-        <option value="$PROJECT_DIR$/src/data/informers.js" />
         <option value="$PROJECT_DIR$/src/components/home/HomePage.js" />
         <option value="$PROJECT_DIR$/src/components/database/textWindow/TextWindowComponent.js" />
         <option value="$PROJECT_DIR$/src/components/graph/TestDataFromInformersText.js" />
         <option value="$PROJECT_DIR$/src/components/graph/GraphPage.js" />
+        <option value="$PROJECT_DIR$/src/data/informers.js" />
+        <option value="$PROJECT_DIR$/src/data/informersText.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="769" />
-    <option name="y" value="-16" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -182,42 +153,13 @@
               <item name="Dialektbasen-for-Sogndal" type="b2602c69:ProjectViewProjectNode" />
               <item name="Dialektbasen-for-Sogndal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dialektbasen-for-Sogndal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dialektbasen-for-Sogndal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dialektbasen-for-Sogndal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dialektbasen-for-Sogndal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="textWindow" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dialektbasen-for-Sogndal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dialektbasen-for-Sogndal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="graph" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dialektbasen-for-Sogndal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dialektbasen-for-Sogndal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dialektbasen-for-Sogndal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dialektbasen-for-Sogndal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dialektbasen-for-Sogndal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dialektbasen-for-Sogndal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -241,19 +183,19 @@
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\henrik\WebstormProjects\dialektbasen_sogndal\node_modules\prettier" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\henrik\WebstormProjects\dialektbasen_sogndal\src\styles\database" />
-      <recent name="C:\Users\henrik\WebstormProjects\dialektbasen_sogndal\src\styles\graph" />
-      <recent name="C:\Users\henrik\WebstormProjects\dialektbasen_sogndal\src\components\database\textWindow" />
-      <recent name="C:\Users\henrik\WebstormProjects\dialektbasen_sogndal\src\components\database\table" />
-      <recent name="C:\Users\henrik\WebstormProjects\dialektbasen_sogndal\src\components\database\search" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\henrik\WebstormProjects\dialektbasen_sogndal\src\static" />
       <recent name="C:\Users\henrik\WebstormProjects\dialektbasen_sogndal\src\components\graph" />
       <recent name="C:\Users\henrik\WebstormProjects\dialektbasen_sogndal\src\styles" />
       <recent name="C:\Users\henrik\WebstormProjects\dialektbasen_sogndal\src\components\database" />
       <recent name="C:\Users\henrik\WebstormProjects\dialektbasen_sogndal\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\henri\WebstormProjects\Dialektbasen-for-Sogndal\src\static" />
+      <recent name="C:\Users\henrik\WebstormProjects\dialektbasen_sogndal\src\styles\database" />
+      <recent name="C:\Users\henrik\WebstormProjects\dialektbasen_sogndal\src\styles\graph" />
+      <recent name="C:\Users\henrik\WebstormProjects\dialektbasen_sogndal\src\components\database\textWindow" />
+      <recent name="C:\Users\henrik\WebstormProjects\dialektbasen_sogndal\src\components\database\table" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -310,11 +252,13 @@
       <workItem from="1547850348001" duration="7504000" />
       <workItem from="1547897094450" duration="3949000" />
       <workItem from="1548171040943" duration="3970000" />
+      <workItem from="1548402435207" duration="677000" />
+      <workItem from="1548491461080" duration="2717000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99643000" />
+    <option name="totallyTimeSpent" value="103037000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -326,9 +270,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18651211" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26495728" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -671,10 +616,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/informersText.js">
+    <entry file="file://$PROJECT_DIR$/src/components/graph/GraphPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73474">
-          <caret line="4322" column="36" selection-start-line="4322" selection-start-column="36" selection-end-line="4322" selection-end-column="36" />
+        <state relative-caret-position="17">
+          <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -688,27 +636,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/informers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="120" column="28" selection-start-line="120" selection-start-column="28" selection-end-line="120" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/graph/TestDataFromInformersText.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+        <state relative-caret-position="832">
+          <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/graph/GraphPage.js">
+    <entry file="file://$PROJECT_DIR$/src/data/informers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-680">
-          <caret line="38" column="24" lean-forward="true" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="346">
+          <caret line="819" column="25" selection-start-line="819" selection-start-column="20" selection-end-line="819" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/informersText.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="801">
+          <caret line="1585" column="77" selection-start-line="1585" selection-start-column="77" selection-end-line="1585" selection-end-column="77" />
         </state>
       </provider>
     </entry>

@@ -831,7 +831,7 @@ const informers =
         },
         {
             id: "66",
-            place: "Dalen",
+            place: "Fjøra",
             gender: "Mann",
             age: "Ungdom 13 - 25",
             birth: "1971 - 2000",
