@@ -36,6 +36,8 @@ class graphSearchComponent extends React.Component{
         return(
             <div className="graphSearchArea">
                 <FilterViewer filters={this.state.filters}/>
+                <br/>
+                "Huk av for de trekkene du ønsker å filtrere på. Hvis ingen er huket av vil alle vises"
                 <div className="checkboxSearchWrapper">
                     <CheckboxComponent onCheckUpdate={this.toggleCheckbox} label="Stad"               variables={Variables.place}              res="place"/>
                     <CheckboxComponent onCheckUpdate={this.toggleCheckbox} label="Kjønn"              variables={Variables.gender}             res="gender"/>

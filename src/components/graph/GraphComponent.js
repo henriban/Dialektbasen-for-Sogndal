@@ -9,7 +9,12 @@ class graph extends React.Component{
         return (
             <div className="graph">
                 <p className="graphLabel">{this.props.title}</p>
+                <div className="graphColorExplanation">
+                    <div className="colorExplanation explanation1"/> <span>a </span>
+                    <div className="colorExplanation explanation2"/> <span>e </span>
+                    <div className="colorExplanation explanation3"/> <span>anna</span>
 
+                </div>
                 <VictoryChart domainPadding={{x: 50}} /*animate={{duration: 300}}*/>
 
                     <VictoryLabel>

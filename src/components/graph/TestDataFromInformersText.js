@@ -24,7 +24,7 @@ export const TestDataFromInformersText = ()=>{
         graphData[id] = generateSymbolCount(data);
     }
 
-    console.log(graphData);
+    return graphData;
 };
 
 

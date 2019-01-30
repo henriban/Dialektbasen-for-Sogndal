@@ -34,3 +34,28 @@
     box-shadow: 0 0 5px #888888;
     border-radius: 5px;
 }
+
+.graphColorExplanation{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    .colorExplanation{
+        width: 10px;
+        height: 10px;
+        margin: 0 2px 0 10px;
+    }
+
+    .explanation1{
+        background-color: #4AACC5;
+    }
+
+    .explanation2{
+        background-color: #77a033;
+    }
+
+    .explanation3{
+        background-color: #e07676;
+    }
+}

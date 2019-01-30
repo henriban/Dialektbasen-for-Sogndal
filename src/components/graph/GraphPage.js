@@ -33,6 +33,10 @@ class GraphPage extends React.Component {
             data4: [],
             data5: [],
             data6: [],
+
+            filteredTestDataFromInformersText: [],
+            xLabel: "",
+            filteredDemoInf: []
         };
     }
 
@@ -100,6 +104,12 @@ class GraphPage extends React.Component {
 
     setSearchLabels(searchLabel){
 
+        this.setState({
+            xLabel: searchLabel
+        });
+
+        this.filterDemo();
+
         let tickFormat = [];
         let tickValues = [];
         let index = 0;
@@ -151,6 +161,32 @@ class GraphPage extends React.Component {
         console.log("Not include", allInformersId.filter(n => !filteredInformersId.includes(n)));
     }
 
+    demoButtonClicked(){
+        this.setState({
+            filteredTestDataFromInformersText: TestDataFromInformersText()
+        })
+    }
+
+    filterDemo(){
+        let filteredDemoInf = [];
+        for(let index in this.state.filteredInformers){
+            for(let id in this.state.filteredTestDataFromInformersText){
+                if(this.state.filteredInformers[index].id === id ){
+                    filteredDemoInf.push(this.state.filteredInformers[index]);
+                }
+            }
+            // this.state.filteredTestDataFromInformersText.map(inf => this.state.filteredInformers[index].id === inf.id ? filteredDemo.push(inf) : null);
+        }
+
+        this.setState({
+            filteredDemoInf: filteredDemoInf
+        })
+    }
+
+    generateDemoData(){
+
+    }
+
     render(){
 
         // this.testFilteredInformers();
@@ -160,7 +196,7 @@ class GraphPage extends React.Component {
             <div>
                 <RadioButtons setSearchLabels={this.setSearchLabels.bind(this)}/>
                 <GraphSearch setFilter={this.setFilter.bind(this)}/>
-                <button onClick={() => TestDataFromInformersText()}>GenerateData</button>
+                <button onClick={() => this.demoButtonClicked()}>DEMO</button>
 
                 <div className="graphPage">
                     <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.data1} title="Infinitiv"/>

@@ -16,7 +16,7 @@ class FilterView extends Component {
 
         for(let key in filters){
             if(filters.hasOwnProperty(key)){
-                filterView += filters[key]
+                filterView += filters[key] + " "
                 // filters[key].map(item => console.log(item));
                 // filters[key].map(item => filterView += item + " ");
             }
@@ -31,7 +31,7 @@ class FilterView extends Component {
 
         return (
             <div>
-                Hvis hva du søker på:
+                Du filtrerer på:
                 {/*{this.props.filters.place}*/}
                 {this.generateFilterView()}
             </div>

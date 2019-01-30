@@ -24,9 +24,13 @@ class RadioButtons extends React.Component{
 
     render(){
         return(
-            <form className="radioButtonsWrapper" onChange={this.setSearchLabels.bind(this)}>
-                {this.generateRadioButtons()}
-            </form>
+            <div>
+                "Velg verdier som skal vises på x-aksen"
+                <form className="radioButtonsWrapper" onChange={this.setSearchLabels.bind(this)}>
+                    {this.generateRadioButtons()}
+                </form>
+            </div>
+
         );
     }
 }
