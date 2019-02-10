@@ -1,7 +1,7 @@
 import React from 'react';
 
 import CheckboxComponent from './CheckboxClusterComponent';
-import FilterViewer from './FilterViewComponent';
+// import FilterViewer from './FilterViewComponent';
 import Variables from '../../data/searchVariables';
 
 import '../../styles/graph/checkbox.scss';
@@ -35,9 +35,8 @@ class graphSearchComponent extends React.Component{
     render(){
         return(
             <div className="graphSearchArea">
-                <FilterViewer filters={this.state.filters}/>
-                <br/>
-                "Huk av for de trekkene du ønsker å filtrere på. Hvis ingen er huket av vil alle vises"
+                {/*<FilterViewer filters={this.state.filters}/>*/}
+                <p className="graphLabel">Huk av for dei trekka du ønskjer å filtrera på. Viss ingen er huka av, vil alle verta synlege.</p>
                 <div className="checkboxSearchWrapper">
                     <CheckboxComponent onCheckUpdate={this.toggleCheckbox} label="Stad"               variables={Variables.place}              res="place"/>
                     <CheckboxComponent onCheckUpdate={this.toggleCheckbox} label="Kjønn"              variables={Variables.gender}             res="gender"/>

@@ -11,8 +11,14 @@
     box-shadow: 0 0 5px #888888;
     border-radius: 5px;
 
+    .radioButtonsContent{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
     label{
-        min-width: 5%;
+        //min-width: 5%;
         margin: 20px;
         padding: 5px;
 

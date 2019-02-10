@@ -8,6 +8,7 @@ import { TestDataFromInformersText }from './TestDataFromInformersText';
 
 import Informers from "../../data/informers";
 import SearchVariables from "../../data/searchVariables";
+import Symbols from "../../data/symbols";
 // import GraphTraitsSelection from './graphTraitsSelectionComponent';
 
 import '../../styles/graph/graph.scss';
@@ -22,21 +23,22 @@ class GraphPage extends React.Component {
 
         this.state = {
             filters: [],
-            filteredInformers: [],
+            filteredInformers: this.getAllInformers(),
 
             tickFormat: [], // labels for Victory Axis
             tickValues: [], // number of different labels ex: [1,2,3]
 
-            data1: [],
-            data2: [],
-            data3: [],
-            data4: [],
-            data5: [],
-            data6: [],
+            dataGraph1: [],
+            dataGraph2: [],
+            dataGraph3: [],
+            dataGraph4: [],
+            dataGraph5: [],
+            dataGraph6: [],
 
             filteredTestDataFromInformersText: [],
-            xLabel: "",
-            filteredDemoInf: []
+            searchLabel: null,
+            filteredDemoInf: [],
+            filteredInformersDividedOnSearchLabel: {}
         };
     }
 
@@ -48,7 +50,13 @@ class GraphPage extends React.Component {
         this.setState({
             filters: filters,
             filteredInformers: this.getFilteredInformers(filters)
-        });
+        }, () => {this.update()});
+    }
+
+    update(){
+        if(this.state.searchLabel != null){
+            this.setSearchLabels(this.state.searchLabel);
+        }
     }
 
     getFilteredInformers(filters){
@@ -104,11 +112,10 @@ class GraphPage extends React.Component {
 
     setSearchLabels(searchLabel){
 
-        this.setState({
-            xLabel: searchLabel
-        });
+        let filteredInformersDividedOnSearchLabel = {};
 
-        this.filterDemo();
+        SearchVariables[searchLabel].map(item => filteredInformersDividedOnSearchLabel[item.label] = []);
+        this.state.filteredInformers.map(inf => filteredInformersDividedOnSearchLabel[inf[searchLabel]] = filteredInformersDividedOnSearchLabel[inf[searchLabel]].concat(inf));
 
         let tickFormat = [];
         let tickValues = [];
@@ -122,7 +129,125 @@ class GraphPage extends React.Component {
             tickValues: tickValues
         });
 
+
+        this.setState({
+            searchLabel: searchLabel,
+            // filteredInformersDividedOnSearchLabel: filteredInformersDividedOnSearchLabel
+        });
+
+        // this.filterDemo();
+
+
+        this.generateSymbolCountPerLabel(searchLabel, filteredInformersDividedOnSearchLabel);
+
         this.generateData(tickValues.length);
+    }
+
+    generateSymbolCountPerLabel(searchLabel, filteredInformers){
+        let d = {};
+        let searchLabels = [];
+
+        SearchVariables[searchLabel].map(item => d[item.label] = {});
+        SearchVariables[searchLabel].map(item => searchLabels.push(item.label));
+
+        for(let key in filteredInformers){
+            if(filteredInformers.hasOwnProperty(key)){
+                let symbols = [];
+                filteredInformers[key].map(inf => symbols.push(this.getSymbolCountFromInformer(inf)));
+                d[key] = symbols;
+            }
+        }
+        this.mergeSymbolCount(d);
+    }
+
+    mergeSymbolCount(d){
+        let symbolDictionary = {};
+
+        for(let key in d){
+            if(d.hasOwnProperty(key)){
+                let symbolMerge = {};
+                d[key].map(symbols => {
+                    for(let s in symbols){
+                        if(symbols.hasOwnProperty(s)){
+
+                            if(!(s in symbolMerge)){
+                                symbolMerge[s] = 0;
+                            }
+
+                            symbolMerge[s] += parseInt(symbols[s]);
+                        }
+                    }
+                });
+                symbolDictionary[key] = symbolMerge;
+            }
+        }
+
+        this.splitDataBetweenGraphs(symbolDictionary);
+    }
+
+    returnZeroIfUndefined(number){
+        return number !== undefined ? number : 0;
+    }
+
+    splitDataBetweenGraphs(symbolDictionary){
+
+        let data1 = [];
+        let data2 = [];
+        let data3 = [];
+        let data4 = [];
+        let data5 = [];
+        let data6 = [];
+
+        for(let key in symbolDictionary){
+            if(symbolDictionary.hasOwnProperty(key)) {
+                let symbols = symbolDictionary[key];
+                // data1.push([{x: 1, y: this.returnZeroIfUndefined(symbols[Symbols.infinitiv_a])},    {x: 2, y: this.returnZeroIfUndefined(symbols[Symbols.infinitiv_e])}, {x: 3, y: 0}]);
+                // data2.push([{x: 1, y: this.returnZeroIfUndefined(symbols[Symbols.ao])},             {x: 2, y: this.returnZeroIfUndefined(symbols[Symbols.å])}, {x: 3, y: 0}]);
+                // data3.push([{x: 1, y: this.returnZeroIfUndefined(symbols[Symbols.bundanForm_i])},   {x: 2, y: this.returnZeroIfUndefined(symbols[Symbols.bundanForm_a])}, {x: 3, y: 0}]);
+                // data4.push([{x: 1, y: this.returnZeroIfUndefined(symbols[Symbols.adnedn])},         {x: 2, y: this.returnZeroIfUndefined(symbols[Symbols.aneene])}, {x: 3, y: 0}]);
+                // data5.push([{x: 1, y: this.returnZeroIfUndefined(symbols[Symbols.dl])},             {x: 2, y: this.returnZeroIfUndefined(symbols[Symbols.ll])}, {x: 3, y: 0}]);
+                // data6.push([{x: 1, y: this.returnZeroIfUndefined(symbols[Symbols.dn])},             {x: 2, y: this.returnZeroIfUndefined(symbols[Symbols.rn])}, {x: 3, y: 0}]);
+                data1.push([this.returnZeroIfUndefined(symbols[Symbols.infinitiv_a]),    this.returnZeroIfUndefined(symbols[Symbols.infinitiv_e]),  0]);
+                data2.push([this.returnZeroIfUndefined(symbols[Symbols.ao]),             this.returnZeroIfUndefined(symbols[Symbols.å]),            0]);
+                data3.push([this.returnZeroIfUndefined(symbols[Symbols.bundanForm_i]),   this.returnZeroIfUndefined(symbols[Symbols.bundanForm_a]), 0]);
+                data4.push([this.returnZeroIfUndefined(symbols[Symbols.adnedn]),         this.returnZeroIfUndefined(symbols[Symbols.aneene]),       0]);
+                data5.push([this.returnZeroIfUndefined(symbols[Symbols.dl]),             this.returnZeroIfUndefined(symbols[Symbols.ll]),           0]);
+                data6.push([this.returnZeroIfUndefined(symbols[Symbols.dn]),             this.returnZeroIfUndefined(symbols[Symbols.rn]),           0]);
+            }
+        }
+
+        this.setState({
+            dataGraph1: this.mergeSymbolValues(data1),
+            dataGraph2: this.mergeSymbolValues(data2),
+            dataGraph3: this.mergeSymbolValues(data3),
+            dataGraph4: this.mergeSymbolValues(data4),
+            dataGraph5: this.mergeSymbolValues(data5),
+            dataGraph6: this.mergeSymbolValues(data6),
+        });
+    }
+
+
+    mergeSymbolValues(data){
+
+        let dataSet = [];
+
+        for(let i = 0; i < 3; i++){
+            let d = [];
+            for(let j = 0; j < data.length; j++){
+                d.push({x: j + 1, y: data[j][i]});
+            }
+            dataSet.push(d);
+        }
+
+        return dataSet;
+    }
+
+    getSymbolCountFromInformer(inf){
+        for(let id in this.state.filteredTestDataFromInformersText){
+            if(id === inf.id){
+                return this.state.filteredTestDataFromInformersText[id];
+            }
+        }
     }
 
     generateData(tick){
@@ -137,20 +262,18 @@ class GraphPage extends React.Component {
             data.push(innerArray)
         }
 
-        this.setState({
-            data1: data,
-            data2: data,
-            data3: data,
-            data4: data,
-            data5: data,
-            data6: data,
-        });
+        // this.setState({
+        //     dataGraph1: data,
+        //     dataGraph2: data,
+        //     dataGraph3: data,
+        //     dataGraph4: data,
+        //     dataGraph5: data,
+        //     dataGraph6: data,
+        // });
     }
 
 
     testFilteredInformers(){
-
-        // console.log("Not include", this.getAllInformers().filter(inf => !this.state.filteredInformers.includes(inf)));
 
         let filteredInformersId = [];
         this.state.filteredInformers.map(inf => filteredInformersId.push(inf.id));
@@ -164,27 +287,9 @@ class GraphPage extends React.Component {
     demoButtonClicked(){
         this.setState({
             filteredTestDataFromInformersText: TestDataFromInformersText()
-        })
-    }
+        });
 
-    filterDemo(){
-        let filteredDemoInf = [];
-        for(let index in this.state.filteredInformers){
-            for(let id in this.state.filteredTestDataFromInformersText){
-                if(this.state.filteredInformers[index].id === id ){
-                    filteredDemoInf.push(this.state.filteredInformers[index]);
-                }
-            }
-            // this.state.filteredTestDataFromInformersText.map(inf => this.state.filteredInformers[index].id === inf.id ? filteredDemo.push(inf) : null);
-        }
-
-        this.setState({
-            filteredDemoInf: filteredDemoInf
-        })
-    }
-
-    generateDemoData(){
-
+        this.update();
     }
 
     render(){
@@ -194,17 +299,17 @@ class GraphPage extends React.Component {
 
         return(
             <div>
+                <button onClick={() => this.demoButtonClicked()}>DEMO</button>
                 <RadioButtons setSearchLabels={this.setSearchLabels.bind(this)}/>
                 <GraphSearch setFilter={this.setFilter.bind(this)}/>
-                <button onClick={() => this.demoButtonClicked()}>DEMO</button>
 
                 <div className="graphPage">
-                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.data1} title="Infinitiv"/>
-                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.data2} title="Ao-lyden"/>
-                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.data3} title="Bunden form eintal av sterke hokjønnssubstantiv og fleirtal av inkjekjønnssubstantiv"/>
-                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.data4} title="Bunden form fleirtal av hokjønns- og hannkjønnssubstantiv"/>
-                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.data5} title="Segmentering av ll > dl"/>
-                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.data6} title="Differensiering av rn > dn"/>
+                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.dataGraph1} explanation1="a"  explanation2="e" title="Infinitiv"/>
+                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.dataGraph2} explanation1="ao" explanation2="å" title="Ao-lyden"/>
+                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.dataGraph3} explanation1="i"  explanation2="a" title="Bunden form eintal av sterke hokjønnssubstantiv og fleirtal av inkjekjønnssubstantiv"/>
+                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.dataGraph4} explanation1="adn/edn" explanation2="ane/ene" title="Bunden form fleirtal av hokjønns- og hannkjønnssubstantiv"/>
+                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.dataGraph5} explanation1="dl" explanation2="ll" title="Segmentering av ll > dl"/>
+                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.dataGraph6} explanation1="dn" explanation2="rn" title="Differensiering av rn > dn"/>
                 </div>
             </div>
         );

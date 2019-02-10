@@ -89,6 +89,7 @@ class Result extends React.Component {
         }
     };
 
+    // TODO: cannot read property id of undefined
     isInformersLocalStorageSet() {
         return localStorage.getItem(this.state.inf1.id) != null && localStorage.getItem(this.state.inf1.id).length > 0 &&
             localStorage.getItem(this.state.inf2.id) != null && localStorage.getItem(this.state.inf2.id).length > 0;

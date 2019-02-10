@@ -2,14 +2,14 @@ const symbols = {
     infinitiv_a: "*",
     infinitiv_e: "‘",
     ao: "@",
-    å :"#",
+    å :"{",
     bundanForm_i : "¤",
     bundanForm_a : "%",
     adnedn : "~",
     aneene : "¨",
-    dl : "+",
-    ll : "§",
-    dn : "{",
+    dl : "§",
+    ll : "+",
+    dn : "#",
     rn : "}"
 };
 
