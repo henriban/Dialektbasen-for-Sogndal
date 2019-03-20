@@ -34,10 +34,6 @@ class Result extends React.Component {
             inf2 = switchInf;
         }
 
-        // let switchInf = inf1;
-        // inf1 = inf1.id === this.props.inf ? inf1 : inf2;
-        // inf2 = inf2.id === this.props.inf ? inf2 : switchInf;
-
         this.state = {
             showSecondInf: false,
             x: 0,
@@ -46,13 +42,13 @@ class Result extends React.Component {
             inf2: inf2
         };
 
-        isLocalStorageSet = this.isInformersLocalStorageSet();
+        // isLocalStorageSet = this.isInformersLocalStorageSet();
 
-        if(!isLocalStorageSet){
-            localStorage.setItem(this.state.inf1.id, JSON.stringify([]));
-            localStorage.setItem(this.state.inf2.id, JSON.stringify([]));
-            needBuildWordList = true;
-        }
+        // if(!isLocalStorageSet){
+        //     localStorage.setItem(this.state.inf1.id, JSON.stringify([]));
+        //     localStorage.setItem(this.state.inf2.id, JSON.stringify([]));
+        //     needBuildWordList = true;
+        // }
     }
 
     componentWillMount(){
@@ -90,10 +86,10 @@ class Result extends React.Component {
     };
 
     // TODO: cannot read property id of undefined
-    isInformersLocalStorageSet() {
-        return localStorage.getItem(this.state.inf1.id) != null && localStorage.getItem(this.state.inf1.id).length > 0 &&
-            localStorage.getItem(this.state.inf2.id) != null && localStorage.getItem(this.state.inf2.id).length > 0;
-    }
+    // isInformersLocalStorageSet() {
+    //     return localStorage.getItem(this.state.inf1.id) != null && localStorage.getItem(this.state.inf1.id).length > 0 &&
+    //         localStorage.getItem(this.state.inf2.id) != null && localStorage.getItem(this.state.inf2.id).length > 0;
+    // }
 
     addWordInLocalStorage(infID){
         let wordList = JSON.parse(localStorage.getItem(infID));
@@ -153,6 +149,10 @@ class Result extends React.Component {
     }
 
     findInformerNumber(line, previousInfNumber) {
+
+        console.log("Inf1", this.state.inf1);
+        console.log("Inf2", this.state.inf2);
+
         if(line.split(":")[0] != null && line.split(":")[0].trim().split(" ").length === 1){
             return this.state.inf1.id.includes(line.split(":")[0].trim()) ? this.state.inf1.id : this.state.inf2.id;
         }
@@ -181,7 +181,7 @@ class Result extends React.Component {
                             <h2 id="headline">{this.state.inf1.age.split(" ")[0]} {this.state.inf1.gender.toLowerCase()} frå {this.state.inf1.place}</h2>
                             <InformantInfoText informant={this.state.inf1}/>
 
-                            {this.showSecondInformer(this.state.showSecondInf)}
+                            {this.state.inf2 != null ? this.showSecondInformer(this.state.showSecondInf) : null}
 
                         </div>
 

@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92406c54-c6dc-4d55-b76a-7b6f13eb8c44" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/static/inf_25og26.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/inf_27og28.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/inf_27pog28p.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/inf_31pog32p.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/database/textWindow/TextWindowComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/database/textWindow/TextWindowComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/graph/GraphComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/graph/GraphComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/graph/GraphPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/graph/GraphPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/graph/GraphSearchComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/graph/GraphSearchComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/graph/RadioButtonComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/graph/RadioButtonComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/informers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/informers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/informersText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/informersText.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/symbols.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/symbols.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/database/textWindow.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/database/textWindow.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/graph/graph.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/graph/graph.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/graph/radiobuttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/graph/radiobuttons.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,17 +20,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/informers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="1014" column="21" lean-forward="true" selection-start-line="1014" selection-start-column="21" selection-end-line="1014" selection-end-column="21" />
+            <state relative-caret-position="17238">
+              <caret line="1014" column="21" selection-start-line="1014" selection-start-column="21" selection-end-line="1014" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/database/textWindow/TextWindowComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="91" column="49" selection-start-line="91" selection-start-column="49" selection-end-line="91" selection-end-column="49" />
+            <state relative-caret-position="544">
+              <caret line="101" column="42" lean-forward="true" selection-start-line="101" selection-start-column="42" selection-end-line="101" selection-end-column="42" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -51,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data/informersText.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/data/symbols.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6298">
-              <caret line="3361" lean-forward="true" selection-start-line="3361" selection-end-line="3361" />
+            <state relative-caret-position="391">
+              <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -71,7 +58,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>static</find>
       <find>static/</find>
       <find>this.setS</find>
       <find>43</find>
@@ -101,6 +87,7 @@
       <find>§</find>
       <find>#</find>
       <find>19og</find>
+      <find>59</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -152,9 +139,9 @@
         <option value="$PROJECT_DIR$/src/styles/graph/graph.scss" />
         <option value="$PROJECT_DIR$/src/components/graph/GraphComponent.js" />
         <option value="$PROJECT_DIR$/src/components/graph/GraphPage.js" />
-        <option value="$PROJECT_DIR$/src/data/symbols.js" />
         <option value="$PROJECT_DIR$/src/data/informersText.js" />
         <option value="$PROJECT_DIR$/src/data/informers.js" />
+        <option value="$PROJECT_DIR$/src/data/symbols.js" />
         <option value="$PROJECT_DIR$/src/components/database/textWindow/TextWindowComponent.js" />
       </list>
     </option>
@@ -170,7 +157,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -247,6 +233,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -343,12 +330,17 @@
       <workItem from="1549153559058" duration="1302000" />
       <workItem from="1549386413918" duration="49000" />
       <workItem from="1549386486558" duration="37000" />
-      <workItem from="1549810128676" duration="4555000" />
+      <workItem from="1549810128676" duration="5215000" />
+      <workItem from="1549999141078" duration="1501000" />
+      <workItem from="1550681979844" duration="1658000" />
+      <workItem from="1551634125748" duration="12000" />
+      <workItem from="1551634199508" duration="606000" />
+      <workItem from="1551975155275" duration="3817000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150096000" />
+    <option name="totallyTimeSpent" value="158350000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -360,16 +352,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="638" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23166667" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16122234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.29035753" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.17067833" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.16901408" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -718,13 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/symbols.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/graph/GraphPage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="897">
@@ -737,27 +722,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/informersText.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6298">
-          <caret line="3361" lean-forward="true" selection-start-line="3361" selection-end-line="3361" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/informers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="1014" column="21" lean-forward="true" selection-start-line="1014" selection-start-column="21" selection-end-line="1014" selection-end-column="21" />
+        <state relative-caret-position="17238">
+          <caret line="1014" column="21" selection-start-line="1014" selection-start-column="21" selection-end-line="1014" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/database/textWindow/TextWindowComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="91" column="49" selection-start-line="91" selection-start-column="49" selection-end-line="91" selection-end-column="49" />
+        <state relative-caret-position="544">
+          <caret line="101" column="42" lean-forward="true" selection-start-line="101" selection-start-column="42" selection-end-line="101" selection-end-column="42" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/informersText.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-689">
+          <caret line="3754" column="7" selection-start-line="3754" selection-start-column="5" selection-end-line="3754" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/symbols.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
         </state>
       </provider>
     </entry>
