@@ -952,6 +952,89 @@ text_13og14 : "13: Det er nok litt forskjell på mitt, min oppvekst og, og hans.
     "I: Å, ja.\n" +
     "14: både gymnastikken og, og elles. Dei hadde liksom sånn, slik sandhole som ein skulle hoppa langt i og hoppa hø, høgde i og slikt noko.",
 
+text_14pog29p: "I: Kva de set pris på med å bu her i Sogndal då?\n" +
+    "29: Eg tykkjer me har eigentleg alt her i Sogndal som me har bruk for. Det er jo valdsamt til\n" +
+    "aktivitet @på §alle område. Det er eit variert næringsliv her, for du har §alle yrkesretningar,\n" +
+    "§alle yrkesgreiner. Me har ikkje noka slike hjørnesteinsbedrifter som ein er avhengige av. Så,\n" +
+    "så har me flott natur rundt omkring, alle ~stadene, for dei som likar det @då, ikkje sant? Har\n" +
+    "no vorte så bra med vegstandar no viss ein vil *reisa og ta seg ein tur til Bergen eller kvar det\n" +
+    "er, så er det ikkje lange ¤stunda, veit du.\n" +
+    "I: Korleis var det du reiste til Bergen?\n" +
+    "14: Nei, til å *begynna med @når før eg fekk no førarkort, så var det no med … Det var no\n" +
+    "ofte den der @snøggbåten eg reiste med.\n" +
+    "29: Mm.\n" +
+    "14: Men det hende no sjølvsagt eg reiste med buss òg. Sidan så, hadde no teke førarkort @då\n" +
+    "og var no begynt i arbeid, så, så hadde no eigen bil, så eg køyrde no som regel. Og det var no\n" +
+    "oftast over §Vikafjellet eg for.\n" +
+    "I: Det er no fint oppå der.\n" +
+    "14: Ja.\n" +
+    "29: Mm. Du veit at …\n" +
+    "14: Men den gongen så var det eigentleg ikkje noko alternativ.\n" +
+    "29: &lt;kremtar&gt;\n" +
+    "14: Du @måtte no *køyra ytre lei, men det trur eg aldri eg gjorde.\n" +
+    "29: Men var ikkje det ferje som gjekk @på Gudvangen den, den ¤tida òg?\n" +
+    "14: Jau.\n" +
+    "I: Ja. Når du vaks opp då, var det noko køyring de dreiv med då?\n" +
+    "29: Sykla, ikkje noko anna. Eg brydde meg ikkje noko om desse ~mopedgreiene heller.\n" +
+    "I: Nei.\n" +
+    "29: Det var jo nokon @då som hadde nokon mopedar, men akkurat i desse der gjengen som\n" +
+    "eg var med, så var det no meir §fotball me dreiv med og ein del aktivitetar slik sett. Så det var\n" +
+    "i grunnen ingen som hadde mopedar eller motorsyklar av den … av dei som eg var med @då.\n" +
+    "Men det var nokon @få utanom. Eg hugsar desse her som var ein seks, sju @år eldre enn\n" +
+    "meg. @Då var det ein periode det var noko valdsamt med motorsyklar nede i Fjøra. For @då\n" +
+    "dreiv dei @på heile sommaren og køyrde dei på rad og rekkje, #gjerne ein @åtte, ti stykk\n" +
+    "@då &lt;uforståeleg&gt; alle ~stadane nede i Fjøra rundt, rundt omkring.\n" +
+    "…………………………..\n" +
+    "I: Ja, men de hadde no skule her framme?\n" +
+    "14: Ja. Og så, så Notsete var skule, så, så #barneskulen var no der borte. Me hadde òg nokre\n" +
+    "timar i Fjøra.\n" +
+    "I: Å, ja.\n" +
+    "14: Slik at ¤engelskundervisninga den var i Fjøra @ifrå femteklasse …\n" +
+    "29: Akkurat.\n" +
+    "14: … veit eg, og utetter. Og var òg der nede med, med sløyd. Me var i saman med, med\n" +
+    "resten av ~dalingane som hadde skular lenger framme her, og så ~øvstedølene.\n" +
+    "\n" +
+    "…………………………………\n" +
+    "I: Kva tykkjer de om denne her då?\n" +
+    "14: Ja, det er vel naturleg me @får ei ny bru, veit eg\n" +
+    "29: Det, ja, ja ¤Loftesnesbrua. Dette blir, dette blir flott dette der. Det blir det. Det er no …\n" +
+    "det blir seksti @år, &lt;nøler&gt; seksti @år sidan sist @då.\n" +
+    "I: Ja, det blir det vel då.\n" +
+    "14: Ja.\n" +
+    "29: Ja.\n" +
+    "I: Så det er behov for ei ny ei her?\n" +
+    "29: Ja, det er det vel. Du ser på desse ¤vogntoga som fer og køyrer no, ikkje sant? Dei blir jo\n" +
+    "berre lengre og lengre desse ¤vogntoga og breiare og breiare òg til ein viss grad òg. Slik at det\n" +
+    "er jo viss det er no to vogntog på ¤brua samtidig der, så ristar jo heile ¤brua. Og dette her\n" +
+    "fortauet @då, ikkje sant, det er vel … Det, det @går akkurat med ei #barnevogn, å *køyra ei\n" +
+    "¤barnevogn @på det viss dei tek det med ro og siktar godt. Er det ei litt slik brei #barnevogn,\n" +
+    "så er det ikkje @råd å *køyra @på, @på ~kantane der, veit du.\n" +
+    "14: Nei.\n" +
+    "29: For …\n" +
+    "14: Men eg tykkjer at det er godt gjort at denne ¤brua har halde så lenge, eg. For tenk @på …\n" +
+    "29: Ja.\n" +
+    "14: … den trafikken @på den gongen som at ¤brua vart bygd.\n" +
+    "29: Ja.\n" +
+    "14: Det kan ikkje samanliknast.\n" +
+    "29: Nei, dei har nok vore bra framsynte den gongen ¤brua der vart planlagd.\n" +
+    "14: Ja.\n" +
+    "29: Det er jo godt, godt handtverk.\n" +
+    "14: Ja.\n" +
+    "29: Det er jo ikkje tvil om.\n" +
+    "14: Det er heilt utruleg at det … Du veit det var ikkje noko trafikk …\n" +
+    "29: Nei.\n" +
+    "14: … samanlikna med i dag.\n" +
+    "29: Nei, ingen, ingenting det.\n" +
+    "14: Og dei, dei &lt;stammar&gt; (størrelsane) @på ¤køyretøya som var kan ikkje samanliknast\n" +
+    "heller.\n" +
+    "29: Nei, @då hadde dei vel … Billaget hadde vel, hadde denne Sognefjord-ruta som var så\n" +
+    "populær, ikkje sant @då? Viss dei køyrde til Oslo ein gong eller to i veka.\n" +
+    "14: Ja.\n" +
+    "29: Det var vel den største bilen …\n" +
+    "14: Det var vel det.\n" +
+    "29: … som gjekk dei over ¤brua, og det blir berre @småtteri mot det som køyrer i dag.\n" +
+    "14: Ja.",
+
 text_15og16 : "16: Ja.\n" +
     "I: Var de kvar dag de var på skulen?\n" +
     "16: <kremtar>\n" +
@@ -1354,6 +1437,109 @@ text_19og20: "20: Det var #gjerne nitten @frå\n" +
     "skuddet spesielt @då. Det @måtte alltid ha med seg. Det er ikkje noko slik før … Trur ikkje\n" +
     "eg høyrde noko særleg @på radio eg før einaste @når eg var mindre, som han sa at …\n" +
     "19: Jau, det @måtte eg ha med meg.",
+
+text_19pog60p: "19: ¤Brua, veit du.\n" +
+    "60: Ja.\n" +
+    "19: @Då veit ikkje eg å ha tid å *vera på jobb @når dei … ¤brua kom. Sat i glaset og prøvde\n" +
+    "å @få ~ungane med meg @då. Var fasinerande å @sjå @på.\n" +
+    "I: Idet ho kom inn fjorden?\n" +
+    "19: Ja.\n" +
+    "I: Følgde de med då?\n" +
+    "19: @Då følgde me …\n" +
+    "60: Svære @båtar. Det var vel eigentleg me det var, eller oss det var spennande for. ~Ungane\n" +
+    "skjønte ikkje heilt.\n" +
+    "19: Nei.\n" +
+    "I: For det tok vel ei stund det? Det var vel sånn langsam …?\n" +
+    "19: Ja, dei var no komne inn fjorden før @då. Så dei køyrde @ifrå kaien, veit eg?\n" +
+    "60: Ja, så kom det vel ein og ein del, gjorde ikkje det @då?\n" +
+    "19: Jau.\n" +
+    "I: Men har det ikkje … har det vore mykje bråk då?\n" +
+    "60: Me har høyrt det av og til @når eg har vore oppe i skogen, opp mot ~Røvhaugane. Der er\n" +
+    "det høyrt litt sånn dunking og klakking. Men var ikkje …\n" +
+    "19: Men dei var no og tok sånne lydtestar òg før dei begynte, for å *finna ut om me tålte\n" +
+    "støyen liksom.\n" +
+    "I: Hen er det de går når de skal ut med ungane då sånn i naturen som du seier? Kva de … ?\n" +
+    "60: Me har ein skog som er rett over #barnehagen. Det blir opp mot ~Røvhaugane som det\n" +
+    "heiter.\n" +
+    "………………………………..\n" +
+    "60: Men syttande mai-toget @då … &lt;humrar&gt;\n" +
+    "I: Ja.\n" +
+    "60: … er jo faktisk ganske masse studentar.\n" +
+    "19: Ja.\n" +
+    "60: Det hadde ikkje vore så langt tog viss det ikkje var for ~studentane, tenkjer eg.\n" +
+    "19: Nei.\n" +
+    "60: For dei lagar jo til litt arrangement i forhold til denne studentveka og … Ja, slik sett så …\n" +
+    "I: Ja, er det noko som bygdefolket er med på òg det? Den veka?\n" +
+    "60: &lt;nøler&gt; Eg trur det er ein del som, ein del lokale som heng …\n" +
+    "I: Mm.\n" +
+    "19: Ja.\n" +
+    "60: … med i studentmiljøet @når dei studerer. Det er #gjerne ikkje §alle som er like flinke til\n" +
+    "det, men. Ho som leiar denne studentveka, ho er lokal, trur eg.\n" +
+    "……………………………..\n" +
+    "60: §Fotballen har vel stor plass, eigentleg?\n" +
+    "19: Ja. Jau, §fotballen har mykje å *seia, og Lerum har no òg mykje å *seia.\n" +
+    "60: Ja.\n" +
+    "\n" +
+    "19: For dei òg ser du no utad.\n" +
+    "60: Men eg trur det at det trekkjer ganske mange.\n" +
+    "19: Ja.\n" +
+    "60: Du har denne fjellsportfestivalen som dei har @fått opp no. Og det kjem jo folk over heile\n" +
+    "landet &lt;uforståeleg&gt; som vil hit @på grunn av, ja §¤fjella og snøen og litt òg det med\n" +
+    "studentar, trur eg at det er mange som søkjer seg hit @på grunn av naturen og dei\n" +
+    "~mogelegheitane det gir @då.\n" +
+    "I: Mm. Men er det noko viktig at me har noko godt fotballag her då?\n" +
+    "19: Ja, det dreg no folk til ¤bygda det òg, og næringslivet gjer vel godt av det, og ~pengane\n" +
+    "kjem inn som dei kan …\n" +
+    "I: Veksa endå meir?\n" +
+    "19: Ja.\n" +
+    "60: &lt;humrar&gt;\n" +
+    "I: Men er ikkje me store nok då?\n" +
+    "19: Jau, eg tenkjer ikkje at ¤bygda skal bli større, men at me kan no *overleva her og\n" +
+    "arbeidsplassar og …\n" +
+    "…………………………………….\n" +
+    "I: Ja, friminutta, korleis var dei då?\n" +
+    "60: Nei, altså, det var ikkje noko spesielt med dei heller, var jo dette at me #gjerne gøymde\n" +
+    "oss inne viss me @måtte ut @då, eller var fleire jenter inn @på same doen og … Det var\n" +
+    "ikkje noko spesielt med ¤friminutta, men. Var det kaldt, så ville ikkje du ut. @Då stod du\n" +
+    "helst att inne, og så @måtte du #gjerne ut @då.\n" +
+    "…………………………………….\n" +
+    "19: Eg håpar ikkje det skjer @då. Fjøra har sin sjarm og …\n" +
+    "60: Absolutt. Det er jo òg litt denne ¤blokka som dei snakkar om @nedpå Lerum …\n" +
+    "19: Ja.\n" +
+    "60: … eller @på kaien der.\n" +
+    "19: Mm.\n" +
+    "60: @Når dei legg så mykje pengar i Fjordstien fordi det skal *vera fint og koseleg å @gå\n" +
+    "blant gamle trehus og naust @på kaien. Og så skal dei ha opp den eine ¤høgblokka etter den\n" +
+    "andre, heilt nedst. Eg trur det var snakk om var det ni etasjar eller noko @på den?\n" +
+    "19: Ja.\n" +
+    "60: @På Lerum. Sjøkanten er det sju, @åtte etasjar med … Ja, det er vel #gjerne ni der òg\n" +
+    "@då, men at det blir @åtte, eller at det blir med ~butikkane.\n" +
+    "19: Butikken, ja. Ja, ~butikkane.\n" +
+    "60: Ja.\n" +
+    "19: Ja.\n" +
+    "………………………………\n" +
+    "I: Du har noko nede i hjørnet der …\n" +
+    "19: MOT eller …?\n" +
+    "I: Ja.\n" +
+    "19: §Fotball eller …? Ja, eg hugsar ~ungane hadde, men det var sånn mot til å *gleda andre-\n" +
+    "dagen.\n" +
+    "\n" +
+    "60: Hugsar me hadde sånn mot til å *seia nei og … eller *seia @ifrå, eller kva det var. @Då\n" +
+    "drog dei fram dette her, viss du sat @på med nokon som var eldre som køyrde bil @då. Så\n" +
+    "skulle du *seia ifrå viss du tykte det gjekk for fort, eller. Eller dette med bilbelte.\n" +
+    "19: Ja.\n" +
+    "60: Men mot til å *gleda har jo vore innom @på jobb òg det.\n" +
+    "19: Og ~ungane dei hadde opplegg at dei … ja, skulle *planleggja. Dei skulle *gleda nokon.\n" +
+    "Og det var ein fast dag dei skulle ha det og @måtte *planleggja kven dei ville *gleda, og\n" +
+    "korleis dei ville *gleda, og kvifor dei ville *gjera det. Og @då var det #gjerne om å *gjera at\n" +
+    "dei sjølve valde ut ein elev som dei følte gjerne trong det, eller dei ikkje hadde så mykje med\n" +
+    "å *gjera. Einkvan i klassen eller @på skulen eller … Men den andre skulle ikkje *vita om det,\n" +
+    "så det var sånn …\n" +
+    "I: Hemmeleg venn?\n" +
+    "19: Men du skulle @då inn og *gjera noko bra for den @då.\n" +
+    "I: Mm.\n" +
+    "19: Så var det no evaluering @etterpå kva dei hadde gjort det leis?\n" +
+    "60: Ja.",
 
 text_21og22: "22: Først så veit du vart jo skulen utbygd eller ombygd.\n" +
     "21: Ja. Og det, og det var @når eg gjekk i sjuandeklassen, trur eg det var.\n" +
@@ -2439,6 +2625,121 @@ text_36pog47 : "47: Om sommaren så hugsar eg at me pleidde å @gå ned og *bada
     "36: Men, #barneskulen skal no *koma opp her òg, trur eg.\n" +
     "47: Ja. \n",
 
+text_36pog48p: "I: Kva trur de det er som gjer at de vil bu her då?\n" +
+    "36: Nei, eg likar meg godt i Sogndal. Det er ikkje så stort @då, trur det har mykje med det å\n" +
+    "*seia. Men så har eg alltid trivest å *vera heime @då. Eg er … @får heimlengsel etter fjorten\n" +
+    "dagar, så.\n" +
+    "I: Kva er det då du saknar?\n" +
+    "36: Nei, eg veit ikkje. Eg berre blir glad @når eg kjem i #Kjørnessvingen og ser Sogndal. Det\n" +
+    "er litt sånn rar ting, men eg blir det, altså. Berre å *vera heime, trur eg.\n" +
+    "I: Så treng ikkje vera folka, det er rett og slett berre plassen &lt;uforståeleg&gt;?\n" +
+    "36: Ja, det er vel litt sånn du kjenner jo §alle. Eg føler litt liksom at … eg føler litt den der viss\n" +
+    "eg er i Fjøra @då, så seier du i (hvert fall) hei mange gonger liksom …\n" +
+    "48: Mm.\n" +
+    "36: … i løpet av ein tur. Det, eg har jo ikkje akkurat prøvd så valdsamt og vore vekke heller\n" +
+    "@då.\n" +
+    "I: Men dei som kjem her til som studentar eller innflyttarar, kva er det dei set pris på her då?\n" +
+    "48: Eg vil tru det er mykje naturen og §¤fjella. Det er filuftslivtilbodet. Så det er no det som\n" +
+    "… ein av dei ~hovudgrunnane til at eg kunne tenkt meg å *busetja meg her i all overskodeleg\n" +
+    "framtid er no, er no nettopp §¤fjella og dei ¤friluftslivtilboda …\n" +
+    "36: Mm.\n" +
+    "48: … at dei er liksom rett utanfor ¤døra. For det har eg sakna litt andre plassar eg har budd.,\n" +
+    "så …\n" +
+    "I: Ja.\n" +
+    "48: Så er det ikkje så tilgjengeleg @då. Men har vore vant med at … Eg bur no i Dalen og kan\n" +
+    "gå ut ¤døra og så er du i skogen og berre @går rett opp på §fjellet. Og det er ti minutt i bil, så\n" +
+    "er du framme i §Hodlekve i heisen og kan @gå langt oppi @på ski. Det trur eg nok er veldig\n" +
+    "positivt med Sogndal.\n" +
+    "I: Er det noko med naturen du set pris på?\n" +
+    "36: Ja, det … veit ikkje. Altså no skal ikkje eg, er no ikkje akkurat sånn som driv og er mest i\n" +
+    "§fjellet då. Men det er jo fint synest eg liksom å @sjå. Så er eg jo @på hytta og sånne ting,\n" +
+    "sant? Så det …\n" +
+    "I: Er den i nærheita?\n" +
+    "36: Me har hytte @på fjellet. Me er no på aking @då med ~ungane og sånne ting.\n" +
+    "I: Ordføraren sa før, eller i fjor då, at Sogndal var kjend for fotball og så var det saft og\n" +
+    "puddersnø.\n" +
+    "48: Mm.\n" +
+    "I: Korleis ville de ha karakterisert denne plassen her?\n" +
+    "36: Det er liksom … Eg ser aldri ~fotballkampane, men eg kan liksom @sjå at det var bra at\n" +
+    "dei vann. &lt;humrar&gt;\n" +
+    "48: Men sånn når du er vekke @ifrå Sogndal, og folk høyrer Sogndal, så er det som regel dei\n" +
+    "¤orda dei nemner.\n" +
+    "I: Mm.\n" +
+    "36: Mm.\n" +
+    "\n" +
+    "48: Altså, det er ¤saftbygda, og så er det «stå no på» og så meir og meir det med snøen @då.\n" +
+    "Men i mindre grad føler eg enn, enn ¤saftbygda òg så …\n" +
+    "36: Eg føler kanskje at den ¤saftbygda er …\n" +
+    "48: Mm.\n" +
+    "36: … tingen.\n" +
+    "48: Ja, eg synest det óg er litt kult eigentleg at Sogndal er jo ei ganske lita bygd. Det er ganske\n" +
+    "mange som veit …\n" +
+    "36: Kvar …\n" +
+    "48: Som har eit visst forhold … i §alle fall høyrt om Sogndal. Men for ¤bygda sin del, så er\n" +
+    "det, det òg er jo … det er bra at dei har klart og etablert eit sånn forhaldsvis stabilt\n" +
+    "tippeligalag.\n" +
+    "I: Mm.\n" +
+    "48: Som klarer å *halda seg @på øvste nivå @frå ei så lita bygd @då. Det blir jo litt sånn\n" +
+    "merkevare av ¤bygda.\n" +
+    "………………………………\n" +
+    "48: Det er no denne ¤brua @då. Det er no det folk flest har snakka om dei siste ~månadene\n" +
+    "føler eg.\n" +
+    "I: Ja. Kva synest de om den?\n" +
+    "48: Det er no bra at me @får ny bru, for det er ekkelt å @gå over han …\n" +
+    "36: Ja, Gud.\n" +
+    "48: … @når det kjem tungtransport og han gyngar.\n" +
+    "36: Mm.\n" +
+    "48: Det er ganske ubehageleg. Før eg begynte å *jobba, så gjekk no eg @på tur nokre timar.\n" +
+    "Så gjekk me nedom ¤brua. Eg trur det stod sånn førti stykke eg og @såg @på at dei løfta opp\n" +
+    "den eine biten. Masse …\n" +
+    "36: Eg trur det er mange som synest det er fasinerande, for ¤brua kom jo opp @på ein gong\n" +
+    "liksom. Sånn @på ein dag, …\n" +
+    "48: Ja.\n" +
+    "36: … så var ho der eigentleg.\n" +
+    "I: Men viss Sogndal skal veksa, kvar skal det veksa hen då liksom?\n" +
+    "48: Ja, det er no det som er …\n" +
+    "36: Det er jo ikkje så lenge sidan det kom @på Gurvin @då.\n" +
+    "48: Nei. Det er jo ikkje det. Der er det jo veldig masse #barnefamiliar.\n" +
+    "36: Ja.\n" +
+    "48: Og @ifrå Gurvin og fram her, så er det jo ikkje meir enn … Ja, viss du @går seint, med\n" +
+    "#barnevogn, så bruker du ti minutt.\n" +
+    "……………………….\n" +
+    "I: MOT, var det nok som de dreiv med på skulen?\n" +
+    "36: Ja.\n" +
+    "48: Stemmer det.\n" +
+    "I: Kva gjekk det ut på då?\n" +
+    "36: Det var jo det at me skulle *vera §snille med kvarandre.\n" +
+    "48: Ja.\n" +
+    "\n" +
+    "36: Eigentleg.\n" +
+    "48: Mot å gi beskjed og …\n" +
+    "36: Ja.\n" +
+    "48: Mot å *seia nei, var vel det?\n" +
+    "36: At me skulle *tora å *seia @ifrå viss det var noko me ikkje ville bli med @på @då.\n" +
+    "48: Ja.\n" +
+    "……………………………………\n" +
+    "I: Du har vore framme og fiska i Dalavatnet?\n" +
+    "36: Me har vore der framme og fiska og sånn @på ~somrane. Det er eigentleg berre fint å\n" +
+    "@gå etter vatnet der @då.\n" +
+    "48: Ja, det er det òg.\n" +
+    "I: Ja, står de på land då, kva?\n" +
+    "36: Nei, dei har @båt. Må ro og sånt @då.\n" +
+    "I: Men kva, kva har de å fiska med viss du har fiska?\n" +
+    "48: Nei, det er fiskestong.\n" +
+    "I: Ja.\n" +
+    "48: Ja, og så har eg vore ute og sett &lt;nøler&gt; #garn. Mm.\n" +
+    "I: Har du fått noko då?\n" +
+    "48: Nei, då me fekk vel litt meir @når me hadde #garn. &lt;uforståeleg&gt;\n" +
+    "………………………………….\n" +
+    "I: Har de vore nede der og klatra noko, eller sett andre har gjort det?\n" +
+    "36: Nei.\n" +
+    "48: Nei. Eg har prøvd å *klatra før liksom, berre eit par gonger liksom, men … ~Ungane, eg\n" +
+    "veit ikkje kor gamle dei kan *vera eg, sånn @åtte, ti år og fer oppi den …\n" +
+    "36: Mm.\n" +
+    "48: … brattaset veggen og heng og dinglar liksom. Eg @får heilt sånn …\n" +
+    "36: Ja, det er litt ekkelt.\n" +
+    "48: ¤Foreldra @står nede og heiar.",
+
 text_37og38 : "I: Hugsar de nokon episodar ifrå de var mindre, før de begynte I skulen? Kva gjorde de på då?\n" +
     "37: #Barnehagen, <humrar>. \n" +
     "38: <humrar>. \n" +
@@ -3079,6 +3380,118 @@ text_45og46: "I: Hugsar de nokon episodar frå de var mindre?\n" +
     "I: Brukar ikkje nokon andre reiskapar du då?\n" +
     "46: <nøler> #Garn brukar no litt. Altså er med bestfar min. Han brukar #garn.",
 
+text_46pog61p: "46: ~Studentane som eg opplever her @då, dei kjem … §alle har (i hvert fall) éin sykkel eller\n" +
+    "to syklar og (i hvert fall) eitt ski-par … ikkje §alle. Men, men dei har (i hvert fall) mykje …\n" +
+    "har kort veg til å *reisa fram @på §fjellet og *køyra seg ein skitur før dei skal ha førelesing,\n" +
+    "*sykla seg ein tur.\n" +
+    "I: Men kva er det de set pris på med denne her plassen her då?\n" +
+    "61: Det er at det er kort avstand til naturen og dei (~opplevelsane) som eg set pris @på,\n" +
+    "familien min … at me ein kan @gå ein tur ein ettermiddag utan at du treng eigentleg å\n" +
+    "*planleggja fleire veker @på førehand.\n" +
+    "I: Mm.\n" +
+    "……………………………………..\n" +
+    "61: Ja, me var til Runde, men det var konfirmasjonsleir. Eg veit ikkje om du var med?\n" +
+    "46: Jau, Runde var eg med.\n" +
+    "I: Ja. Kan de ikkje seia litt om det då?\n" +
+    "46: At me var @på @båttur og slikt med noko, var ikkje noko.\n" +
+    "61: Jau, var ikkje du ein av dei som vart sjøsjuk òg?\n" +
+    "46: &lt;humrar&gt; Det, heilt sikkert. Det hugsar eg ikkje, faktisk. Men det …\n" +
+    "61: &lt;humrar&gt; Eg trur eigentleg §alle @låg.\n" +
+    "46: … trur, er no ikkje usannsynleg med meg (i hvert fall).\n" +
+    "61: Ja, det var eigentleg ut mot havet det, der ute.\n" +
+    "46: Det var ut mot havet.\n" +
+    "61: Ja.\n" +
+    "46: Men eg veit at det var eit val å *vera @på ein @båttur òg, og det var (i hvert fall) ikkje eg\n" +
+    "@på.\n" +
+    "61: Og så var det …\n" +
+    "46: Men det var #gjerne @etterpå.\n" +
+    "61: Nei. Men me hadde valet §mellom @båttur og fjelltur.\n" +
+    "46: Ja.\n" +
+    "I: Å, ja. Men, viss de var på båttur, var det noko fisking og slikt då, eller?\n" +
+    "46: Nei, ikkje som eg hugsar.\n" +
+    "61: Nei, ein rundtur rundt ¤øya for å @sjå @på ~fuglane, trur eg me eigentleg skulle.\n" +
+    "46: Lundefugl.\n" +
+    "I: Mm.\n" +
+    "61: Ja.\n" +
+    "I: Men her i fjorden då, er det noko fisking her?\n" +
+    "46: Eg dreiv med det før, ja.\n" +
+    "I: Ja, kva …?\n" +
+    "46: Det var ikkje så mykje fisk.\n" +
+    "I: Det var ikkje så mykje fisk? Nei?\n" +
+    "46: Nei.\n" +
+    "I: Kva fiska du med?\n" +
+    "46: Med stong og pilk, stort sett.\n" +
+    "\n" +
+    "I: Ja.\n" +
+    "61: Eg har nett @fått levering med mykje fisk @ifrå Vik.\n" +
+    "I: Ja.\n" +
+    "61: Ja. Så det er ein del no i @år faktisk i forhold til kva det har vore.\n" +
+    "I: Veit du kva fiskeutstyr dei brukar?\n" +
+    "61: Nei, det er sikkert #garn.\n" +
+    "I: Ja.\n" +
+    "61: Det er vel mest effektivt.\n" +
+    "……………………………………..\n" +
+    "46: Nye bru.\n" +
+    "I: Kva synest du om denne der då?\n" +
+    "46: Rasande fin. @På tide.\n" +
+    "61: Ho passar godt inn.\n" +
+    "46: Mm.\n" +
+    "I: Ja, så ho er fin å sjå på med andre ord?\n" +
+    "61: Ja, det tykkjer i §alle fall eg.\n" +
+    "46: Fin å @sjå @på, og så blir det litt betre for @gåande og syklande og … Så var det vel ein\n" +
+    "ingeniør som no driv … er borte i prosjektet der som har uttalt det at han ikkje køyrer over\n" +
+    "¤brua viss han ser at det kjem ein lastebil @på &lt;humrar&gt; imot seg.\n" +
+    "I: Nei.\n" +
+    "46: Så det seier vel noko om standen som den gamle ¤brua er i.\n" +
+    "61: Kjenner godt at det gyngar.\n" +
+    "46: Ikkje godt å *koma over med verken sykkel eller #barnevogn, for å *seia det slik, eller\n" +
+    "@gåande @på vinteren.\n" +
+    "………………………………………….\n" +
+    "I: &lt;nøler&gt; Kva, kva trur de vil skje med, med sogndalsdialekten då i framtida?\n" +
+    "46: Den blir nok meir og meir utvatna, tippar eg.\n" +
+    "I: Kva meiner du med det?\n" +
+    "46: Nei, me, desse her typiske ¤trekka trur eg forsvinn. Men eg kjenner no det @når eg pratar\n" +
+    "med andre, eller folk @ifrå andre plassar at ein somme tider @må *leggja om for å, for å\n" +
+    "*føla seg @forstått, faktisk.\n" +
+    "I: Mm.\n" +
+    "46: Og det er vel …\n" +
+    "I: Kva er det dei ikkje skjønar då? Kva er det som er så vanskeleg?\n" +
+    "46: Ja, sytten, atten og nitten er no #gjerne ikkje det enklaste alltid og noko meir eg veit ikkje.\n" +
+    "61: Desse ao-~endingane er vel ikkje alltid like greie heller.\n" +
+    "46: Nei, eg fekk vel beskjed … Me var til Oslo ein gong, og @då fekk eg spørsmål om me var\n" +
+    "@ifrå Island så.\n" +
+    "I: Ja, og då sa du?\n" +
+    "46: Nei, @då sa eg at eg var det. &lt;humrar&gt; Nei, @då sa eg at eg var @frå Sogndal. @Då var\n" +
+    "dei vel litt overraska ja. Det er nokre @år sidan.\n" +
+    "I: Men er det viktig for deg å markera at du er ifrå Sogndal?\n" +
+    "46: Ja.\n" +
+    "\n" +
+    "I: Kvifor er det viktig?\n" +
+    "46: Nei, det er, har … No @får me oppslag om at Sogndal er best @på omdømme. Me @får,\n" +
+    "det er gode, gode … Det er ein god plass, tenkjer eg. Det er ein fin plass å *vera @ifrå.\n" +
+    "I: Mm.\n" +
+    "46: Men det er no den plassen ein er oppvaksen. Så er det no der eg alltid har vore, og @då\n" +
+    "har du no sjølvsagt ein tilhøyrigheit der, tenkjer eg.\n" +
+    "I: For deg då?\n" +
+    "61: Eg òg har jo budd her heile livet, men (muligens) det har noko med at ¤foreldra mine\n" +
+    "ikkje er @herifrå. Så har eg ikkje det same, ja, kva skal me §kalla det? ¤Tilknytinga som\n" +
+    "#gjerne du har.\n" +
+    "46: Mm. Det kan nok *henda.\n" +
+    "61: Det er ikkje så viktig for meg i §alle fall sjølv om eg merkar at det kjem jo med @¤åra det\n" +
+    "òg. Ein føler jo etter kvart at ein er meir og meir tilknytt.\n" +
+    "I: Ja.\n" +
+    "61: Sjølvsagt.\n" +
+    "I: Så røtene er her liksom?\n" +
+    "61: Ja, det begynner no å *festa seg røter. &lt;latter&gt;\n" +
+    "46: &lt;latter&gt;\n" +
+    "I: &lt;latter&gt; Ja.\n" +
+    "46: Jau, det er viktig.\n" +
+    "I: Akkurat.\n" +
+    "46: Eg har røter @på §alle sider langt baketter i tid.\n" +
+    "61: Ja, det har ikkje eg, veit du.\n" +
+    "46: Sikkert det som gjer det @då.\n" +
+    "61: Ja.",
+
 text_49og61: "I: Trefte de nokon jamaldringar før de begynte i skulen då? \n" +
     "61: Eg trefte jo ~naboane. Dei var jo @på alder med meg. Nokon var eitt @år yngre og nokon var eitt \n" +
     "@år eldre. Så var me ute og sykla og leikte i ~sandkassane. \n" +
@@ -3359,6 +3772,166 @@ text_51og60: "I: Hugsar de nokon episodar frå de var mindre?\n" +
     "60: Mm.\n" +
     "51: Sånn modellgreier, og så hadde ho … høyrest ut som ho snakkar blanding §mellom eit\n" +
     "eller anna anna og … Hø prøver å *snakka bokmål, men ho klarer ikkje det.",
+
+text_51pog59p: "I: Sogndal har jo vokse valdsamt sidan de gjekk på ungdomsskulen.\n" +
+    "59: Mm.\n" +
+    "I: Er no, er ikkje det over sju tusen innbyggjarar her no? Har no forandra seg litt.\n" +
+    "59: Ja, det har det.\n" +
+    "51: Mm. Forandra seg veldig masse. Jau, du @får tomt her @på #Kjørnes.\n" +
+    "59: Men @då har du ikkje @råd til å *byggja. &lt;humrar&gt;\n" +
+    "51: Nei, sant. Men så @får du vel òg … Jau, du kan @få framme i Dalen @då, men det er jo,\n" +
+    "det er jo avstand @då.\n" +
+    "I: Men det er no, no lagar dei jo sykkelveg og … så det er jo lettare å koma seg bort her.\n" +
+    "59: Ja, eg er jo vaksen opp @på #Kjørnes òg, så for min del så synest eg det var heilt greitt.\n" +
+    "51: Litt utanfor.\n" +
+    "59: Litt utanfor.\n" +
+    "51: Så @går det buss og så, ja. Det er ikkje så langt heller no til #Kjørnes.\n" +
+    "59: Nei.\n" +
+    "51: For liksom #Kjørnes er liksom no nesten det nye sentrum òg sant. @Når det kjem så\n" +
+    "masse hus som det gjer her òg.\n" +
+    "I: Mm.\n" +
+    "59: Det eg synest er kjekt her, er at det er eit nybyggjarfelt, sant. Så §alle i rekka @vår @på\n" +
+    "@åtte er jo i same situasjon.\n" +
+    "51: Mm.\n" +
+    "59: §Alle er @på same altså, ja … ~Ungane er @på same alder og …\n" +
+    "I: Mm.\n" +
+    "59: Det er ikkje … Eg seier eg er @frå Sogndal. Eg seier ikkje at eg er @frå #Kjørnes.\n" +
+    "51: &lt;humrar&gt; Er @frå #Kjørnes, ja.\n" +
+    "59: Nei.\n" +
+    "I: Nei. &lt;humrar&gt;\n" +
+    "51: Kvar er det hen liksom?\n" +
+    "59: Sånn som dei som er @frå Kaupanger seier at dei er @frå Kaupanger, sant …\n" +
+    "51: Ja.\n" +
+    "59: … sjølv om det er i Sogndal kommune.\n" +
+    "I: Ja.\n" +
+    "51: Mm.\n" +
+    "59: Men eg seier at eg er @frå Sogndal, eg er ikkje @frå #Kjørnes.\n" +
+    "51: Nei.\n" +
+    "59: Men eg veit ikkje …\n" +
+    "51: Folk hadde berre vore forvirra lurt @på kvar det var #Kjørnes liksom. &lt;humrar&gt;\n" +
+    "59: Men eg veit ikkje kva dei, dei som bur i Sogndal kva dei §kallar oss. &lt;latter&gt; Det kan jo\n" +
+    "*henda dei &lt;uforståeleg&gt;\n" +
+    "I: Ja.\n" +
+    "51: Dei som bur @på #Kjørnes, ja.\n" +
+    "59: Mm.\n" +
+    "\n" +
+    "………………………………\n" +
+    "59: Eg er litt skeptisk til at dei har flytta sjette og sjuande klasse opp @på @Kvåle, fordi at\n" +
+    "det blir … Det der skiftet mellom å @gå @ifrå #barneskulen og opp @på ungdomsskulen …\n" +
+    "Eg hugsar at det var veldig sånn …\n" +
+    "51: Mm.\n" +
+    "59: … stor skifte. Det var veldig spesielt.\n" +
+    "51: Mm.\n" +
+    "59: Så eg berre tenkjer at ~ungane blir store litt …\n" +
+    "51: fort.\n" +
+    "59: … tidleg. Eller liksom at dei skal …\n" +
+    "I: Mm.\n" +
+    "51: Mm. At det går litt fort?\n" +
+    "59: Ja.\n" +
+    "51: Mm.\n" +
+    "59: At dei plutseleg der me var @når me begynte @på ungdomsskulen at dei er der kanskje\n" +
+    "allereie i sjette klasse. Sjølv om …\n" +
+    "51: Men dei er jo mykje… Har ikkje du merka? &lt;uforståeleg&gt; Altså eg ser jo berre @på dei\n" +
+    "som er tretten @år gamle no.\n" +
+    "59: Mm.\n" +
+    "51: Som har mobil, altså før det òg.\n" +
+    "59: Mm.\n" +
+    "51: @Når eg var tretten @år, eg hadde ikkje mobil. Eg hadde jo ikkje … Altså, altså\n" +
+    "~prioriteringane er heilt annleis no enn det dei var før, sant?\n" +
+    "59: Ja.\n" +
+    "51: Og at det er forventning at du skal *klara deg mykje tidlegare no enn det du, altså … Det\n" +
+    "merkar jo eg. Det ser eg jo berre …\n" +
+    "…………………………..\n" +
+    "59: Men det er jo ein sving unna.\n" +
+    "51: Det er jo ikkje for langt unna sentrum.\n" +
+    "59: Ein sving unna det dei §kallar solsida, sant?\n" +
+    "51: Mm. Og solsida er jo sentrum i Sogndal no.\n" +
+    "59: Ja, det er jo det dei seier.\n" +
+    "51: Det er jo ikkje …\n" +
+    "59: Men Bjelde det er Dalen.\n" +
+    "51: Notsete. …\n" +
+    "59: Ja.\n" +
+    "51: @Då snakkar me heller Dalen.\n" +
+    "59: Ja, men eg tenkjer …\n" +
+    "51: Nei, veit du.\n" +
+    "59: Og oppi der er det så mange småbarnsfamiliar òg.\n" +
+    "51: Mm.\n" +
+    "59: Så dei burde jo absolutt ha takka ja til …\n" +
+    "51: Ja.\n" +
+    "\n" +
+    "59: … både utbygging, for dei har lyst å *skilja ut tomter, og så *byggja ein #barnehage.\n" +
+    "I: Mm.\n" +
+    "59: Og det er jo kjempe … Eg synest det er trist eg at dei bygde desse ~høgblokkene, for eg\n" +
+    "tenkte at liksom …\n" +
+    "I: Men tenkte …\n" +
+    "59: … for bygde, bygde …\n" +
+    "51: Der kunne det ha vore ein #barnehage.\n" +
+    "I: Hen meiner du no?\n" +
+    "51: Ulvahaugen du tenkjer @på?\n" +
+    "59: Ja, eg tenkjer både Ulvahaugen og …\n" +
+    "51: Der kunne jo i staden for og bygt …\n" +
+    "59: … nede på Coop Extra der òg.\n" +
+    "59: Eg synest det er trist at …\n" +
+    "51: Ja.\n" +
+    "59: … det er kome høgblokker i Sogndal,\n" +
+    "51: Ja, sant ja. Ja.\n" +
+    "59: I ¤bygda.\n" +
+    "I: Mm.\n" +
+    "59: Og no skal dei jo *koma med det @på\n" +
+    "51: @På Lerumskaien òg, ja.\n" +
+    "59: Lerumkaien òg. Ja.\n" +
+    "51: Ja, der kunne ha vore i Ulvahaugen.\n" +
+    "59: Mm.\n" +
+    "51: I staden for og bygt den siste ¤blokka, så kunne dei hatt #barnehage der.\n" +
+    "59: Ja, mm.\n" +
+    "…………………………………………….\n" +
+    "51: ¤Brua.\n" +
+    "59: Å, det er så kjekt at dei er komne i gang.\n" +
+    "I: Ja, kva synest de om den @då?\n" +
+    "51: Det er jo flott.\n" +
+    "59: Eg synest den er fin eg.\n" +
+    "51: Ja, eg synest ho er flott eg òg.\n" +
+    "59: Ja.\n" +
+    "51: Ja, du kjem ut @ifrå tunellen og du berre ser ¤brua.\n" +
+    "59: Ja.\n" +
+    "51: Ho er skikkeleg flott altså.\n" +
+    "59: Er det.\n" +
+    "51: Ja, det må eg *seia. Eg ser jo at hin, er jo, det er nett så vidt eg torer å *køyra over ho.\n" +
+    "&lt;humrar&gt;\n" +
+    "59: Mm. Han er falleferdig, altså.\n" +
+    "51: Ja, han er det altså.\n" +
+    "59: Ja.\n" +
+    "51: Rett og slett.\n" +
+    "\n" +
+    "59: Men eg har jo òg §trilla til Sogndal nokre gonger no og &lt;humrar&gt; …\n" +
+    "51: Har du §trilla over den ¤brua der?\n" +
+    "59: Eg har §trilla over den ¤brua.\n" +
+    "51: Det hadde eg aldri gjort.\n" +
+    "59: Det var ikkje noko kjekt.\n" +
+    "51: Nei.\n" +
+    "59: For ¤vogna mi er ganske brei òg.\n" +
+    "I: Ja.\n" +
+    "59: Så det fortauet @på ¤brua, den (funkar) ikkje.\n" +
+    "51: Men du klarer jo knapt å @gå der.\n" +
+    "59: Ja.\n" +
+    "51: Viss du skal ha ein §sykkel @då …\n" +
+    "59: Ja.\n" +
+    "51: … over der, så @må du nesten ha §sykkelen uti vegen.\n" +
+    "…………………………………..\n" +
+    "I: Kva du set pris på med …med bortsett frå familien då, med å bu her?\n" +
+    "51: Eg har jo mange av gamle ~vennene mine som fortsatt bur her, som er komne tilbake òg\n" +
+    "etter dei har liksom vore vekke. Så, eg set pris @på det, og det at liksom at ~ungane, og dei\n" +
+    "@går i #barnehage her … Og det er, det er berre litt sånn spesielt, fordi at du @får liksom, du\n" +
+    "blir liksom knytt, knytt mykje meir til dei som … ja #~barnehagane og ~skulane og alt, sant,\n" +
+    "fordi … Men det er jo mykje som har forandra seg @på Trudvang sidan …\n" +
+    "I: Ja.\n" +
+    "59: Mm.\n" +
+    "51: … me gjekk der, for å *seia det sånn @då.\n" +
+    "I: Ja, kva er annleis no?\n" +
+    "51: Nei, altså &lt;sukkar&gt; … Men dei er mykje meir flinkare til å @sjå ~ungane no, synest eg,\n" +
+    "enn det dei var før.\n" +
+    "59: Følte sånn i klassen @vår, så hadde me veldig innprenta at §alle skal *vera med §alle.\n" +
+    "51: Mm.",
 
 text_53og63: "I: Kva gjorde de på i friminutta når de var komne i skulen?\n" +
     "63: Sykla @på sånne trehjulssyklar og klatra i tre, tok eple @frå ¤trea.\n" +

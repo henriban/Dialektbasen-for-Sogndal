@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92406c54-c6dc-4d55-b76a-7b6f13eb8c44" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/static/inf_14pog29p.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/inf_19pog60p.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/inf_36pog48p.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/inf_46pog61p.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/inf_51pog59p.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/database/textWindow/TextWindowComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/database/textWindow/TextWindowComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/symbols.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/symbols.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/informers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/informers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/informersText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/informersText.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,32 +22,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/data/informers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17238">
-              <caret line="1014" column="21" selection-start-line="1014" selection-start-column="21" selection-end-line="1014" selection-end-column="21" />
+            <state relative-caret-position="445">
+              <caret line="1109" column="26" lean-forward="true" selection-start-line="1109" selection-start-column="26" selection-end-line="1109" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/database/textWindow/TextWindowComponent.js">
+        <entry file="file://$PROJECT_DIR$/src/data/informersText.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="101" column="42" lean-forward="true" selection-start-line="101" selection-start-column="42" selection-end-line="101" selection-end-column="42" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/data/symbols.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+            <state relative-caret-position="462">
+              <caret line="3933" column="12" selection-start-line="3933" selection-start-column="12" selection-end-line="3933" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -58,13 +51,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>static/</find>
-      <find>this.setS</find>
-      <find>43</find>
-      <find>42</find>
-      <find>52</find>
-      <find>sogndal</find>
-      <find>36p</find>
       <find>text_39</find>
       <find>filterrows</find>
       <find>filters</find>
@@ -77,7 +63,6 @@
       <find>1971 - 2001</find>
       <find>this.state.inf</find>
       <find>går</find>
-      <find>48</find>
       <find>&amp;gt;</find>
       <find>hasown</find>
       <find>@</find>
@@ -88,6 +73,14 @@
       <find>#</find>
       <find>19og</find>
       <find>59</find>
+      <find>19&quot;</find>
+      <find>46</find>
+      <find>61</find>
+      <find>48</find>
+      <find>36&quot;</find>
+      <find>46p</find>
+      <find>51&quot;</find>
+      <find>51</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -139,101 +132,55 @@
         <option value="$PROJECT_DIR$/src/styles/graph/graph.scss" />
         <option value="$PROJECT_DIR$/src/components/graph/GraphComponent.js" />
         <option value="$PROJECT_DIR$/src/components/graph/GraphPage.js" />
-        <option value="$PROJECT_DIR$/src/data/informersText.js" />
-        <option value="$PROJECT_DIR$/src/data/informers.js" />
         <option value="$PROJECT_DIR$/src/data/symbols.js" />
         <option value="$PROJECT_DIR$/src/components/database/textWindow/TextWindowComponent.js" />
+        <option value="$PROJECT_DIR$/src/data/informersText.js" />
+        <option value="$PROJECT_DIR$/src/data/informers.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="638" />
-    <option name="height" value="1047" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="676" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Dialektbasen-for-Sogndal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dialektbasen-for-Sogndal" type="462c0819:PsiDirectoryNode" />
+              <item name="dialektbasen_sogndal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dialektbasen_sogndal" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Dialektbasen-for-Sogndal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dialektbasen-for-Sogndal" type="462c0819:PsiDirectoryNode" />
+              <item name="dialektbasen_sogndal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dialektbasen_sogndal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Dialektbasen-for-Sogndal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dialektbasen-for-Sogndal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dialektbasen-for-Sogndal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dialektbasen-for-Sogndal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dialektbasen-for-Sogndal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dialektbasen-for-Sogndal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="textWindow" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dialektbasen-for-Sogndal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dialektbasen-for-Sogndal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="graph" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dialektbasen-for-Sogndal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dialektbasen-for-Sogndal" type="462c0819:PsiDirectoryNode" />
+              <item name="dialektbasen_sogndal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dialektbasen_sogndal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Dialektbasen-for-Sogndal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dialektbasen-for-Sogndal" type="462c0819:PsiDirectoryNode" />
+              <item name="dialektbasen_sogndal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dialektbasen_sogndal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dialektbasen-for-Sogndal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dialektbasen-for-Sogndal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dialektbasen-for-Sogndal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dialektbasen-for-Sogndal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dialektbasen-for-Sogndal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dialektbasen-for-Sogndal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-              <item name="graph" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -251,19 +198,19 @@
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\henrik\WebstormProjects\dialektbasen_sogndal\node_modules\prettier" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\henri\WebstormProjects\Dialektbasen-for-Sogndal\src\static" />
-      <recent name="C:\Users\henrik\WebstormProjects\dialektbasen_sogndal\src\styles\database" />
-      <recent name="C:\Users\henrik\WebstormProjects\dialektbasen_sogndal\src\styles\graph" />
-      <recent name="C:\Users\henrik\WebstormProjects\dialektbasen_sogndal\src\components\database\textWindow" />
-      <recent name="C:\Users\henrik\WebstormProjects\dialektbasen_sogndal\src\components\database\table" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\henri\WebstormProjects\Dialektbasen-for-Sogndal\src\static" />
       <recent name="C:\Users\henrik\WebstormProjects\dialektbasen_sogndal\src\static" />
       <recent name="C:\Users\henrik\WebstormProjects\dialektbasen_sogndal\src\components\graph" />
       <recent name="C:\Users\henrik\WebstormProjects\dialektbasen_sogndal\src\styles" />
       <recent name="C:\Users\henrik\WebstormProjects\dialektbasen_sogndal\src\components\database" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\henrik\WebstormProjects\dialektbasen_sogndal\src\static" />
+      <recent name="C:\Users\henri\WebstormProjects\Dialektbasen-for-Sogndal\src\static" />
+      <recent name="C:\Users\henrik\WebstormProjects\dialektbasen_sogndal\src\styles\database" />
+      <recent name="C:\Users\henrik\WebstormProjects\dialektbasen_sogndal\src\styles\graph" />
+      <recent name="C:\Users\henrik\WebstormProjects\dialektbasen_sogndal\src\components\database\textWindow" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -336,11 +283,12 @@
       <workItem from="1551634125748" duration="12000" />
       <workItem from="1551634199508" duration="606000" />
       <workItem from="1551975155275" duration="3817000" />
+      <workItem from="1555685389285" duration="6626000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158350000" />
+    <option name="totallyTimeSpent" value="164976000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -352,16 +300,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="676" y="0" width="697" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16122234" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30955994" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.29035753" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.16901408" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.17109634" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -374,6 +322,26 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32776934" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.29035753" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.17109634" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.18418202" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.24052005" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -703,13 +671,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/searchVariables.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="44" column="48" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/graph/GraphPage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="897">
@@ -722,34 +683,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/informers.js">
+    <entry file="file://$PROJECT_DIR$/src/data/symbols.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17238">
-          <caret line="1014" column="21" selection-start-line="1014" selection-start-column="21" selection-end-line="1014" selection-end-column="21" />
+        <state relative-caret-position="391">
+          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/database/textWindow/TextWindowComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="101" column="42" lean-forward="true" selection-start-line="101" selection-start-column="42" selection-end-line="101" selection-end-column="42" />
+        <state relative-caret-position="476">
+          <caret line="65" column="20" lean-forward="true" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/informersText.js">
+    <entry file="file://$PROJECT_DIR$/src/data/searchVariables.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-689">
-          <caret line="3754" column="7" selection-start-line="3754" selection-start-column="5" selection-end-line="3754" selection-end-column="7" />
+        <state relative-caret-position="748">
+          <caret line="44" column="48" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/symbols.js">
+    <entry file="file://$PROJECT_DIR$/src/data/informersText.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        <state relative-caret-position="462">
+          <caret line="3933" column="12" selection-start-line="3933" selection-start-column="12" selection-end-line="3933" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/informers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="1109" column="26" lean-forward="true" selection-start-line="1109" selection-start-column="26" selection-end-line="1109" selection-end-column="26" />
         </state>
       </provider>
     </entry>
