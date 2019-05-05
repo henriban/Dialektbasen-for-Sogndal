@@ -66,7 +66,7 @@ class popUp extends React.Component {
     }
 
     getActiveButtonFromLocalStorage(){
-        let symbol = JSON.parse(localStorage.getItem(this.props.infToStore))[this.props.wordIndex];
+        let symbol = JSON.parse(localStorage.getItem(this.state.inf))[this.props.wordIndex];
 
         if(symbol === this.state.btn1){
             return "btn1"

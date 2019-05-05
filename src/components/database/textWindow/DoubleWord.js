@@ -3,11 +3,11 @@ import PopUp from './PopUpComponent';
 
 const REGEX = new RegExp("([@#*¤%¨‘~+§{}])", "g");
 
-let style = { 
-  color: "blue"
+let style = {
+    color: "red"
 };
 
-class Word extends React.Component{
+class DoubleWord extends React.Component{
 
     constructor(props){
         super(props);
@@ -84,4 +84,4 @@ class Word extends React.Component{
     }
 }
 
-export default Word;
+export default DoubleWord;

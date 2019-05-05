@@ -3,6 +3,7 @@ import React from 'react';
 import Informers from '../../../data/informers';
 
 import InformantInfoText from './InformantInfoTextComponent';
+import DoubleWord from './DoubleWord';
 import Word from './TextWindowWordComponent';
 
 import '../../../styles/database/textWindow.scss';
@@ -119,7 +120,26 @@ class Result extends React.Component {
                         line.split(" ")
                             .map(word => {
                                 // if(word.indexOf(word.match(REGEX)) !== -1){
-                                if(this.doWordContainSymbol(word)){
+
+                                if(this.doWordContainTwoSymbol(word)){
+
+                                    console.log(word);
+
+                                    if(needBuildWordList){
+                                        this.addWordInLocalStorage(infNumber);
+                                    }
+
+                                    index = this.state.inf1.id.includes(infNumber) ? clickableWordCountInf1 + 2: clickableWordCountInf2 + 2;
+
+                                    return <DoubleWord key={key++}
+                                                 wordIndex={index - 1}
+                                                 word={word}
+
+                                                 inf={infNumber}
+                                                 mouseX={this.state.x}
+                                                 mouseY={this.state.y}/>;
+
+                                } else if(this.doWordContainSymbol(word)){
 
                                     if(needBuildWordList){
                                         this.addWordInLocalStorage(infNumber);
@@ -130,7 +150,6 @@ class Result extends React.Component {
                                     return <Word key={key++}
                                                  wordIndex={index - 1}
                                                  word={word}
-                                                 infToStore={infNumber}
 
                                                  inf={infNumber}
                                                  mouseX={this.state.x}
@@ -150,17 +169,25 @@ class Result extends React.Component {
 
     findInformerNumber(line, previousInfNumber) {
 
-        console.log("Inf1", this.state.inf1);
-        console.log("Inf2", this.state.inf2);
+        let infNumberStr = line.split(":")[0].trim();
 
-        if(line.split(":")[0] != null && line.split(":")[0].trim().split(" ").length === 1){
-            return this.state.inf1.id.includes(line.split(":")[0].trim()) ? this.state.inf1.id : this.state.inf2.id;
+        if(infNumberStr != null && infNumberStr.split(" ").length === 1){
+            if(Number(infNumberStr)){
+                return this.state.inf1.id.includes(infNumberStr) ? this.state.inf1.id : this.state.inf2.id;
+            }
         }
         return previousInfNumber;
     }
 
     doWordContainSymbol(word){
         return word.indexOf(word.match(REGEX)) !== -1;
+    }
+
+    doWordContainTwoSymbol(word){
+        if(word.match(REGEX)){
+            return word.match(REGEX).length === 2;
+        }
+        return false;
     }
 
     render(){

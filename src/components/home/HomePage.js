@@ -46,7 +46,7 @@ class Home extends React.Component {
                         <li>Differensiering av rn &gt; dn Eksempel: gje<span style={style}>dn</span>a eller gje<span style={style}>rn</span>e</li>
                     </ul>*/}
 
-                    <h2 name="kva">1) Kva finn du i denne basen?</h2>
+                    <h2 name="kva">Kva finn du i denne basen?</h2>
 
                     <ul>
                         <li>Her er samtalesnuttar med sogndøler i ulike aldrar frå opptak gjorde i
@@ -58,7 +58,7 @@ class Home extends React.Component {
                             også om kva som etter deira syn kjenneteiknar bygda.</li>
                     </ul>
 
-                    <h2 name="kvifor">2) Kvifor finst denne basen?</h2>
+                    <h2 name="kvifor">Kvifor finst denne basen?</h2>
 
                     <ul>
                         <li>Etter å ha gjort mange dialektopptak med mange sogndøler er det eit
@@ -71,7 +71,7 @@ class Home extends React.Component {
                             100-årsperspektiv.</li>
                     </ul>
 
-                    <h2 name="korleis">3) Korleis kan du bruka denne basen?</h2>
+                    <h2 name="korleis">Korleis kan du bruka denne basen?</h2>
 
                     <ul>
                         <li>Du kan berre kosa deg og lytta til opptaka.</li>
@@ -90,7 +90,7 @@ class Home extends React.Component {
                         og bruken av <i>då</i> og <i>når</i> avvika frå norma.
                     </p>
 
-                    <h2 name="eksempel">4) Eksempel på trekk du kan analysera:</h2>
+                    <h2 name="eksempel">Eksempel på trekk du kan analysera:</h2>
 
                     <p>
                         I dei aller fleste dialektsnuttane vil du finna seks språklege trekk (på

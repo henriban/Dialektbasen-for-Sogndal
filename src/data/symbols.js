@@ -18,7 +18,6 @@ const symbols = {
     adnedn_anna : "~a",
     dl_anna : "§a",
     dn_anna : "#a"
-
 };
 
 export default symbols;
