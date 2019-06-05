@@ -14,7 +14,7 @@ class Word extends React.Component{
 
         this.state = {
             word: this.trimWord(this.props.word, this.props.word.match(REGEX)[0]),
-            symbol: this.props.word.match(REGEX)[0],
+            symbol: this.props.word.match(REGEX),
             inf: this.props.inf,
             wordIndex: this.props.wordIndex,
 
@@ -28,12 +28,8 @@ class Word extends React.Component{
         });
     }
 
-    trimWord(word, symbol){
-        if(word.split(symbol)[0] === ""){
-            return word.split(symbol)[1];
-        }
-
-        return word.split(symbol)[0];
+    trimWord(word){
+        return word.replace(REGEX, '');
     }
 
     // symbol = ao, e, a ...
@@ -62,6 +58,7 @@ class Word extends React.Component{
         // let symbol = this.state.word.match(REGEX)[0];
         let symbol = this.state.symbol;
 
+
         return(
             <span>
                 {this.state.showPopUp &&
@@ -70,7 +67,7 @@ class Word extends React.Component{
                        inf={this.state.inf}
                        wordIndex={this.state.wordIndex}
 
-                       onButtonClicked={this.onButtonClicked}
+                       registerButtonClicked={this.onButtonClicked}
                        onCloseClick={this.closePopUp.bind(this)}
                        mouseX={this.props.mouseX}
                        mouseY={this.props.mouseY}

@@ -43,13 +43,13 @@ class Result extends React.Component {
             inf2: inf2
         };
 
-        // isLocalStorageSet = this.isInformersLocalStorageSet();
+        isLocalStorageSet = this.isInformersLocalStorageSet();
 
-        // if(!isLocalStorageSet){
-        //     localStorage.setItem(this.state.inf1.id, JSON.stringify([]));
-        //     localStorage.setItem(this.state.inf2.id, JSON.stringify([]));
-        //     needBuildWordList = true;
-        // }
+        if(!isLocalStorageSet){
+            localStorage.setItem(this.state.inf1.id, JSON.stringify([]));
+            localStorage.setItem(this.state.inf2.id, JSON.stringify([]));
+            needBuildWordList = true;
+        }
     }
 
     componentWillMount(){
@@ -87,10 +87,10 @@ class Result extends React.Component {
     };
 
     // TODO: cannot read property id of undefined
-    // isInformersLocalStorageSet() {
-    //     return localStorage.getItem(this.state.inf1.id) != null && localStorage.getItem(this.state.inf1.id).length > 0 &&
-    //         localStorage.getItem(this.state.inf2.id) != null && localStorage.getItem(this.state.inf2.id).length > 0;
-    // }
+    isInformersLocalStorageSet() {
+        return localStorage.getItem(this.state.inf1.id) != null && localStorage.getItem(this.state.inf1.id).length > 0 &&
+            localStorage.getItem(this.state.inf2.id) != null && localStorage.getItem(this.state.inf2.id).length > 0;
+    }
 
     addWordInLocalStorage(infID){
         let wordList = JSON.parse(localStorage.getItem(infID));
@@ -122,8 +122,6 @@ class Result extends React.Component {
                                 // if(word.indexOf(word.match(REGEX)) !== -1){
 
                                 if(this.doWordContainTwoSymbol(word)){
-
-                                    console.log(word);
 
                                     if(needBuildWordList){
                                         this.addWordInLocalStorage(infNumber);

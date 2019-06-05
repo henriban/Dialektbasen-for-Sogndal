@@ -97,6 +97,10 @@ class GraphPage extends React.Component {
 
         Informers.forEach(function (inf) {
             let infData = JSON.parse(localStorage.getItem(inf.id));
+
+            console.log(inf.id, infData);
+            return;
+
             if (infData != null) {
                 let counts = {};
                 for (let i = 0; i < infData.length; i++) {

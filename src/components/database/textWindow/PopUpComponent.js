@@ -2,6 +2,7 @@ import React from 'react';
 import Symbols from '../../../data/symbols';
 
 import '../../../styles/database/popUp.scss';
+import {GeneratePopUpBtnAlternatives} from "./GeneratePopUpBtnAlternatives";
 
 const removeREGEX = new RegExp("[.,]", "g");
 
@@ -24,42 +25,21 @@ class popUp extends React.Component {
 
     componentWillMount(){
 
-        let symbol = this.props.symbol;
+        let symbol = this.props.symbol[0];
 
-        let alternative1 = "";
-        let alternative2 = "";
-
-        if(symbol === Symbols.infinitiv_a || symbol === Symbols.infinitiv_e){
-            alternative1 = "a";
-            alternative2 = "e";
-        }else if(symbol === Symbols.ao || symbol === Symbols.å){
-            alternative1 = "ao";
-            alternative2 = "å";
-        }else if(symbol === Symbols.bundanForm_i || symbol === Symbols.bundanForm_a){
-            alternative1 = "i";
-            alternative2 = "a";
-        }else if(symbol === Symbols.adnedn || symbol === Symbols.aneene){
-            alternative1 = "adn/edn";
-            alternative2 = "ane/ene";
-        }else if(symbol === Symbols.dl || symbol === Symbols.ll){
-            alternative1 = "dl";
-            alternative2 = "ll";
-        }else if(symbol === Symbols.dn || symbol === Symbols.rn){
-            alternative1 = "dn";
-            alternative2 = "rn";
-        }
+        let alternatives = GeneratePopUpBtnAlternatives(symbol);
 
         let word = this.state.word;
 
         //trim word for "," and "."
         if(word.match(removeREGEX)){
-            word = word.split(word.match(removeREGEX)[0])[0];
+            word = word.replace(removeREGEX, '');
         }
 
         this.setState({
             word: word,
-            btn1: alternative1,
-            btn2: alternative2,
+            btn1: alternatives.alternative1,
+            btn2: alternatives.alternative2,
         });
 
         this.getActiveButtonFromLocalStorage()
@@ -84,7 +64,7 @@ class popUp extends React.Component {
             symbol = symbol + "_" + this.state.btn1 + "_" + this.state.btn2;
         }
 
-        this.props.onButtonClicked(symbol, this.state.inf);
+        this.props.registerButtonClicked(symbol, this.state.inf);
     }
 
     render(){

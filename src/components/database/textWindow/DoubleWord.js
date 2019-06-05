@@ -1,5 +1,5 @@
 import React from 'react';
-import PopUp from './PopUpComponent';
+import DoublePopUp from './DoubleWordPopUp';
 
 const REGEX = new RegExp("([@#*¤%¨‘~+§{}])", "g");
 
@@ -13,8 +13,8 @@ class DoubleWord extends React.Component{
         super(props);
 
         this.state = {
-            word: this.trimWord(this.props.word, this.props.word.match(REGEX)[0]),
-            symbol: this.props.word.match(REGEX)[0],
+            word: this.trimWord(this.props.word),
+            symbol: this.props.word.match(REGEX),
             inf: this.props.inf,
             wordIndex: this.props.wordIndex,
 
@@ -28,25 +28,12 @@ class DoubleWord extends React.Component{
         });
     }
 
-    trimWord(word, symbol){
-        if(word.split(symbol)[0] === ""){
-            return word.split(symbol)[1];
-        }
-
-        return word.split(symbol)[0];
+    trimWord(word){
+        return word.replace(REGEX, '');
     }
 
     // symbol = ao, e, a ...
-    onButtonClicked = (symbol, inf) =>{
-
-        if(inf !== "I") {
-
-            // Register which button that is pressed
-            let wordList = JSON.parse(localStorage.getItem(this.state.inf));
-            wordList[this.state.wordIndex] = symbol;
-            localStorage.setItem(this.state.inf, JSON.stringify(wordList));
-        }
-
+    registerButtonClicked = () =>{
         this.closePopUp();
     };
 
@@ -65,15 +52,15 @@ class DoubleWord extends React.Component{
         return(
             <span>
                 {this.state.showPopUp &&
-                <PopUp word={this.state.word}
-                       symbol={symbol}
-                       inf={this.state.inf}
-                       wordIndex={this.state.wordIndex}
+                <DoublePopUp word={this.state.word}
+                             symbol={symbol}
+                             inf={this.state.inf}
+                             wordIndex={this.state.wordIndex}
 
-                       onButtonClicked={this.onButtonClicked}
-                       onCloseClick={this.closePopUp.bind(this)}
-                       mouseX={this.props.mouseX}
-                       mouseY={this.props.mouseY}
+                             registerButtonClicked={this.registerButtonClicked}
+                             onCloseClick={this.closePopUp.bind(this)}
+                             mouseX={this.props.mouseX}
+                             mouseY={this.props.mouseY}
                 />}
                 {/*OnClick find symbol and remove/trim word from symbol(ends up with symbol and word)*/}
                 <span onClick={() => this.openPopUp()}
