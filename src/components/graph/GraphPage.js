@@ -98,20 +98,19 @@ class GraphPage extends React.Component {
         Informers.forEach(function (inf) {
             let infData = JSON.parse(localStorage.getItem(inf.id));
 
-            console.log(inf.id, infData);
-            return;
-
             if (infData != null) {
                 let counts = {};
                 for (let i = 0; i < infData.length; i++) {
                     let data = infData[i];
-                    if (data.trim() !== "") {
+                    if (data != null && data.trim() !== "") {
                         counts[infData[i]] = 1 + (counts[infData[i]] || 0);
                     }
                 }
                 informersData[inf.id] = counts;
             }
         });
+
+        console.log(informersData);
     }
 
     setSearchLabels(searchLabel){

@@ -1,6 +1,4 @@
 import React from 'react';
-import Symbols from '../../../data/symbols';
-
 import '../../../styles/database/popUp.scss';
 import {GeneratePopUpBtnAlternatives} from "./GeneratePopUpBtnAlternatives";
 
