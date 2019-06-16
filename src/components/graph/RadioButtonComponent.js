@@ -11,10 +11,25 @@ class RadioButtons extends React.Component{
 
     generateRadioButtons(){
         return Variables.map(function(variable) {
-            if(variable.name !== 'Inf.'){
+            // Check off place radiobutton by default
+            if(variable.name === "Stad"){
                 return(
                     <label key={variable.num} htmlFor={variable.name}>
-                        <input id={variable.name} type="radio" value={variable.key} name="graphLabelSelector"/>
+                        <input id={variable.name}
+                               type="radio"
+                               value={variable.key}
+                               name="graphLabelSelector"
+                               defaultChecked/>
+                        {variable.name}
+                    </label>);
+            }
+            if(variable.name !== 'Inf.' && variable.name !== "Stad"){
+                return(
+                    <label key={variable.num} htmlFor={variable.name}>
+                        <input id={variable.name}
+                               type="radio"
+                               value={variable.key}
+                               name="graphLabelSelector"/>
                         {variable.name}
                     </label>);
             }
