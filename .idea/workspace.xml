@@ -2,26 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92406c54-c6dc-4d55-b76a-7b6f13eb8c44" name="Default Changelist" comment="">
-<<<<<<< HEAD
-      <change afterPath="$PROJECT_DIR$/src/components/database/textWindow/DoubleWord.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/database/textWindow/PopUpComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/database/textWindow/PopUpComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/database/textWindow/TextWindowComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/database/textWindow/TextWindowComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/database/textWindow/TextWindowWordComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/database/textWindow/TextWindowWordComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/symbols.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/symbols.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-=======
-      <change afterPath="$PROJECT_DIR$/src/static/inf_14pog29p.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/inf_19pog60p.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/inf_36pog48p.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/inf_46pog61p.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/inf_51pog59p.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/informers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/informers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/informersText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/informersText.js" afterDir="false" />
->>>>>>> fcdb9976d5b923b9be1eec738433be2708515142
+      <change beforePath="$PROJECT_DIR$/src/components/graph/GraphPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/graph/GraphPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/graph/RadioButtonComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/graph/RadioButtonComponent.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,74 +17,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-<<<<<<< HEAD
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/database/textWindow/TextWindowComponent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2125">
-              <caret line="133" column="46" selection-start-line="133" selection-start-column="46" selection-end-line="133" selection-end-column="46" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-=======
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/data/informers.js">
+        <entry file="file://$PROJECT_DIR$/src/components/graph/GraphPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="1109" column="26" lean-forward="true" selection-start-line="1109" selection-start-column="26" selection-end-line="1109" selection-end-column="26" />
->>>>>>> fcdb9976d5b923b9be1eec738433be2708515142
+            <state relative-caret-position="102">
+              <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-<<<<<<< HEAD
-        <entry file="file://$PROJECT_DIR$/src/components/database/textWindow/TextWindowWordComponent.js">
+        <entry file="file://$PROJECT_DIR$/src/components/graph/TestDataFromInformersText.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/database/textWindow/DoubleWord.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="442">
+              <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/database/textWindow/PopUpComponent.js">
+        <entry file="file://$PROJECT_DIR$/src/data/tableColumns.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data/informersText.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61693">
-              <caret line="3629" lean-forward="true" selection-start-line="3629" selection-end-line="3629" />
-=======
-        <entry file="file://$PROJECT_DIR$/src/data/informersText.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="3933" column="12" selection-start-line="3933" selection-start-column="12" selection-end-line="3933" selection-end-column="12" />
->>>>>>> fcdb9976d5b923b9be1eec738433be2708515142
+            <state relative-caret-position="238">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -117,13 +55,10 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-<<<<<<< HEAD
       <find>42</find>
       <find>52</find>
       <find>sogndal</find>
       <find>36p</find>
-=======
->>>>>>> fcdb9976d5b923b9be1eec738433be2708515142
       <find>text_39</find>
       <find>filterrows</find>
       <find>filters</find>
@@ -146,20 +81,9 @@
       <find>#</find>
       <find>19og</find>
       <find>59</find>
-<<<<<<< HEAD
       <find>@#seksårsbarnehagen</find>
       <find>blue</find>
       <find>inftost</find>
-=======
-      <find>19&quot;</find>
-      <find>46</find>
-      <find>61</find>
-      <find>48</find>
-      <find>36&quot;</find>
-      <find>46p</find>
-      <find>51&quot;</find>
-      <find>51</find>
->>>>>>> fcdb9976d5b923b9be1eec738433be2708515142
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -200,16 +124,11 @@
         <option value="$PROJECT_DIR$/src/components/graph/TestDataFromInformersText.js" />
         <option value="$PROJECT_DIR$/src/styles/database/textWindow.scss" />
         <option value="$PROJECT_DIR$/src/components/graph/GraphSearchComponent.js" />
-        <option value="$PROJECT_DIR$/src/components/graph/RadioButtonComponent.js" />
         <option value="$PROJECT_DIR$/src/styles/graph/radiobuttons.scss" />
         <option value="$PROJECT_DIR$/src/data/searchVariables.js" />
         <option value="$PROJECT_DIR$/src/styles/graph/graph.scss" />
         <option value="$PROJECT_DIR$/src/components/graph/GraphComponent.js" />
-        <option value="$PROJECT_DIR$/src/components/graph/GraphPage.js" />
-<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/data/informers.js" />
-=======
->>>>>>> fcdb9976d5b923b9be1eec738433be2708515142
         <option value="$PROJECT_DIR$/src/data/symbols.js" />
         <option value="$PROJECT_DIR$/src/data/informersText.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
@@ -218,23 +137,18 @@
         <option value="$PROJECT_DIR$/src/components/database/textWindow/PopUpComponent.js" />
         <option value="$PROJECT_DIR$/src/components/database/textWindow/TextWindowWordComponent.js" />
         <option value="$PROJECT_DIR$/src/components/database/textWindow/TextWindowComponent.js" />
-<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/components/database/textWindow/DoubleWord.js" />
-=======
-        <option value="$PROJECT_DIR$/src/data/informersText.js" />
-        <option value="$PROJECT_DIR$/src/data/informers.js" />
->>>>>>> fcdb9976d5b923b9be1eec738433be2708515142
+        <option value="$PROJECT_DIR$/src/components/graph/RadioButtonComponent.js" />
+        <option value="$PROJECT_DIR$/src/components/graph/GraphPage.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="676" />
-    <option name="width" value="697" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="172" />
+    <option name="width" value="1049" />
     <option name="height" value="735" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -245,44 +159,8 @@
         <subPane>
           <expand>
             <path>
-<<<<<<< HEAD
-              <item name="Dialektbasen-for-Sogndal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dialektbasen-for-Sogndal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dialektbasen-for-Sogndal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dialektbasen-for-Sogndal" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dialektbasen-for-Sogndal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dialektbasen-for-Sogndal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dialektbasen-for-Sogndal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dialektbasen-for-Sogndal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dialektbasen-for-Sogndal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dialektbasen-for-Sogndal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dialektbasen-for-Sogndal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dialektbasen-for-Sogndal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="textWindow" type="462c0819:PsiDirectoryNode" />
-=======
               <item name="dialektbasen_sogndal" type="b2602c69:ProjectViewProjectNode" />
               <item name="dialektbasen_sogndal" type="462c0819:PsiDirectoryNode" />
->>>>>>> fcdb9976d5b923b9be1eec738433be2708515142
             </path>
             <path>
               <item name="dialektbasen_sogndal" type="b2602c69:ProjectViewProjectNode" />
@@ -294,7 +172,13 @@
               <item name="dialektbasen_sogndal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dialektbasen_sogndal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dialektbasen_sogndal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="graph" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dialektbasen_sogndal" type="b2602c69:ProjectViewProjectNode" />
@@ -409,25 +293,21 @@
       <workItem from="1551634125748" duration="12000" />
       <workItem from="1551634199508" duration="606000" />
       <workItem from="1551975155275" duration="3817000" />
-<<<<<<< HEAD
       <workItem from="1553350113866" duration="1198000" />
       <workItem from="1553426011291" duration="11956000" />
       <workItem from="1554827390030" duration="607000" />
       <workItem from="1554831758973" duration="22000" />
       <workItem from="1554831868023" duration="4756000" />
       <workItem from="1557057942281" duration="70000" />
-=======
-      <workItem from="1555685389285" duration="6626000" />
->>>>>>> fcdb9976d5b923b9be1eec738433be2708515142
+      <workItem from="1559750549289" duration="599000" />
+      <workItem from="1560080581757" duration="1080000" />
+      <workItem from="1560087241369" duration="11005000" />
+      <workItem from="1560172112353" duration="1336000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="176959000" />
-=======
-    <option name="totallyTimeSpent" value="164976000" />
->>>>>>> fcdb9976d5b923b9be1eec738433be2708515142
+    <option name="totallyTimeSpent" value="190999000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -439,20 +319,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-=======
-    <frame x="676" y="0" width="697" height="735" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
->>>>>>> fcdb9976d5b923b9be1eec738433be2708515142
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30955994" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16666667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.29035753" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.17109634" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.28903654" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.17021276" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -465,26 +341,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32776934" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" side_tool="true" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.29035753" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.17109634" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.18418202" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.24052005" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -589,9 +445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/tableColumns.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/database/search/SelectComponent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -650,27 +503,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/graph/CheckboxClusterComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="64" column="1" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/graph/FilterViewComponent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="35" column="43" lean-forward="true" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/graph/TestDataFromInformersText.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-679">
-          <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -695,27 +531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/graph/RadioButtonComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="28" column="52" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/graph/GraphSearchComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="38" column="41" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#141#192#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/graph/GraphComponent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -737,25 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/graph/GraphPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="897">
-          <caret line="227" lean-forward="true" selection-start-line="227" selection-end-line="227" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="n#!!block;n#getAllInformers#0;n#GraphPage#0" />
-            <element signature="n#!!block;n#generateDataFromLocalStorage#0;n#GraphPage#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/symbols.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -822,7 +618,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/database/textWindow/TextWindowComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
         <state relative-caret-position="2125">
           <caret line="133" column="46" selection-start-line="133" selection-start-column="46" selection-end-line="133" selection-end-column="46" />
           <folding>
@@ -845,26 +640,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-=======
-        <state relative-caret-position="476">
-          <caret line="65" column="20" lean-forward="true" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
->>>>>>> fcdb9976d5b923b9be1eec738433be2708515142
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/searchVariables.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="48" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/informersText.js">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
         <state relative-caret-position="61693">
           <caret line="3629" lean-forward="true" selection-start-line="3629" selection-end-line="3629" />
         </state>
@@ -877,17 +660,65 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
-=======
-        <state relative-caret-position="462">
-          <caret line="3933" column="12" selection-start-line="3933" selection-start-column="12" selection-end-line="3933" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/informers.js">
+    <entry file="file://$PROJECT_DIR$/src/components/graph/CheckboxClusterComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="1109" column="26" lean-forward="true" selection-start-line="1109" selection-start-column="26" selection-end-line="1109" selection-end-column="26" />
->>>>>>> fcdb9976d5b923b9be1eec738433be2708515142
+        <state relative-caret-position="425">
+          <caret line="48" column="6" lean-forward="true" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/graph/GraphSearchComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="40" column="29" lean-forward="true" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#141#192#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/searchVariables.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" column="48" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/graph/RadioButtonComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/tableColumns.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/graph/TestDataFromInformersText.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/graph/GraphPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
         </state>
       </provider>
     </entry>

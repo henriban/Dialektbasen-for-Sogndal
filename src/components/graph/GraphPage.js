@@ -28,6 +28,8 @@ class GraphPage extends React.Component {
             tickFormat: [], // labels for Victory Axis
             tickValues: [], // number of different labels ex: [1,2,3]
 
+            dataFromLocalStorage: {},
+
             dataGraph1: [],
             dataGraph2: [],
             dataGraph3: [],
@@ -44,6 +46,7 @@ class GraphPage extends React.Component {
 
     componentDidMount(){
         this.generateDataFromLocalStorage();
+        this.setSearchLabels("place");
     }
 
     setFilter(filters){
@@ -110,7 +113,11 @@ class GraphPage extends React.Component {
             }
         });
 
-        console.log(informersData);
+        this.setState({
+            dataFromLocalStorage: informersData
+        }, () => {
+            console.log("Data", this.state.dataFromLocalStorage)
+        })
     }
 
     setSearchLabels(searchLabel){
@@ -129,17 +136,9 @@ class GraphPage extends React.Component {
 
         this.setState({
             tickFormat: tickFormat,
-            tickValues: tickValues
+            tickValues: tickValues,
+            searchLabel: searchLabel
         });
-
-
-        this.setState({
-            searchLabel: searchLabel,
-            // filteredInformersDividedOnSearchLabel: filteredInformersDividedOnSearchLabel
-        });
-
-        // this.filterDemo();
-
 
         this.generateSymbolCountPerLabel(searchLabel, filteredInformersDividedOnSearchLabel);
 
@@ -184,7 +183,6 @@ class GraphPage extends React.Component {
                 symbolDictionary[key] = symbolMerge;
             }
         }
-
         this.splitDataBetweenGraphs(symbolDictionary);
     }
 
@@ -204,12 +202,7 @@ class GraphPage extends React.Component {
         for(let key in symbolDictionary){
             if(symbolDictionary.hasOwnProperty(key)) {
                 let symbols = symbolDictionary[key];
-                // data1.push([{x: 1, y: this.returnZeroIfUndefined(symbols[Symbols.infinitiv_a])},    {x: 2, y: this.returnZeroIfUndefined(symbols[Symbols.infinitiv_e])}, {x: 3, y: 0}]);
-                // data2.push([{x: 1, y: this.returnZeroIfUndefined(symbols[Symbols.ao])},             {x: 2, y: this.returnZeroIfUndefined(symbols[Symbols.å])}, {x: 3, y: 0}]);
-                // data3.push([{x: 1, y: this.returnZeroIfUndefined(symbols[Symbols.bundanForm_i])},   {x: 2, y: this.returnZeroIfUndefined(symbols[Symbols.bundanForm_a])}, {x: 3, y: 0}]);
-                // data4.push([{x: 1, y: this.returnZeroIfUndefined(symbols[Symbols.adnedn])},         {x: 2, y: this.returnZeroIfUndefined(symbols[Symbols.aneene])}, {x: 3, y: 0}]);
-                // data5.push([{x: 1, y: this.returnZeroIfUndefined(symbols[Symbols.dl])},             {x: 2, y: this.returnZeroIfUndefined(symbols[Symbols.ll])}, {x: 3, y: 0}]);
-                // data6.push([{x: 1, y: this.returnZeroIfUndefined(symbols[Symbols.dn])},             {x: 2, y: this.returnZeroIfUndefined(symbols[Symbols.rn])}, {x: 3, y: 0}]);
+
                 data1.push([this.returnZeroIfUndefined(symbols[Symbols.infinitiv_a]),    this.returnZeroIfUndefined(symbols[Symbols.infinitiv_e]),  0]);
                 data2.push([this.returnZeroIfUndefined(symbols[Symbols.ao]),             this.returnZeroIfUndefined(symbols[Symbols.å]),            0]);
                 data3.push([this.returnZeroIfUndefined(symbols[Symbols.bundanForm_i]),   this.returnZeroIfUndefined(symbols[Symbols.bundanForm_a]), 0]);
@@ -241,7 +234,6 @@ class GraphPage extends React.Component {
             }
             dataSet.push(d);
         }
-
         return dataSet;
     }
 
@@ -264,15 +256,6 @@ class GraphPage extends React.Component {
 
             data.push(innerArray)
         }
-
-        // this.setState({
-        //     dataGraph1: data,
-        //     dataGraph2: data,
-        //     dataGraph3: data,
-        //     dataGraph4: data,
-        //     dataGraph5: data,
-        //     dataGraph6: data,
-        // });
     }
 
 
@@ -287,13 +270,13 @@ class GraphPage extends React.Component {
         console.log("Not include", allInformersId.filter(n => !filteredInformersId.includes(n)));
     }
 
-    demoButtonClicked(){
-        this.setState({
-            filteredTestDataFromInformersText: TestDataFromInformersText()
-        });
-
-        this.update();
-    }
+    // demoButtonClicked(){
+    //     this.setState({
+    //         filteredTestDataFromInformersText: TestDataFromInformersText()
+    //     });
+    //
+    //     this.update();
+    // }
 
     render(){
 
@@ -302,17 +285,17 @@ class GraphPage extends React.Component {
 
         return(
             <div>
-                <button onClick={() => this.demoButtonClicked()}>DEMO</button>
+                {/*<button onClick={() => this.demoButtonClicked()}>DEMO</button>*/}
                 <RadioButtons setSearchLabels={this.setSearchLabels.bind(this)}/>
                 <GraphSearch setFilter={this.setFilter.bind(this)}/>
 
                 <div className="graphPage">
-                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.dataGraph1} explanation1="a"  explanation2="e" title="Infinitiv"/>
-                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.dataGraph2} explanation1="ao" explanation2="å" title="Ao-lyden"/>
-                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.dataGraph3} explanation1="i"  explanation2="a" title="Bunden form eintal av sterke hokjønnssubstantiv og fleirtal av inkjekjønnssubstantiv"/>
-                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.dataGraph4} explanation1="adn/edn" explanation2="ane/ene" title="Bunden form fleirtal av hokjønns- og hannkjønnssubstantiv"/>
-                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.dataGraph5} explanation1="dl" explanation2="ll" title="Segmentering av ll > dl"/>
-                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.dataGraph6} explanation1="dn" explanation2="rn" title="Differensiering av rn > dn"/>
+                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.dataGraph1} explanation1="a"          explanation2="e"        title="Infinitiv"/>
+                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.dataGraph2} explanation1="ao"         explanation2="å"        title="Ao-lyden"/>
+                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.dataGraph3} explanation1="i"          explanation2="a"        title="Bunden form eintal av sterke hokjønnssubstantiv og fleirtal av inkjekjønnssubstantiv"/>
+                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.dataGraph4} explanation1="adn/edn"    explanation2="ane/ene"  title="Bunden form fleirtal av hokjønns- og hannkjønnssubstantiv"/>
+                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.dataGraph5} explanation1="dl"         explanation2="ll"       title="Segmentering av ll > dl"/>
+                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.dataGraph6} explanation1="dn"         explanation2="rn"       title="Differensiering av rn > dn"/>
                 </div>
             </div>
         );
