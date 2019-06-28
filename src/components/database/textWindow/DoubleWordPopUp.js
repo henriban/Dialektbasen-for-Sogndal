@@ -60,7 +60,7 @@ class DoubleWordPopUp extends React.Component {
             return "alt1_btn1"
         }else if(symbol === this.state.alt1_btn2){
             return "alt1_btn2"
-        }else if(symbol === "Anna"){
+        }else if(symbol.split("_")[0] === "Anna"){
             return "btnA1"
         }
     }

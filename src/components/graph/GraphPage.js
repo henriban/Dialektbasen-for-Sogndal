@@ -4,7 +4,7 @@ import Graph from './GraphComponent';
 import GraphSearch from './GraphSearchComponent';
 import RadioButtons  from './RadioButtonComponent';
 
-import { TestDataFromInformersText }from './TestDataFromInformersText';
+// import { TestDataFromInformersText }from './TestDataFromInformersText';
 
 import Informers from "../../data/informers";
 import SearchVariables from "../../data/searchVariables";
@@ -15,6 +15,8 @@ import '../../styles/graph/graph.scss';
 
 let informersData = {};
 // const REGEX = new RegExp("([@#*¤%¨‘~+§{}])", "g");
+
+
 
 class GraphPage extends React.Component {
 
@@ -38,15 +40,33 @@ class GraphPage extends React.Component {
             dataGraph6: [],
 
             filteredTestDataFromInformersText: [],
-            searchLabel: null,
+            searchLabel: "place",
             filteredDemoInf: [],
             filteredInformersDividedOnSearchLabel: {}
         };
     }
 
+    // Set the default value of the radio button
     componentDidMount(){
-        this.generateDataFromLocalStorage();
-        this.setSearchLabels("place");
+        this.setSearchLabels(this.state.searchLabel);
+    }
+
+    setSearchLabels(searchLabel){
+
+        let tickFormat = [];
+        let tickValues = [];
+        let index = 0;
+
+        SearchVariables[searchLabel].map(label => tickFormat.push(label.label));
+        tickFormat.map(tick => tickValues.push(++index));
+
+        this.setState({
+            tickFormat: tickFormat,
+            tickValues: tickValues,
+            searchLabel: searchLabel
+        }, () => {
+            this.update();
+        });
     }
 
     setFilter(filters){
@@ -58,7 +78,13 @@ class GraphPage extends React.Component {
 
     update(){
         if(this.state.searchLabel != null){
-            this.setSearchLabels(this.state.searchLabel);
+
+            let filteredLocalStorage = this.filterOutInformersFromLocalStorage(
+                this.getDataFromLocalStorage(),
+                this.getFilteredInformersDividedOnSearchLabel(this.state.searchLabel)
+            );
+
+            this.splitDataBetweenGraphs(filteredLocalStorage);
         }
     }
 
@@ -96,7 +122,7 @@ class GraphPage extends React.Component {
         return informers;
     }
 
-    generateDataFromLocalStorage(){
+    getDataFromLocalStorage(){
 
         Informers.forEach(function (inf) {
             let infData = JSON.parse(localStorage.getItem(inf.id));
@@ -113,179 +139,155 @@ class GraphPage extends React.Component {
             }
         });
 
-        this.setState({
-            dataFromLocalStorage: informersData
-        }, () => {
-            console.log("Data", this.state.dataFromLocalStorage)
-        })
+        return informersData;
     }
 
-    setSearchLabels(searchLabel){
-
+    getFilteredInformersDividedOnSearchLabel(searchLabel){
         let filteredInformersDividedOnSearchLabel = {};
 
-        SearchVariables[searchLabel].map(item => filteredInformersDividedOnSearchLabel[item.label] = []);
+        SearchVariables[searchLabel].map(label => filteredInformersDividedOnSearchLabel[label.label] = []);
         this.state.filteredInformers.map(inf => filteredInformersDividedOnSearchLabel[inf[searchLabel]] = filteredInformersDividedOnSearchLabel[inf[searchLabel]].concat(inf));
 
-        let tickFormat = [];
-        let tickValues = [];
-        let index = 0;
-
-        SearchVariables[searchLabel].map(item => tickFormat.push(item.label));
-        tickFormat.map(tick => tickValues.push(++index));
-
-        this.setState({
-            tickFormat: tickFormat,
-            tickValues: tickValues,
-            searchLabel: searchLabel
-        });
-
-        this.generateSymbolCountPerLabel(searchLabel, filteredInformersDividedOnSearchLabel);
-
-        this.generateData(tickValues.length);
+        return filteredInformersDividedOnSearchLabel;
     }
 
-    generateSymbolCountPerLabel(searchLabel, filteredInformers){
-        let d = {};
-        let searchLabels = [];
+    filterOutInformersFromLocalStorage(localStorage, filter){
 
-        SearchVariables[searchLabel].map(item => d[item.label] = {});
-        SearchVariables[searchLabel].map(item => searchLabels.push(item.label));
+        // let filterIDs = [];
+        let filteredIDsByLabel = {};
 
-        for(let key in filteredInformers){
-            if(filteredInformers.hasOwnProperty(key)){
-                let symbols = [];
-                filteredInformers[key].map(inf => symbols.push(this.getSymbolCountFromInformer(inf)));
-                d[key] = symbols;
+        // Get all informer IDs from filteredInformers divided on labels
+        for(let filterLabel in filter){
+            if(filter.hasOwnProperty(filterLabel)) {
+                let filterIDs = [];
+                filter[filterLabel].map(inf => filterIDs.push(inf.id));
+                filteredIDsByLabel[filterLabel] = filterIDs;
             }
         }
-        this.mergeSymbolCount(d);
-    }
 
-    mergeSymbolCount(d){
-        let symbolDictionary = {};
+        let filteredLocalStorage = {};
 
-        for(let key in d){
-            if(d.hasOwnProperty(key)){
-                let symbolMerge = {};
-                d[key].map(symbols => {
-                    for(let s in symbols){
-                        if(symbols.hasOwnProperty(s)){
+        // Go through all all IDs from filter by label
+        for (let label in filteredIDsByLabel){
+            if(filteredIDsByLabel.hasOwnProperty(label)) {
 
-                            if(!(s in symbolMerge)){
-                                symbolMerge[s] = 0;
-                            }
+                let localStorageData = [];
 
-                            symbolMerge[s] += parseInt(symbols[s]);
+                // Divided localStorage data by label
+                for(let infID in localStorage) {
+                    if(localStorage.hasOwnProperty(infID)) {
+
+                        if(filteredIDsByLabel[label].includes(infID)){
+                            localStorageData.push(localStorage[infID]);
                         }
                     }
-                });
-                symbolDictionary[key] = symbolMerge;
+                }
+
+                filteredLocalStorage[label] = localStorageData;
             }
         }
-        this.splitDataBetweenGraphs(symbolDictionary);
+
+        // For each label, sum all localStorage variables
+        for(let label in filteredLocalStorage){
+            if(filteredLocalStorage.hasOwnProperty(label)) {
+
+                let counts = {};
+
+                for (let i = 0; i < filteredLocalStorage[label].length; i++) {
+
+                    let variableCount = filteredLocalStorage[label][i];
+
+                    for(let variable in variableCount){
+                        if(variableCount.hasOwnProperty(variable)) {
+                            counts[variable] = variableCount[variable] + (counts[variable] || 0);
+                        }
+                    }
+                }
+                filteredLocalStorage[label] = counts;
+            }
+        }
+
+        return(filteredLocalStorage);
     }
+
+    // Newest
+    splitDataBetweenGraphs(filteredLocalStorage){
+        let graph1 = [];
+        let graph2 = [];
+        let graph3 = [];
+        let graph4 = [];
+        let graph5 = [];
+        let graph6 = [];
+
+        const variables = {
+            infinitiv_a : "a",
+            infinitiv_e : "e",
+            infinitiv_anna : "Anna_a_e",
+            ao : "ao",
+            å :"å",
+            anna_ao_å : "Anna_ao_å",
+            bundanForm_i : "i",
+            bundanForm_a : "b_a", //TODO: Fuckup?
+            bundanForm_anna : "Anna_i_a",
+            adnedn : "adn/edn",
+            aneene : "ane/ene",
+            anna_adnedn_aneene : "Anna_adnedn_aneene",
+            dl : "dl",
+            ll : "ll",
+            anna_dl_ll : "Anna_dl_ll",
+            dn : "dn",
+            rn : "rn",
+            anna_dn_rn : "Anna_dn_rn",
+        };
+
+        for(let label in filteredLocalStorage){
+            if(filteredLocalStorage.hasOwnProperty(label)) {
+                let variablesFromLocalStorage = filteredLocalStorage[label];
+
+                graph1.push([this.returnZeroIfUndefined(variablesFromLocalStorage[variables["infinitiv_a"]]),    this.returnZeroIfUndefined(variablesFromLocalStorage[variables["infinitiv_e"]]),  this.returnZeroIfUndefined(variablesFromLocalStorage[variables["infinitiv_anna"]])]);
+                graph2.push([this.returnZeroIfUndefined(variablesFromLocalStorage[variables["ao"]]),             this.returnZeroIfUndefined(variablesFromLocalStorage[variables["å"]]),            this.returnZeroIfUndefined(variablesFromLocalStorage[variables["anna_ao_å"]])]);
+                graph3.push([this.returnZeroIfUndefined(variablesFromLocalStorage[variables["bundanForm_i"]]),   this.returnZeroIfUndefined(variablesFromLocalStorage[variables["bundanForm_a"]]), this.returnZeroIfUndefined(variablesFromLocalStorage[variables["bundanForm_anna"]])]);
+                graph4.push([this.returnZeroIfUndefined(variablesFromLocalStorage[variables["adnedn"]]),         this.returnZeroIfUndefined(variablesFromLocalStorage[variables["aneene"]]),       this.returnZeroIfUndefined(variablesFromLocalStorage[variables["anna_adnedn_aneene"]])]);
+                graph5.push([this.returnZeroIfUndefined(variablesFromLocalStorage[variables["dl"]]),             this.returnZeroIfUndefined(variablesFromLocalStorage[variables["ll"]]),           this.returnZeroIfUndefined(variablesFromLocalStorage[variables["anna_dl_ll"]])]);
+                graph6.push([this.returnZeroIfUndefined(variablesFromLocalStorage[variables["dn"]]),             this.returnZeroIfUndefined(variablesFromLocalStorage[variables["rn"]]),           this.returnZeroIfUndefined(variablesFromLocalStorage[variables["anna_dn_rn"]])]);
+            }
+        }
+
+        this.setState({
+            dataGraph1: this.divideBarGraph(graph1),
+            dataGraph2: this.divideBarGraph(graph2),
+            dataGraph3: this.divideBarGraph(graph3),
+            dataGraph4: this.divideBarGraph(graph4),
+            dataGraph5: this.divideBarGraph(graph5),
+            dataGraph6: this.divideBarGraph(graph6),
+        });
+    }
+
+
 
     returnZeroIfUndefined(number){
         return number !== undefined ? number : 0;
     }
 
-    splitDataBetweenGraphs(symbolDictionary){
+    divideBarGraph(data){
 
-        let data1 = [];
-        let data2 = [];
-        let data3 = [];
-        let data4 = [];
-        let data5 = [];
-        let data6 = [];
-
-        for(let key in symbolDictionary){
-            if(symbolDictionary.hasOwnProperty(key)) {
-                let symbols = symbolDictionary[key];
-
-                data1.push([this.returnZeroIfUndefined(symbols[Symbols.infinitiv_a]),    this.returnZeroIfUndefined(symbols[Symbols.infinitiv_e]),  0]);
-                data2.push([this.returnZeroIfUndefined(symbols[Symbols.ao]),             this.returnZeroIfUndefined(symbols[Symbols.å]),            0]);
-                data3.push([this.returnZeroIfUndefined(symbols[Symbols.bundanForm_i]),   this.returnZeroIfUndefined(symbols[Symbols.bundanForm_a]), 0]);
-                data4.push([this.returnZeroIfUndefined(symbols[Symbols.adnedn]),         this.returnZeroIfUndefined(symbols[Symbols.aneene]),       0]);
-                data5.push([this.returnZeroIfUndefined(symbols[Symbols.dl]),             this.returnZeroIfUndefined(symbols[Symbols.ll]),           0]);
-                data6.push([this.returnZeroIfUndefined(symbols[Symbols.dn]),             this.returnZeroIfUndefined(symbols[Symbols.rn]),           0]);
-            }
-        }
-
-        this.setState({
-            dataGraph1: this.mergeSymbolValues(data1),
-            dataGraph2: this.mergeSymbolValues(data2),
-            dataGraph3: this.mergeSymbolValues(data3),
-            dataGraph4: this.mergeSymbolValues(data4),
-            dataGraph5: this.mergeSymbolValues(data5),
-            dataGraph6: this.mergeSymbolValues(data6),
-        });
-    }
-
-
-    mergeSymbolValues(data){
-
-        let dataSet = [];
+        let graphData = [];
 
         for(let i = 0; i < 3; i++){
-            let d = [];
+            let barData = [];
             for(let j = 0; j < data.length; j++){
-                d.push({x: j + 1, y: data[j][i]});
+                barData.push({x: j + 1, y: data[j][i]});
             }
-            dataSet.push(d);
+            graphData.push(barData);
         }
-        return dataSet;
+
+        return graphData;
     }
-
-    getSymbolCountFromInformer(inf){
-        for(let id in this.state.filteredTestDataFromInformersText){
-            if(id === inf.id){
-                return this.state.filteredTestDataFromInformersText[id];
-            }
-        }
-    }
-
-    generateData(tick){
-        let data = [];
-
-        for(let i = 0; i < 3; i++){
-            let innerArray = [];
-            for(let j = 1; j < tick + 1; j++){
-                innerArray.push({x: j, y: Math.floor(Math.random() * Math.floor(9)) + 1});
-            }
-
-            data.push(innerArray)
-        }
-    }
-
-
-    testFilteredInformers(){
-
-        let filteredInformersId = [];
-        this.state.filteredInformers.map(inf => filteredInformersId.push(inf.id));
-
-        let allInformersId = [];
-        this.getAllInformers().map(inf => allInformersId.push(inf.id));
-
-        console.log("Not include", allInformersId.filter(n => !filteredInformersId.includes(n)));
-    }
-
-    // demoButtonClicked(){
-    //     this.setState({
-    //         filteredTestDataFromInformersText: TestDataFromInformersText()
-    //     });
-    //
-    //     this.update();
-    // }
 
     render(){
 
-        // this.testFilteredInformers();
-        // this.generateDataFromInformersText();
-
         return(
             <div>
-                {/*<button onClick={() => this.demoButtonClicked()}>DEMO</button>*/}
                 <RadioButtons setSearchLabels={this.setSearchLabels.bind(this)}/>
                 <GraphSearch setFilter={this.setFilter.bind(this)}/>
 

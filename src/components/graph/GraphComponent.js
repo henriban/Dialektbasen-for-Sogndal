@@ -3,7 +3,6 @@ import { VictoryGroup, VictoryChart, VictoryBar, VictoryAxis, VictoryLabel } fro
   
 class graph extends React.Component{
 
-
     formatTickFormat(){
         let ticketFormat = this.props.tickFormat;
         let newTicketFormat = [];
@@ -11,7 +10,7 @@ class graph extends React.Component{
         if(ticketFormat !== undefined && ticketFormat.length > 0){
             if(ticketFormat[0].split(" ").length > 2 ){
 
-                for(let i = 0; i <ticketFormat.length; i++){
+                for(let i = 0; i < ticketFormat.length; i++){
                     let text = ticketFormat[i];
 
                     let newTicket = text.slice(0, text.split(" ")[0].length) + "\n" + text.slice(text.split(" ")[0].length);
@@ -24,10 +23,22 @@ class graph extends React.Component{
         return newTicketFormat;
     }
 
+    getVerticalTickValue(){
+        let highestValue = 0;
+        this.props.data.map(data => data.map(value => highestValue = value.y > highestValue ? value.y : highestValue));
+
+        if(highestValue < 3){
+            return [0, 1, 2]
+        }
+        else if(highestValue < 2){
+            return [0, 1, 2]
+        }
+
+        return [highestValue]
+    }
+
     render() {
         let key = 0;
-
-        // console.log(this.props.data);
 
         return (
             <div className="graph">
@@ -38,7 +49,7 @@ class graph extends React.Component{
                     <div className="colorExplanation explanation3"/> <span>anna</span>
 
                 </div>
-                <VictoryChart domainPadding={{x: 50}} /*animate={{duration: 300}}*/>
+                <VictoryChart domainPadding={50}>
 
                     <VictoryLabel>
 
@@ -47,12 +58,12 @@ class graph extends React.Component{
                     <VictoryGroup offset={20} colorScale={["#4AACC5", "#77a033", "#e07676"]}>
 
                         {this.props.data.map(data => {
-                            return(<VictoryBar key={key++} data={data} />);
+                            return(<VictoryBar key={key++} data={data} animate={{ duration: 500 }} style={{data: { width: 12 }}}/>);
                         })}
                     </VictoryGroup>
-                    {/*<VictoryAxis tickValues={this.props.tickValues} tickFormat={this.props.tickFormat}/>*/}
                     <VictoryAxis tickValues={this.props.tickValues} tickFormat={this.formatTickFormat()}/>
-                    <VictoryAxis dependentAxis tickFormat={(tick) => `${Math.round(tick)}`}/>
+                    <VictoryAxis dependentAxis tickValues={this.getVerticalTickValue()} tickFormat={(tick) => `${Math.round(tick)}`}/>
+
                 </VictoryChart>
                 <br/>
                 <br/>

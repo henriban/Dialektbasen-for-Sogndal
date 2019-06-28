@@ -50,19 +50,23 @@ class popUp extends React.Component {
             return "btn1"
         }else if(symbol === this.state.btn2){
             return "btn2"
-        }else if(symbol === "Anna"){
+        }else if(symbol.split("_")[0] === "Anna"){
             return "btnA"
         }
     }
 
     buttonClicked(symbol){
 
-        // To distinguish between the "Anna"
+        // To distinguish between the different "Anna"
         if(symbol === "Anna"){
             symbol = symbol + "_" + this.state.btn1 + "_" + this.state.btn2;
         }
 
         this.props.registerButtonClicked(symbol, this.state.inf);
+    }
+
+    getFocusButton(activeButton, buttonString){
+        return activeButton === buttonString ? "activeButton" : "defaultButton"
     }
 
     render(){
@@ -74,10 +78,10 @@ class popUp extends React.Component {
                 <button id="closePopUpIcon" onClick={() => this.props.onCloseClick()}>x</button>
                 <p>{this.state.word}</p>
                 <div className="popUpButtonContainer">
-                    <button onClick={() => this.buttonClicked(this.state.btn1)} className={activeButton === ("btn1") ? "activeButton" : "defaultButton"}>{this.state.btn1}</button>
-                    <button onClick={() => this.buttonClicked(this.state.btn2)} className={activeButton === ("btn2") ? "activeButton" : "defaultButton"}>{this.state.btn2}</button>
+                    <button onClick={() => this.buttonClicked(this.state.btn1)} className={this.getFocusButton(activeButton, "btn1")}>{this.state.btn1}</button>
+                    <button onClick={() => this.buttonClicked(this.state.btn2)} className={this.getFocusButton(activeButton, "btn2")}>{this.state.btn2}</button>
                 </div>
-                <button id="btnA" onClick={() => this.buttonClicked(this.state.btn3)} className={activeButton === ("btnA") ? "activeButton" : "defaultButton"}>{this.state.btn3}</button>
+                <button id="btnA" onClick={() => this.buttonClicked(this.state.btn3)} className={this.getFocusButton(activeButton,"btnA")}>{this.state.btn3}</button>
             </div>
         );
     }

@@ -44,7 +44,6 @@ export default class checkboxComponent extends React.Component{
             this.setLabelCheckStr(label)
         }
 
-        console.log(label);
         this.props.onCheckUpdate(this.state.checkStr, res);
     };
 

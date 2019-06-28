@@ -94,7 +94,10 @@ class Result extends React.Component {
 
     addWordInLocalStorage(infID){
         let wordList = JSON.parse(localStorage.getItem(infID));
-        wordList.push("");
+        if(wordList != null){
+            wordList.push("");
+        }
+
         localStorage.setItem(infID, JSON.stringify(wordList));
     }
 
