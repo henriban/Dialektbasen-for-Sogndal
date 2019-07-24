@@ -8,6 +8,7 @@ import RadioButtons  from './RadioButtonComponent';
 
 import Informers from "../../data/informers";
 import SearchVariables from "../../data/searchVariables";
+import Variables from "../../data/variables";
 import Symbols from "../../data/symbols";
 // import GraphTraitsSelection from './graphTraitsSelectionComponent';
 
@@ -219,37 +220,16 @@ class GraphPage extends React.Component {
         let graph5 = [];
         let graph6 = [];
 
-        const variables = {
-            infinitiv_a : "a",
-            infinitiv_e : "e",
-            infinitiv_anna : "Anna_a_e",
-            ao : "ao",
-            å :"å",
-            anna_ao_å : "Anna_ao_å",
-            bundanForm_i : "i",
-            bundanForm_a : "b_a", //TODO: Fuckup?
-            bundanForm_anna : "Anna_i_a",
-            adnedn : "adn/edn",
-            aneene : "ane/ene",
-            anna_adnedn_aneene : "Anna_adnedn_aneene",
-            dl : "dl",
-            ll : "ll",
-            anna_dl_ll : "Anna_dl_ll",
-            dn : "dn",
-            rn : "rn",
-            anna_dn_rn : "Anna_dn_rn",
-        };
-
         for(let label in filteredLocalStorage){
             if(filteredLocalStorage.hasOwnProperty(label)) {
                 let variablesFromLocalStorage = filteredLocalStorage[label];
 
-                graph1.push([this.returnZeroIfUndefined(variablesFromLocalStorage[variables["infinitiv_a"]]),    this.returnZeroIfUndefined(variablesFromLocalStorage[variables["infinitiv_e"]]),  this.returnZeroIfUndefined(variablesFromLocalStorage[variables["infinitiv_anna"]])]);
-                graph2.push([this.returnZeroIfUndefined(variablesFromLocalStorage[variables["ao"]]),             this.returnZeroIfUndefined(variablesFromLocalStorage[variables["å"]]),            this.returnZeroIfUndefined(variablesFromLocalStorage[variables["anna_ao_å"]])]);
-                graph3.push([this.returnZeroIfUndefined(variablesFromLocalStorage[variables["bundanForm_i"]]),   this.returnZeroIfUndefined(variablesFromLocalStorage[variables["bundanForm_a"]]), this.returnZeroIfUndefined(variablesFromLocalStorage[variables["bundanForm_anna"]])]);
-                graph4.push([this.returnZeroIfUndefined(variablesFromLocalStorage[variables["adnedn"]]),         this.returnZeroIfUndefined(variablesFromLocalStorage[variables["aneene"]]),       this.returnZeroIfUndefined(variablesFromLocalStorage[variables["anna_adnedn_aneene"]])]);
-                graph5.push([this.returnZeroIfUndefined(variablesFromLocalStorage[variables["dl"]]),             this.returnZeroIfUndefined(variablesFromLocalStorage[variables["ll"]]),           this.returnZeroIfUndefined(variablesFromLocalStorage[variables["anna_dl_ll"]])]);
-                graph6.push([this.returnZeroIfUndefined(variablesFromLocalStorage[variables["dn"]]),             this.returnZeroIfUndefined(variablesFromLocalStorage[variables["rn"]]),           this.returnZeroIfUndefined(variablesFromLocalStorage[variables["anna_dn_rn"]])]);
+                graph1.push([this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.infinitiv_a]),    this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.infinitiv_e]),  this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.infinitiv_anna])]);
+                graph2.push([this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.ao]),             this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.å]),            this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.anna_ao_å])]);
+                graph3.push([this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.bundanForm_i]),   this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.bundanForm_a]), this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.bundanForm_anna])]);
+                graph4.push([this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.adnedn]),         this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.aneene]),       this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.anna_adnedn_aneene])]);
+                graph5.push([this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.dl]),             this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.ll]),           this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.anna_dl_ll])]);
+                graph6.push([this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.dn]),             this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.rn]),           this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.anna_dn_rn])]);
             }
         }
 
@@ -292,12 +272,12 @@ class GraphPage extends React.Component {
                 <GraphSearch setFilter={this.setFilter.bind(this)}/>
 
                 <div className="graphPage">
-                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.dataGraph1} explanation1="a"          explanation2="e"        title="Infinitiv"/>
-                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.dataGraph2} explanation1="ao"         explanation2="å"        title="Ao-lyden"/>
-                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.dataGraph3} explanation1="i"          explanation2="a"        title="Bunden form eintal av sterke hokjønnssubstantiv og fleirtal av inkjekjønnssubstantiv"/>
-                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.dataGraph4} explanation1="adn/edn"    explanation2="ane/ene"  title="Bunden form fleirtal av hokjønns- og hannkjønnssubstantiv"/>
-                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.dataGraph5} explanation1="dl"         explanation2="ll"       title="Segmentering av ll > dl"/>
-                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.dataGraph6} explanation1="dn"         explanation2="rn"       title="Differensiering av rn > dn"/>
+                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.dataGraph1} explanation1={Variables.infinitiv_a}      explanation2={Variables.infinitiv_e}    title="Infinitiv"/>
+                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.dataGraph2} explanation1={Variables.ao}               explanation2={Variables.å}              title="Ao-lyden"/>
+                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.dataGraph3} explanation1={Variables.bundanForm_i}     explanation2={Variables.bundanForm_a}   title="Bunden form eintal av sterke hokjønnssubstantiv og fleirtal av inkjekjønnssubstantiv"/>
+                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.dataGraph4} explanation1={Variables.adnedn}           explanation2={Variables.aneene}         title="Bunden form fleirtal av hokjønns- og hannkjønnssubstantiv"/>
+                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.dataGraph5} explanation1={Variables.dl}               explanation2={Variables.ll}             title="Segmentering av ll > dl"/>
+                    <Graph tickFormat={this.state.tickFormat} tickValues={this.state.tickValues} data={this.state.dataGraph6} explanation1={Variables.dn}               explanation2={Variables.rn}             title="Differensiering av rn > dn"/>
                 </div>
             </div>
         );
