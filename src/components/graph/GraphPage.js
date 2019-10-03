@@ -41,7 +41,7 @@ class GraphPage extends React.Component {
             dataGraph6: [],
 
             filteredTestDataFromInformersText: [],
-            searchLabel: "place",
+            searchLabel: "place", // Default search on place
             filteredDemoInf: [],
             filteredInformersDividedOnSearchLabel: {}
         };
@@ -211,7 +211,6 @@ class GraphPage extends React.Component {
         return(filteredLocalStorage);
     }
 
-    // Newest
     splitDataBetweenGraphs(filteredLocalStorage){
         let graph1 = [];
         let graph2 = [];
@@ -223,6 +222,8 @@ class GraphPage extends React.Component {
         for(let label in filteredLocalStorage){
             if(filteredLocalStorage.hasOwnProperty(label)) {
                 let variablesFromLocalStorage = filteredLocalStorage[label];
+
+                console.log(variablesFromLocalStorage);
 
                 graph1.push([this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.infinitiv_a]),    this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.infinitiv_e]),  this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.infinitiv_anna])]);
                 graph2.push([this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.ao]),             this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.å]),            this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.anna_ao_å])]);
@@ -242,8 +243,6 @@ class GraphPage extends React.Component {
             dataGraph6: this.divideBarGraph(graph6),
         });
     }
-
-
 
     returnZeroIfUndefined(number){
         return number !== undefined ? number : 0;

@@ -20,19 +20,4 @@ const symbols = {
     dn_anna : "#a"
 };
 
-const variables = {
-    infinitiv_a : "a",
-    infinitiv_e : "e",
-    ao : "ao",
-    å :"å",
-    bundanForm_i : "i",
-    bundanForm_a : "a",
-    adnedn : "adn/edn",
-    aneene : "ane/ene",
-    dl : "dl",
-    ll : "ll",
-    dn : "dn",
-    rn : "rn",
-};
-
 export default symbols;
