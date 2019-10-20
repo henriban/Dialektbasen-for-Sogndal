@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92406c54-c6dc-4d55-b76a-7b6f13eb8c44" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/graph/GraphPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/graph/GraphPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/symbols.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/symbols.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/database/textWindow/TextWindowComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/database/textWindow/TextWindowComponent.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,40 +17,6 @@
         <option value="JavaScript File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>52</find>
-      <find>sogndal</find>
-      <find>36p</find>
-      <find>text_39</find>
-      <find>filterrows</find>
-      <find>filters</find>
-      <find>fjøra</find>
-      <find>–</find>
-      <find>Mann</find>
-      <find>31</find>
-      <find>.tolowercase()</find>
-      <find>get</find>
-      <find>1971 - 2001</find>
-      <find>this.state.inf</find>
-      <find>går</find>
-      <find>&amp;gt;</find>
-      <find>hasown</find>
-      <find>@</find>
-      <find>*</find>
-      <find>‘</find>
-      <find>+</find>
-      <find>§</find>
-      <find>#</find>
-      <find>19og</find>
-      <find>59</find>
-      <find>@#seksårsbarnehagen</find>
-      <find>blue</find>
-      <find>inftost</find>
-      <find>getAllInformers</find>
-      <find>counts</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -183,6 +147,9 @@
       <workItem from="1566036799564" duration="1510000" />
       <workItem from="1568310314560" duration="3532000" />
       <workItem from="1568912484930" duration="3028000" />
+      <workItem from="1571333517273" duration="108000" />
+      <workItem from="1571333739520" duration="1450000" />
+      <workItem from="1571565377990" duration="15320000" />
     </task>
     <servers />
   </component>

@@ -115,10 +115,10 @@ class Result extends React.Component {
         return(
             // Splits the line on br and check if line contains a symbol.
             <div>{text.split("\n").map(line => {
+
+                infNumber = this.findInformerNumber(line, infNumber);
+
                 if(line.match(REGEX)) {
-
-                    infNumber = this.findInformerNumber(line, infNumber);
-
                     return <div key={key++}>{
                         line.split(" ")
                             .map(word => {
