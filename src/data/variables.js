@@ -6,7 +6,7 @@ const variables = {
     å :"å",
     anna_ao_å : "Anna_ao_å",
     bundanForm_i : "i",
-    bundanForm_a : "a", //TODO: Fuckup?
+    bundanForm_a : "a",
     bundanForm_anna : "Anna_i_a",
     adnedn : "adn/edn",
     aneene : "ane/ene",

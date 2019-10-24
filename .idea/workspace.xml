@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="92406c54-c6dc-4d55-b76a-7b6f13eb8c44" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/database/textWindow/TextWindowComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/database/textWindow/TextWindowComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/database/textWindow/DoubleWordPopUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/database/textWindow/DoubleWordPopUp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/database/textWindow/GeneratePopUpBtnAlternatives.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/database/textWindow/GeneratePopUpBtnAlternatives.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/database/textWindow/PopUpComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/database/textWindow/PopUpComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/graph/GraphPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/graph/GraphPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/variables.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/variables.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/home.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

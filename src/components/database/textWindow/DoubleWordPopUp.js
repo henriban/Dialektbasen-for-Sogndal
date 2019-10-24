@@ -13,10 +13,16 @@ class DoubleWordPopUp extends React.Component {
             alt1_btn1: "",
             alt1_btn2: "",
             alt1_btn3: "Anna",
+            alt1_symbol1: "",
+            alt1_symbol2: "",
+            alt1_symbol_anna: "",
 
             alt2_btn1: "",
             alt2_btn2: "",
             alt2_btn3: "Anna",
+            alt2_symbol1: "",
+            alt2_symbol2: "",
+            alt2_symbol_anna: "",
 
             inf: this.props.inf,
             wordIndex: this.props.wordIndex,
@@ -44,9 +50,15 @@ class DoubleWordPopUp extends React.Component {
             word: word,
             alt1_btn1: alternatives1.alternative1,
             alt1_btn2: alternatives1.alternative2,
+            alt1_symbol1: alternatives1.symbol1,
+            alt1_symbol2: alternatives1.symbol2,
+            alt1_symbol_anna: alternatives1.anna,
 
             alt2_btn1: alternatives2.alternative1,
             alt2_btn2: alternatives2.alternative2,
+            alt2_symbol1: alternatives2.symbol1,
+            alt2_symbol2: alternatives2.symbol2,
+            alt2_symbol_anna: alternatives2.anna,
         });
 
         this.getActiveButton1FromLocalStorage();
@@ -56,11 +68,11 @@ class DoubleWordPopUp extends React.Component {
     getActiveButton1FromLocalStorage(){
         let symbol = JSON.parse(localStorage.getItem(this.state.inf))[this.props.wordIndex - 1];
 
-        if(symbol === this.state.alt1_btn1){
+        if(symbol === this.state.alt1_symbol1){
             return "alt1_btn1"
-        }else if(symbol === this.state.alt1_btn2){
+        }else if(symbol === this.state.alt1_symbol2){
             return "alt1_btn2"
-        }else if(symbol.split("_")[0] === "Anna"){
+        }else if(symbol === this.state.alt1_symbol_anna){
             return "btnA1"
         }
     }
@@ -68,11 +80,11 @@ class DoubleWordPopUp extends React.Component {
     getActiveButton2FromLocalStorage(){
         let symbol = JSON.parse(localStorage.getItem(this.state.inf))[this.props.wordIndex];
 
-        if(symbol === this.state.alt2_btn1){
+        if(symbol === this.state.alt2_symbol1){
             return "alt2_btn1"
-        }else if(symbol === this.state.alt2_btn2){
+        }else if(symbol === this.state.alt2_symbol2){
             return "alt2_btn2"
-        }else if(symbol === "Anna"){
+        }else if(symbol === this.state.alt2_symbol_anna){
             return "btnA2"
         }
     }
@@ -86,9 +98,9 @@ class DoubleWordPopUp extends React.Component {
         localStorage.setItem(this.state.inf, JSON.stringify(wordList));
 
         // To distinguish between the "Anna"
-        if(symbol === "Anna"){
-            symbol = symbol + "_" + this.state.alt1_btn1 + "_" + this.state.alt1_btn2;
-        }
+        // if(symbol === "Anna"){
+        //     symbol = symbol + "_" + this.state.alt1_btn1 + "_" + this.state.alt1_btn2;
+        // }
 
         this.props.registerButtonClicked(symbol, this.state.inf);
     }
@@ -103,13 +115,13 @@ class DoubleWordPopUp extends React.Component {
                 <button id="closePopUpIcon" onClick={() => this.props.onCloseClick()}>x</button>
                 <p>{this.state.word}</p>
                 <div className="popUpButtonContainer">
-                    <button onClick={() => this.buttonClicked(this.state.alt1_btn1, this.state.wordIndex - 1)} className={activeButton1 === ("alt1_btn1") ? "activeButton" : "defaultButton"}>{this.state.alt1_btn1}</button>
-                    <button onClick={() => this.buttonClicked(this.state.alt1_btn2, this.state.wordIndex - 1)} className={activeButton1 === ("alt1_btn2") ? "activeButton" : "defaultButton"}>{this.state.alt1_btn2}</button>
+                    <button onClick={() => this.buttonClicked(this.state.alt1_symbol1, this.state.wordIndex - 1)} className={activeButton1 === ("alt1_btn1") ? "activeButton" : "defaultButton"}>{this.state.alt1_btn1}</button>
+                    <button onClick={() => this.buttonClicked(this.state.alt1_symbol2, this.state.wordIndex - 1)} className={activeButton1 === ("alt1_btn2") ? "activeButton" : "defaultButton"}>{this.state.alt1_btn2}</button>
                     <button onClick={() => this.buttonClicked(this.state.alt1_btn3, this.state.wordIndex - 1)} className={activeButton1 === ("btnA1") ? "activeButton" : "defaultButton"}>{this.state.alt1_btn3}</button>
                 </div>
                 <div className="popUpButtonContainer">
-                    <button onClick={() => this.buttonClicked(this.state.alt2_btn1, this.state.wordIndex)} className={activeButton2 === ("alt2_btn1") ? "activeButton" : "defaultButton"}>{this.state.alt2_btn1}</button>
-                    <button onClick={() => this.buttonClicked(this.state.alt2_btn2, this.state.wordIndex)} className={activeButton2 === ("alt2_btn2") ? "activeButton" : "defaultButton"}>{this.state.alt2_btn2}</button>
+                    <button onClick={() => this.buttonClicked(this.state.alt2_symbol1, this.state.wordIndex)} className={activeButton2 === ("alt2_btn1") ? "activeButton" : "defaultButton"}>{this.state.alt2_btn1}</button>
+                    <button onClick={() => this.buttonClicked(this.state.alt2_symbol2, this.state.wordIndex)} className={activeButton2 === ("alt2_btn2") ? "activeButton" : "defaultButton"}>{this.state.alt2_btn2}</button>
                     <button onClick={() => this.buttonClicked(this.state.alt2_btn3, this.state.wordIndex)} className={activeButton2 === ("btnA2") ? "activeButton" : "defaultButton"}>{this.state.alt2_btn3}</button>
                 </div>
             </div>

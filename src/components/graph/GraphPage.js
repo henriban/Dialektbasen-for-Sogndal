@@ -223,14 +223,21 @@ class GraphPage extends React.Component {
             if(filteredLocalStorage.hasOwnProperty(label)) {
                 let variablesFromLocalStorage = filteredLocalStorage[label];
 
-                console.log(variablesFromLocalStorage);
+                // console.log(variablesFromLocalStorage);
 
-                graph1.push([this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.infinitiv_a]),    this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.infinitiv_e]),  this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.infinitiv_anna])]);
-                graph2.push([this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.ao]),             this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.å]),            this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.anna_ao_å])]);
-                graph3.push([this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.bundanForm_i]),   this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.bundanForm_a]), this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.bundanForm_anna])]);
-                graph4.push([this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.adnedn]),         this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.aneene]),       this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.anna_adnedn_aneene])]);
-                graph5.push([this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.dl]),             this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.ll]),           this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.anna_dl_ll])]);
-                graph6.push([this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.dn]),             this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.rn]),           this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.anna_dn_rn])]);
+                // graph1.push([this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.infinitiv_a]),    this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.infinitiv_e]),  this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.infinitiv_anna])]);
+                // graph2.push([this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.ao]),             this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.å]),            this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.anna_ao_å])]);
+                // graph3.push([this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.bundanForm_i]),   this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.bundanForm_a]), this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.bundanForm_anna])]);
+                // graph4.push([this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.adnedn]),         this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.aneene]),       this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.anna_adnedn_aneene])]);
+                // graph5.push([this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.dl]),             this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.ll]),           this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.anna_dl_ll])]);
+                // graph6.push([this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.dn]),             this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.rn]),           this.returnZeroIfUndefined(variablesFromLocalStorage[Variables.anna_dn_rn])]);
+
+                graph1.push([this.returnZeroIfUndefined(variablesFromLocalStorage[Symbols.infinitiv_a]),    this.returnZeroIfUndefined(variablesFromLocalStorage[Symbols.infinitiv_e]),  this.returnZeroIfUndefined(variablesFromLocalStorage[Symbols.infinitiv_anna])]);
+                graph2.push([this.returnZeroIfUndefined(variablesFromLocalStorage[Symbols.ao]),             this.returnZeroIfUndefined(variablesFromLocalStorage[Symbols.å]),            this.returnZeroIfUndefined(variablesFromLocalStorage[Symbols.anna_ao_å])]);
+                graph3.push([this.returnZeroIfUndefined(variablesFromLocalStorage[Symbols.bundanForm_i]),   this.returnZeroIfUndefined(variablesFromLocalStorage[Symbols.bundanForm_a]), this.returnZeroIfUndefined(variablesFromLocalStorage[Symbols.bundanForm_anna])]);
+                graph4.push([this.returnZeroIfUndefined(variablesFromLocalStorage[Symbols.adnedn]),         this.returnZeroIfUndefined(variablesFromLocalStorage[Symbols.aneene]),       this.returnZeroIfUndefined(variablesFromLocalStorage[Symbols.anna_adnedn_aneene])]);
+                graph5.push([this.returnZeroIfUndefined(variablesFromLocalStorage[Symbols.dl]),             this.returnZeroIfUndefined(variablesFromLocalStorage[Symbols.ll]),           this.returnZeroIfUndefined(variablesFromLocalStorage[Symbols.anna_dl_ll])]);
+                graph6.push([this.returnZeroIfUndefined(variablesFromLocalStorage[Symbols.dn]),             this.returnZeroIfUndefined(variablesFromLocalStorage[Symbols.rn]),           this.returnZeroIfUndefined(variablesFromLocalStorage[Symbols.anna_dn_rn])]);
             }
         }
 
