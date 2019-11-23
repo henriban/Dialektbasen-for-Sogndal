@@ -2,12 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92406c54-c6dc-4d55-b76a-7b6f13eb8c44" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/static/inf_03pog30p.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/inf_21pog26p.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/inf_23pog24p.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/inf_42pog54p.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/inf_44pog55p.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/inf_52pog53p.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/database/textWindow/DoubleWordPopUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/database/textWindow/DoubleWordPopUp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/database/textWindow/GeneratePopUpBtnAlternatives.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/database/textWindow/GeneratePopUpBtnAlternatives.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/database/textWindow/PopUpComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/database/textWindow/PopUpComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/graph/GraphPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/graph/GraphPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/variables.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/variables.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/database/search/SearchComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/database/search/SearchComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/database/textWindow/DoubleWord.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/database/textWindow/DoubleWord.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/database/textWindow/InformantInfoTextComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/database/textWindow/InformantInfoTextComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/database/textWindow/TextWindowWordComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/database/textWindow/TextWindowWordComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/graph/GraphSearchComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/graph/GraphSearchComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/informers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/informers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/informersText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/informersText.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/tableColumns.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/tableColumns.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/graph/graph.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/graph/graph.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/home.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,11 +37,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1PNxqHIOX2HLXsKu6eSCZrmoG3w" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../geography-quiz" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Vue/utd" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -155,6 +168,12 @@
       <workItem from="1571333517273" duration="108000" />
       <workItem from="1571333739520" duration="1450000" />
       <workItem from="1571565377990" duration="15320000" />
+      <workItem from="1572173894128" duration="6518000" />
+      <workItem from="1572544428734" duration="31000" />
+      <workItem from="1572544489778" duration="1884000" />
+      <workItem from="1573396755947" duration="18000" />
+      <workItem from="1574104123965" duration="6534000" />
+      <workItem from="1574507246064" duration="1835000" />
     </task>
     <servers />
   </component>
@@ -173,5 +192,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

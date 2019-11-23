@@ -22,7 +22,7 @@ const tableColumns =
         },
         {
             key: 'birth',
-            name: 'Fødselstidspunkt',
+            name: 'Fødd i tidbolken',
             num: 4
         },
         {

@@ -41,7 +41,7 @@ class graphSearchComponent extends React.Component{
                     <CheckboxComponent onCheckUpdate={this.toggleCheckbox} label="Stad"               variables={Variables.place}              res="place"/>
                     <CheckboxComponent onCheckUpdate={this.toggleCheckbox} label="Kjønn"              variables={Variables.gender}             res="gender"/>
                     <CheckboxComponent onCheckUpdate={this.toggleCheckbox} label="Alder"              variables={Variables.age}                res="age"/>
-                    <CheckboxComponent onCheckUpdate={this.toggleCheckbox} label="Fødselstidspunkt"   variables={Variables.birth}              res="birth"/>
+                    <CheckboxComponent onCheckUpdate={this.toggleCheckbox} label="Fødd i tidbolken"   variables={Variables.birth}              res="birth"/>
                     <CheckboxComponent onCheckUpdate={this.toggleCheckbox} label="Opptakstidspunkt"   variables={Variables.date_of_recording}  res="date_of_recording"/>
                     <CheckboxComponent onCheckUpdate={this.toggleCheckbox} label="Utdanning"          variables={Variables.education}          res="education"/>
                     <CheckboxComponent onCheckUpdate={this.toggleCheckbox} label="Yrke"               variables={Variables.occupation}         res="occupation"/>

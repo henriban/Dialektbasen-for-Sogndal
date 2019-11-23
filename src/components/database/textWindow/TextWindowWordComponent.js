@@ -3,9 +3,9 @@ import PopUp from './PopUpComponent';
 
 const REGEX = new RegExp("([@#*¤%¨‘~+§{}])", "g");
 
-let style = { 
-  color: "blue"
-};
+// let style = {
+//   color: "blue"
+// };
 
 class Word extends React.Component{
 
@@ -74,7 +74,7 @@ class Word extends React.Component{
                 />}
                 {/*OnClick find symbol and remove/trim word from symbol(ends up with symbol and word)*/}
                 <span onClick={() => this.openPopUp()}
-                      style={style}
+                      // style={style}
                       key={this.id}>{this.state.word} </span>
             </span>
         );

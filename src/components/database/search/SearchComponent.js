@@ -44,7 +44,7 @@ class Search extends React.Component {
                     <SelectItem  onSelectUpdate={this.handleChange} label="Stad"               data={Variables.place}               res="place"/>
                     <SelectItem  onSelectUpdate={this.handleChange} label="Kjønn"              data={Variables.gender}              res="gender"/>
                     <SelectItem  onSelectUpdate={this.handleChange} label="Alder"              data={Variables.age}                 res="age"/>
-                    <SelectItem  onSelectUpdate={this.handleChange} label="Fødselstidspunkt"   data={Variables.birth}               res="birth"/>
+                    <SelectItem  onSelectUpdate={this.handleChange} label="Fødd i tidbolken"   data={Variables.birth}               res="birth"/>
                     <SelectItem  onSelectUpdate={this.handleChange} label="Opptakstidspunkt"   data={Variables.date_of_recording}   res="date_of_recording"/>
                     <SelectItem  onSelectUpdate={this.handleChange} label="Utdanning"          data={Variables.education}           res="education"/>
                     <SelectItem  onSelectUpdate={this.handleChange} label="Yrke"               data={Variables.occupation}          res="occupation"/>

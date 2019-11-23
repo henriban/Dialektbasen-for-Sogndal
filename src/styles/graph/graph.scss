@@ -61,3 +61,11 @@
         background-color: #e07676;
     }
 }
+
+
+@media all and (max-width: 820px)  {
+    .graph{
+        width: 100%;
+        min-width: 300px;
+    }
+}

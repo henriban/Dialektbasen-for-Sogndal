@@ -73,6 +73,20 @@ const informers =
             panel: "Trend"
         },
         {
+            id: "03p",
+            place: "Dalen",
+            gender: "Mann",
+            age: "Eldre 61 -",
+            birth: "1911 - 1940",
+            date_of_recording: "2017",
+            education: "Yrkesfag",
+            occupation: "Primær",
+            parents_background: "Begge frå Sogndal",
+            audio: "inf_03pog30p.mp3",
+            text: Texts.text_3pog30p,
+            panel: "Panel"
+        },
+        {
             id: "04",
             place: "Dalen",
             gender: "Mann",
@@ -438,6 +452,20 @@ const informers =
             panel: "Trend"
         },
         {
+            id: "21p",
+            place: "Fjøra",
+            gender: "Kvinne",
+            age: "Eldre 61 -",
+            birth: "1941 - 1970",
+            date_of_recording: "2017",
+            education: "Vidaregåande",
+            occupation: "Tertiær",
+            parents_background: "Far frå Sogndal",
+            audio: "inf_21pog26p.mp3",
+            text: Texts.text_21pog26p,
+            panel: "Panel"
+        },
+        {
             id: "22",
             place: "Fjøra",
             gender: "Kvinne",
@@ -466,6 +494,20 @@ const informers =
             panel: "Trend"
         },
         {
+            id: "23p",
+            place: "Fjøra",
+            gender: "Kvinne",
+            age: "Middelaldra 41 - 60",
+            birth: "1941 - 1970",
+            date_of_recording: "2017",
+            education: "Høgskule",
+            occupation: "Tertiær",
+            parents_background: "Begge frå Sogndal",
+            audio: "inf_23pog24p.mp3",
+            text: Texts.text_23pog24p,
+            panel: "Panel"
+        },
+        {
             id: "24",
             place: "Fjøra",
             gender: "Kvinne",
@@ -478,6 +520,20 @@ const informers =
             audio: "inf_23og24.mp3",
             text: Texts.text_23og24,
             panel: "Trend"
+        },
+        {
+            id: "24p",
+            place: "Fjøra",
+            gender: "Kvinne",
+            age: "Middelaldra 41 - 60",
+            birth: "1941 - 1970",
+            date_of_recording: "2017",
+            education: "Høgskule",
+            occupation: "Tertiær",
+            parents_background: "Far frå Sogndal",
+            audio: "inf_23pog24p.mp3",
+            text: Texts.text_23pog24p,
+            panel: "Panel"
         },
         {
             id: "25",
@@ -506,6 +562,20 @@ const informers =
             audio: "inf_25og26.mp3",
             text: Texts.text_25og26,
             panel: "Trend"
+        },
+        {
+            id: "26p",
+            place: "Fjøra",
+            gender: "Mann",
+            age: "Middelaldra 41 - 60",
+            birth: "1941 - 1970",
+            date_of_recording: "2017",
+            education: "Vidaregåande",
+            occupation: "Tertiær",
+            parents_background: "Far frå Sogndal",
+            audio: "inf_21pog26p.mp3",
+            text: Texts.text_21pog26p,
+            panel: "Panel"
         },
         {
             id: "27",
@@ -604,6 +674,20 @@ const informers =
             audio: "inf_29og30.mp3",
             text: Texts.text_29og30,
             panel: "Trend"
+        },
+        {
+            id: "30p",
+            place: "Fjøra",
+            gender: "Mann",
+            age: "Eldre 61 - ",
+            birth: "1911 - 1940",
+            date_of_recording: "2017",
+            education: "Yrkesfag",
+            occupation: "Tertiær",
+            parents_background: "Begge frå Sogndal",
+            audio: "inf_03pog30p.mp3",
+            text: Texts.text_3pog30p,
+            panel: "Panel"
         },
         {
             id: "31",
@@ -816,6 +900,20 @@ const informers =
             panel: "Trend"
         },
         {
+            id: "42p",
+            place: "Dalen",
+            gender: "Mann",
+            age: "Ung 26 - 40",
+            birth: "1971 - 2000",
+            date_of_recording: "2017",
+            education: "Vidaregåande",
+            occupation: "Tertiær",
+            parents_background: "Begge frå Sogndal",
+            audio: "inf_42pog54p.mp3",
+            text: Texts.text_42pog54p,
+            panel: "Panel"
+        },
+        {
             id: "43",
             place: "Fjøra",
             gender: "Mann",
@@ -842,6 +940,20 @@ const informers =
             audio: "inf_44og65.mp3",
             text: Texts.text_44og65,
             panel: "Trend"
+        },
+        {
+            id: "44p",
+            place: "Norane",
+            gender: "Mann",
+            age: "Ung 26 - 40",
+            birth: "1971 - 2000",
+            date_of_recording: "2017",
+            education: "Yrkesfag",
+            occupation: "Tertiær",
+            parents_background: "Begge frå Sogndal",
+            audio: "inf_44pog55p.mp3",
+            text: Texts.text_44pog55p,
+            panel: "Panel"
         },
         {
             id: "45",
@@ -878,8 +990,8 @@ const informers =
             age: "Ung 26 - 40",
             birth: "1971 - 2000",
             date_of_recording: "2017",
-            education: "Grunnskule", //TODO: ??
-            occupation: "Elev", //TODO: ??
+            education: "Yrkesfag",
+            occupation: "Tertiær",
             parents_background: "Begge frå Sogndal",
             audio: "inf_46pog61p.mp3",
             text: Texts.text_46pog61p,
@@ -917,11 +1029,11 @@ const informers =
             id: "48p",
             place: "Fjøra",
             gender: "Kvinne",
-            age: "Ung 26 - 40", //TODO: ??
+            age: "Ung 26 - 40",
             birth: "1971 - 2000",
             date_of_recording: "2017",
-            education: "Grunnskule",
-            occupation: "Elev",
+            education: "Høgskule",
+            occupation: "Tertiær",
             parents_background: "Far frå Sogndal",
             audio: "inf_36pog48p.mp3",
             text: Texts.text_36pog48p,
@@ -976,8 +1088,8 @@ const informers =
             age: "Ung 26 - 40",
             birth: "1971 - 2000",
             date_of_recording: "2017",
-            education: "Grunnskule", // TODO: ??
-            occupation: "Elev", // TODO: ??
+            education: "Høgskule",
+            occupation: "Tertiær",
             parents_background: "Far frå Sogndal",
             audio: "inf_51pog59p.mp3",
             text: Texts.text_51pog59p,
@@ -998,6 +1110,20 @@ const informers =
             panel: "Trend"
         },
         {
+            id: "52p",
+            place: "Norane",
+            gender: "Mann",
+            age: "Ung 26 - 40",
+            birth: "1971 - 2000",
+            date_of_recording: "2017",
+            education: "Vidaregåande",
+            occupation: "Tertiær",
+            parents_background: "Mor frå Sogndal",
+            audio: "inf_52pog53p.mp3",
+            text: Texts.text_52pog53p,
+            panel: "Panel"
+        },
+        {
             id: "53",
             place: "Norane",
             gender: "Mann",
@@ -1010,6 +1136,20 @@ const informers =
             audio: "inf_53og63.mp3",
             text: Texts.text_53og63,
             panel: "Trend"
+        },
+        {
+            id: "53p",
+            place: "Norane",
+            gender: "Mann",
+            age: "Ung 26 - 40",
+            birth: "1971 - 2000",
+            date_of_recording: "2017",
+            education: "Vidaregåande",
+            occupation: "Tertiær",
+            parents_background: "Far frå Sogndal",
+            audio: "inf_52pog53p.mp3",
+            text: Texts.text_52pog53p,
+            panel: "Panel"
         },
         {
             id: "54",
@@ -1026,6 +1166,20 @@ const informers =
             panel: "Trend"
         },
         {
+            id: "54p",
+            place: "Dalen",
+            gender: "Mann",
+            age: "Ung 26 - 40",
+            birth: "1971 - 2000",
+            date_of_recording: "2017",
+            education: "Yrkesfag",
+            occupation: "Tertiær",
+            parents_background: "Far frå Sogndal",
+            audio: "inf_42pog54p.mp3",
+            text: Texts.text_42pog54p,
+            panel: "Panel"
+        },
+        {
             id: "55",
             place: "Norane",
             gender: "Mann",
@@ -1038,6 +1192,20 @@ const informers =
             audio: "inf_43og55.mp3",
             text: Texts.text_43og55,
             panel: "Trend"
+        },
+        {
+            id: "55p",
+            place: "Norane",
+            gender: "Mann",
+            age: "Ung 26 - 40",
+            birth: "1971 - 2000",
+            date_of_recording: "2017",
+            education: "Yrkesfag",
+            occupation: "Tertiær",
+            parents_background: "Far frå Sogndal",
+            audio: "inf_44pog55p.mp3",
+            text: Texts.text_44pog55p,
+            panel: "Panel"
         },
         {
             id: "56",
@@ -1102,8 +1270,8 @@ const informers =
             age: "Ung 26 - 40",
             birth: "1971 - 2000",
             date_of_recording: "2001",
-            education: "Grunnskule", //TODO: ??
-            occupation: "Elev", //TODO: ??
+            education: "Høgskule",
+            occupation: "Tertiær",
             parents_background: "Ingen frå Sogndal",
             audio: "inf_51pog59p.mp3",
             text: Texts.text_51pog59p,
@@ -1158,8 +1326,8 @@ const informers =
             age: "Ung 26 - 40",
             birth: "1971 - 2000",
             date_of_recording: "2017",
-            education: "Grunnskule", //TODO: ??
-            occupation: "Elev", //TODO: ??
+            education: "Høgskule",
+            occupation: "Tertiær",
             parents_background: "Ingen frå Sogndal",
             audio: "inf_46pog61p.mp3",
             text: Texts.text_46pog61p,

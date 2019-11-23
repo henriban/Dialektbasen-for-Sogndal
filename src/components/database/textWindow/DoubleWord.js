@@ -3,9 +3,9 @@ import DoublePopUp from './DoubleWordPopUp';
 
 const REGEX = new RegExp("([@#*¤%¨‘~+§{}])", "g");
 
-let style = {
-    color: "red"
-};
+// let style = {
+//     color: "red"
+// };
 
 class DoubleWord extends React.Component{
 
@@ -64,7 +64,7 @@ class DoubleWord extends React.Component{
                 />}
                 {/*OnClick find symbol and remove/trim word from symbol(ends up with symbol and word)*/}
                 <span onClick={() => this.openPopUp()}
-                      style={style}
+                      // style={style}
                       key={this.id}>{this.state.word} </span>
             </span>
         );
