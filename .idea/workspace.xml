@@ -2,25 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92406c54-c6dc-4d55-b76a-7b6f13eb8c44" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/static/inf_03pog30p.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/inf_21pog26p.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/inf_23pog24p.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/inf_42pog54p.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/inf_44pog55p.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/inf_52pog53p.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/database/search/SearchComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/database/search/SearchComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/database/textWindow/DoubleWord.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/database/textWindow/DoubleWord.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/database/textWindow/InformantInfoTextComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/database/textWindow/InformantInfoTextComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/database/textWindow/TextWindowWordComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/database/textWindow/TextWindowWordComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/graph/GraphSearchComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/graph/GraphSearchComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/informers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/informers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/informersText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/informersText.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/tableColumns.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/tableColumns.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/graph/graph.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/graph/graph.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/home.scss" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,6 +25,11 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -55,6 +45,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\henrik\WebstormProjects\dialektbasen_sogndal\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -72,18 +63,6 @@
       <recent name="C:\Users\henrik\WebstormProjects\dialektbasen_sogndal\src\components\database\textWindow" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -95,6 +74,18 @@
       <envs />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -174,6 +165,13 @@
       <workItem from="1573396755947" duration="18000" />
       <workItem from="1574104123965" duration="6534000" />
       <workItem from="1574507246064" duration="1835000" />
+      <workItem from="1574626583740" duration="599000" />
+      <workItem from="1575235499212" duration="599000" />
+      <workItem from="1575406098871" duration="41000" />
+      <workItem from="1575406203128" duration="2496000" />
+      <workItem from="1575565160859" duration="2220000" />
+      <workItem from="1575819555461" duration="5385000" />
+      <workItem from="1575921020732" duration="3052000" />
     </task>
     <servers />
   </component>
@@ -195,5 +193,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1575929119644">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575929119644" />
+    <state x="-1459" y="162" key="SettingsEditor" timestamp="1575575779625">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1459" y="162" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1575575779625" />
   </component>
 </project>

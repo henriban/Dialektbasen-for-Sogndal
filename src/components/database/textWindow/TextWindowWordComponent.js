@@ -1,11 +1,8 @@
 import React from 'react';
 import PopUp from './PopUpComponent';
+import {GeneratePopUpBtnAlternatives} from "./GeneratePopUpBtnAlternatives";
 
 const REGEX = new RegExp("([@#*¤%¨‘~+§{}])", "g");
-
-// let style = {
-//   color: "blue"
-// };
 
 class Word extends React.Component{
 
@@ -51,6 +48,27 @@ class Word extends React.Component{
             showPopUp: false
         });
     }
+    
+    getStyle(){
+        if(JSON.parse(localStorage.getItem(this.state.inf)) != null){
+            let registeredSymbol = JSON.parse(localStorage.getItem(this.state.inf))[this.state.wordIndex];
+
+            if(registeredSymbol !== ""){
+                let alternatives = GeneratePopUpBtnAlternatives(registeredSymbol);
+
+                console.log(registeredSymbol, alternatives.symbol1);
+
+                if(registeredSymbol === alternatives.symbol1)
+                    return { color: "blue" };
+                else if(registeredSymbol === alternatives.symbol2)
+                    return { color: "red" };
+                else if(registeredSymbol === alternatives.anna)
+                    return { color: "green" };
+            }
+        }
+
+        return { color: "black" };
+    }
 
     //TODO: showPopUp globally (only on window at the time)
     render(){
@@ -58,6 +76,7 @@ class Word extends React.Component{
         // let symbol = this.state.word.match(REGEX)[0];
         let symbol = this.state.symbol;
 
+        let style = this.getStyle();
 
         return(
             <span>
@@ -74,7 +93,7 @@ class Word extends React.Component{
                 />}
                 {/*OnClick find symbol and remove/trim word from symbol(ends up with symbol and word)*/}
                 <span onClick={() => this.openPopUp()}
-                      // style={style}
+                      style={style}
                       key={this.id}>{this.state.word} </span>
             </span>
         );
