@@ -499,7 +499,7 @@ text_5pog6p : "I: Jammen hen skal dei få ny viss dei skal utvida det då?\n" +
     "5: fordi at dei ikkje hadde brøytt. Då@ hadde desse luringane~ gløymt og vore ute og brøytt.\n" +
     "6: Men alle§ desse vogntoga¤ lagar jo mykje trøbbel.\n" +
     "5: Å, fy.\n" +
-    "……………………………………………………………………………………………………\n" +
+    "…………………………………………………………..\n" +
     "6: Me var så mykje meir sosiale\n" +
     "5: Ja.\n" +
     "6: sant før du fekk data og telefon\n" +
@@ -557,7 +557,7 @@ text_5pog6p : "I: Jammen hen skal dei få ny viss dei skal utvida det då?\n" +
     "vorte for mykje så dei har møtt veggen, og det innrømmer dei òg. Og då@ ser du dei knapt.\n" +
     "6: Eg trur ikkje det at dei hadde det mindre travelt. Det var berre det at dei tenkte ikkje på@ det på@\n" +
     "den måten.\n" +
-    "…………………………………………………………………………………………………………………………….\n" +
+    "…………………………………………………………...\n" +
     "I: No er jo denne her studentveka i gang. Er det noko som bygdefolket er med på òg eller?\n" +
     "6: Det er litt konsertar som er for alle§ då@.\n" +
     "5: Hadde ikkje dei vore på Trudvang no og laga til eitkvart slags arrangement då@?\n" +

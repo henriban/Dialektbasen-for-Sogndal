@@ -1,8 +1,10 @@
+@import './variables';
+
 .navbar{
   display: flex;
   justify-content: space-around;
-  box-shadow: 1px 1px 1px #888888;
-  background-color: #FFF;
+  box-shadow: 1px 1px 1px $navbar-shadow-color;
+  background-color: $navbar-background-color;
   min-height: 25px;
 
   .item{
@@ -10,13 +12,21 @@
     padding: 10px;
     text-align: center;
     text-decoration: none;
-    color: black;
+    font-weight: bold;
+    color: $main-text-color;
   }
 
   .item:hover{
-    background-color: #bababa;
+    background-color: $navbar-background-color-hover;
+    // border-bottom: 2px solid #dee2f6;
+  }
+
+  .active{
+    border-bottom: 2px solid $navbar-active-border-color;
   }
 }
 
-
-
+.navbar-logo{
+  margin: auto;
+  width: 40%;
+}

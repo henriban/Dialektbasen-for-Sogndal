@@ -1,11 +1,8 @@
 import React from 'react';
 import DoublePopUp from './DoubleWordPopUp';
+import {GeneratePopUpBtnAlternatives} from "./GeneratePopUpBtnAlternatives";
 
 const REGEX = new RegExp("([@#*¤%¨‘~+§{}])", "g");
-
-// let style = {
-//     color: "red"
-// };
 
 class DoubleWord extends React.Component{
 
@@ -50,6 +47,27 @@ class DoubleWord extends React.Component{
         return [str1, str2]
     }
 
+    getStyle(wordIndex){
+        if(JSON.parse(localStorage.getItem(this.state.inf)) != null){
+            let registeredSymbol = JSON.parse(localStorage.getItem(this.state.inf))[wordIndex];
+
+            if(registeredSymbol !== ""){
+                let alternatives = GeneratePopUpBtnAlternatives(registeredSymbol);
+
+                console.log("registered: ", registeredSymbol, "anna: ", alternatives.anna);
+
+                if(registeredSymbol === alternatives.symbol1)
+                    return { color: "blue" };
+                else if(registeredSymbol === alternatives.symbol2)
+                    return { color: "red" };
+                else if(registeredSymbol === alternatives.anna)
+                    return { color: "green" };
+            }
+        }
+
+        return { color: "black" };
+    }
+
     //TODO: showPopUp globally (only on window at the time)
     render(){
 
@@ -57,13 +75,8 @@ class DoubleWord extends React.Component{
         let symbol = this.state.symbol;
         let splitWord = this.divideWord();
 
-        let style1 = {
-            color: "red"
-        };
-
-        let style2 = {
-            color: "green"
-        };
+        let style1 = this.getStyle(this.state.wordIndex - 1);
+        let style2 = this.getStyle(this.state.wordIndex);
 
         return(
             <span>
@@ -79,10 +92,9 @@ class DoubleWord extends React.Component{
                              mouseY={this.props.mouseY}
                 />}
                 {/*OnClick find symbol and remove/trim word from symbol(ends up with symbol and word)*/}
-                <span onClick={() => this.openPopUp()}
-                      // style={style}
-                      key={this.id}><span style={style1}>{splitWord[0]}</span><span style={style2}>splitWord[1]</span></span>
-                    {/*{this.state.word} </span>*/}
+                <span onClick={() => this.openPopUp()} key={this.id}>
+                    <span style={style1}>{splitWord[0]}</span>
+                    <span style={style2}>{splitWord[1]}</span> </span>
             </span>
         );
     }

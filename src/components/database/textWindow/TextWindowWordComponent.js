@@ -56,7 +56,7 @@ class Word extends React.Component{
             if(registeredSymbol !== ""){
                 let alternatives = GeneratePopUpBtnAlternatives(registeredSymbol);
 
-                console.log(registeredSymbol, alternatives.symbol1);
+                console.log("registered: ", registeredSymbol, "anna: ", alternatives.anna);
 
                 if(registeredSymbol === alternatives.symbol1)
                     return { color: "blue" };
