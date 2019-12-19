@@ -137,21 +137,6 @@ class Home extends React.Component {
                         vera mest aktuelt som alternativ viss du ikkje oppfattar kva språkbrukarane
                         seier.
                     </p>
-
-                    <br/>
-                    <br/>
-                    <p>
-                        Kontaktinformasjon: <br/>
-                        Fagleg ansvarleg for dialektbasen: Ragnhild Lie Anderson <br/>
-                        <a href="https://www.uib.no/personer/Ragnhild.Lie.Anderson">www.uib.no/personer/Ragnhild.Lie.Anderson</a> <br/>
-                        E-post: ragnhild.anderson@uib.no <br/>
-                        <br/>
-                        Digital utviklar og tilretteleggjar: <br/>
-                        Henrik Bjelke Anderson <br/>
-                        <br/>
-                        Logo: <br/>
-                        Ida Torkildsen
-                    </p>
                 </div>
             </div>
         );

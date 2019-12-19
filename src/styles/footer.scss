@@ -1,7 +1,28 @@
+@import './variables';
+
 .footerWrapper{
-  background-color: #ddd;
-  height: 210px;
+
+  margin-top: 50px;
+  background-color: $footer-background-color;
+  height: 150px;
   text-align: center;
+  border-top: .5px solid $navbar-active-border-color;
+
+  color: #444;
+
+  .footerContent{
+    margin: auto;
+    width: 70%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    div{
+      width: 50%;
+    }
+  }
 }
 
 .footerWrapper p {

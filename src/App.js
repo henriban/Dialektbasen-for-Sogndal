@@ -8,6 +8,7 @@ import Graph from './components/graph/GraphPage';
 
 import Navbar from './components/Navbar';
 import LogoNavbar from './components/LogoNavbar';
+import Footer from './components/Footer';
 
 
 class App extends Component {
@@ -22,7 +23,7 @@ class App extends Component {
             <Route path='/database' component={Database}/>
             <Route path='/graf' component={Graph}/>
           </Switch>
-          {/*<Footer />*/}
+          <Footer />
         </div>
     );
   }
