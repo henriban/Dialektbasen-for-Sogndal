@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="92406c54-c6dc-4d55-b76a-7b6f13eb8c44" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/database/textWindow/DoubleWord.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/database/textWindow/DoubleWord.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/database/textWindow/TextWindowWordComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/database/textWindow/TextWindowWordComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/Sociolinguistics.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Sociolinguistics.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,6 +172,8 @@
       <workItem from="1575565160859" duration="2220000" />
       <workItem from="1575819555461" duration="5385000" />
       <workItem from="1575921020732" duration="3052000" />
+      <workItem from="1576824870306" duration="493000" />
+      <workItem from="1576825371796" duration="4005000" />
     </task>
     <servers />
   </component>
@@ -199,6 +201,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575929119644" />
+    <state width="1899" height="381" key="GridCell.Tab.0.bottom" timestamp="1576825363113">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="381" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1576825363113" />
+    <state width="1899" height="381" key="GridCell.Tab.0.center" timestamp="1576825363113">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="381" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1576825363113" />
+    <state width="1899" height="381" key="GridCell.Tab.0.left" timestamp="1576825363113">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="381" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1576825363113" />
+    <state width="1899" height="381" key="GridCell.Tab.0.right" timestamp="1576825363113">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="381" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1576825363113" />
     <state x="-1459" y="162" key="SettingsEditor" timestamp="1575575779625">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
