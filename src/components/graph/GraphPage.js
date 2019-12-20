@@ -4,8 +4,6 @@ import Graph from './GraphComponent';
 import GraphSearch from './GraphSearchComponent';
 import RadioButtons  from './RadioButtonComponent';
 
-// import { TestDataFromInformersText }from './TestDataFromInformersText';
-
 import Informers from "../../data/informers";
 import SearchVariables from "../../data/searchVariables";
 import Variables from "../../data/variables";

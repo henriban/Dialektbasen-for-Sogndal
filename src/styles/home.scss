@@ -8,7 +8,12 @@
   margin: auto;
   //height: 500px;
   width: 50%;
+  max-width: 700px;
   //object-fit: none;
+}
+
+.sociolinguisticsImage{
+  width: 100%;
 }
 
 .logo{
@@ -19,9 +24,14 @@
 }
 
 .about{
-  margin: auto;
-  margin-bottom: 10px;
+  margin: auto auto 10px;
   width: 50%;
+}
+
+@media only screen and (max-width: 900px) {
+  .about{
+    width: 70%;
+  }
 }
 
 .example_div{

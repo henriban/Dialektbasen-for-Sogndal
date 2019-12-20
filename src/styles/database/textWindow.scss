@@ -59,6 +59,7 @@
 
 .firstInfPanel{
   margin-left: 20px;
+  //margin: 0 10px 0 20px;
   width: 32%;
 
   display: flex;
@@ -80,13 +81,13 @@
 }
 
 .text{
-  margin: 10px 0;
+  margin: 10px 0 10px 10px;
 
   /*display: flex;*/
   /*flex-wrap: nowrap;*/
   justify-content: space-around;
 
-  width: 66%;
+  width: 65%;
 
   max-height: 530px;
 

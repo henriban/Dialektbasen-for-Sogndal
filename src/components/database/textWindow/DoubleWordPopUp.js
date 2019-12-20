@@ -97,11 +97,6 @@ class DoubleWordPopUp extends React.Component {
         wordList[wordIndex] = symbol;
         localStorage.setItem(this.state.inf, JSON.stringify(wordList));
 
-        // To distinguish between the "Anna"
-        // if(symbol === "Anna"){
-        //     symbol = symbol + "_" + this.state.alt1_btn1 + "_" + this.state.alt1_btn2;
-        // }
-
         this.props.registerButtonClicked(symbol, this.state.inf);
     }
 
@@ -117,12 +112,12 @@ class DoubleWordPopUp extends React.Component {
                 <div className="popUpButtonContainer">
                     <button onClick={() => this.buttonClicked(this.state.alt1_symbol1, this.state.wordIndex - 1)} className={activeButton1 === ("alt1_btn1") ? "activeButton" : "defaultButton"}>{this.state.alt1_btn1}</button>
                     <button onClick={() => this.buttonClicked(this.state.alt1_symbol2, this.state.wordIndex - 1)} className={activeButton1 === ("alt1_btn2") ? "activeButton" : "defaultButton"}>{this.state.alt1_btn2}</button>
-                    <button onClick={() => this.buttonClicked(this.state.alt1_btn3, this.state.wordIndex - 1)} className={activeButton1 === ("btnA1") ? "activeButton" : "defaultButton"}>{this.state.alt1_btn3}</button>
+                    <button onClick={() => this.buttonClicked(this.state.alt1_symbol_anna, this.state.wordIndex - 1)} className={activeButton1 === ("btnA1") ? "activeButton" : "defaultButton"}>{this.state.alt1_btn3}</button>
                 </div>
                 <div className="popUpButtonContainer">
                     <button onClick={() => this.buttonClicked(this.state.alt2_symbol1, this.state.wordIndex)} className={activeButton2 === ("alt2_btn1") ? "activeButton" : "defaultButton"}>{this.state.alt2_btn1}</button>
                     <button onClick={() => this.buttonClicked(this.state.alt2_symbol2, this.state.wordIndex)} className={activeButton2 === ("alt2_btn2") ? "activeButton" : "defaultButton"}>{this.state.alt2_btn2}</button>
-                    <button onClick={() => this.buttonClicked(this.state.alt2_btn3, this.state.wordIndex)} className={activeButton2 === ("btnA2") ? "activeButton" : "defaultButton"}>{this.state.alt2_btn3}</button>
+                    <button onClick={() => this.buttonClicked(this.state.alt2_symbol_anna, this.state.wordIndex)} className={activeButton2 === ("btnA2") ? "activeButton" : "defaultButton"}>{this.state.alt2_btn3}</button>
                 </div>
             </div>
         );

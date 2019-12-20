@@ -66,8 +66,8 @@ class Sociolinguistics extends React.Component {
                         kan me seia kjenneteiknar språket på staden på det aktuelle tidspunktet. Karta nedanfor viser ei idealisert 
                         form av nokre trekk som kjenneteiknar dei tradisjonelle sognemåla i høve til fjordamålet, og deretter noko 
                         som skil sogndalsdialekten frå andre sognemål.`}</p>
-                    <img className="startPageImage" src="fjordamål_og_sognemål.png" alt="fjordamål_og_sognemål" style={{width: '100%'}}/>
-                    <span>Figur 1: Figuren viser nokre skilje mellom tradisjonelt fjordamål og sognemål i eit kart over Nordfjord, Sunnfjord og Sogn. <a href="https://www.statistikknett.no/reiseliv/OmProfilen/regioner/14_sogn_fjordane_regioner.aspx">https://www.statistikknett.no/reiseliv/OmProfilen/regioner/14_sogn_fjordane_regioner.aspx</a></span>
+                    <img className="sociolinguisticsImage" src="fjordamål_og_sognemål.png" alt="fjordamål_og_sognemål" style={{width: '100%'}}/>
+                    <p>Figur 1: Figuren viser nokre skilje mellom tradisjonelt fjordamål og sognemål i eit kart over Nordfjord, Sunnfjord og Sogn. <a href="https://www.statistikknett.no/reiseliv/OmProfilen/regioner/14_sogn_fjordane_regioner.aspx">https://www.statistikknett.no/reiseliv/OmProfilen/regioner/14_sogn_fjordane_regioner.aspx</a></p>
 
                     <h2>Fjordamål</h2>
                     <p>På venstre sida av den raude streken på kartet i figur 1 ser ein nokre tradisjonelle trekk for fjordamål, dvs.
@@ -90,8 +90,8 @@ class Sociolinguistics extends React.Component {
                         fanst det i gamalnorsk ein {this.redWord("r")} framom {this.redWord("n-en")} også her, slik at sogningane differensierer i ord som {this.bracketWord("mennene")} og {this.bracketWord("damene")} og uttalar
                         dei {this.bracketWord("mennedn")} og {this.bracketWord("damedn")}.</p>
 
-                    <img className="startPageImage" src="talemålet.png" alt="talemålet" style={{width: '100%'}}/>
-                    <span>Figur 2: Figuren viser kart over Ytre Sogn (lilla), Midtre Sogn (grøn) og Indre Sogn (oransje).</span>
+                    <img className="sociolinguisticsImage" src="talemålet.png" alt="talemålet" style={{width: '100%'}}/>
+                    <p>Figur 2: Figuren viser kart over Ytre Sogn (lilla), Midtre Sogn (grøn) og Indre Sogn (oransje).</p>
 
                     <h2>Talemålet i Midtre Sogn</h2>
                     <p>Kommunane Balestrand, Vik, Aurland, Leikanger og Sogndal har ein del språktrekk sams som gjer at me kan skilja desse områda ut

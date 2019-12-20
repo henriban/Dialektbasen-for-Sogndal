@@ -84,7 +84,7 @@ class Table extends React.Component{
         let rowComponents = this.generateRows();
 
         return (
-            <div>
+            <div className="database-table">
                 <table ref="filteredTable">
                     <thead><tr>{headerComponents}</tr></thead>
                     <tbody key={key++}>{rowComponents}</tbody>

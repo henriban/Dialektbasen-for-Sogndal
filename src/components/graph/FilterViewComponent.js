@@ -17,8 +17,6 @@ class FilterView extends Component {
         for(let key in filters){
             if(filters.hasOwnProperty(key)){
                 filterView += filters[key] + " "
-                // filters[key].map(item => console.log(item));
-                // filters[key].map(item => filterView += item + " ");
             }
         }
 

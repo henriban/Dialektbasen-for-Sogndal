@@ -39,19 +39,16 @@ class Search extends React.Component {
 
     render(){
         return(
-            <div>
-                <div className="selectWrapper">
-                    <SelectItem  onSelectUpdate={this.handleChange} label="Stad"               data={Variables.place}               res="place"/>
-                    <SelectItem  onSelectUpdate={this.handleChange} label="Kjønn"              data={Variables.gender}              res="gender"/>
-                    <SelectItem  onSelectUpdate={this.handleChange} label="Alder"              data={Variables.age}                 res="age"/>
-                    <SelectItem  onSelectUpdate={this.handleChange} label="Fødd i tidbolken"   data={Variables.birth}               res="birth"/>
-                    <SelectItem  onSelectUpdate={this.handleChange} label="Opptakstidspunkt"   data={Variables.date_of_recording}   res="date_of_recording"/>
-                    <SelectItem  onSelectUpdate={this.handleChange} label="Utdanning"          data={Variables.education}           res="education"/>
-                    <SelectItem  onSelectUpdate={this.handleChange} label="Yrke"               data={Variables.occupation}          res="occupation"/>
-                    <SelectItem  onSelectUpdate={this.handleChange} label="Foreldrebakgrunn"   data={Variables.parents_background}  res="parents_background"/>
-                    <SelectItem  onSelectUpdate={this.handleChange} label="Type informant"     data={Variables.panel}               res="panel"/>
-                </div>
-                {/* TODO: Reset button*/}
+            <div className="selectWrapper">
+                <SelectItem  onSelectUpdate={this.handleChange} label="Stad"               data={Variables.place}               res="place"/>
+                <SelectItem  onSelectUpdate={this.handleChange} label="Kjønn"              data={Variables.gender}              res="gender"/>
+                <SelectItem  onSelectUpdate={this.handleChange} label="Alder"              data={Variables.age}                 res="age"/>
+                <SelectItem  onSelectUpdate={this.handleChange} label="Fødd i tidbolken"   data={Variables.birth}               res="birth"/>
+                <SelectItem  onSelectUpdate={this.handleChange} label="Opptakstidspunkt"   data={Variables.date_of_recording}   res="date_of_recording"/>
+                <SelectItem  onSelectUpdate={this.handleChange} label="Utdanning"          data={Variables.education}           res="education"/>
+                <SelectItem  onSelectUpdate={this.handleChange} label="Yrke"               data={Variables.occupation}          res="occupation"/>
+                <SelectItem  onSelectUpdate={this.handleChange} label="Foreldrebakgrunn"   data={Variables.parents_background}  res="parents_background"/>
+                <SelectItem  onSelectUpdate={this.handleChange} label="Type informant"     data={Variables.panel}               res="panel"/>
             </div>
         );
     }

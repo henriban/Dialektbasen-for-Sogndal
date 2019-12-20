@@ -54,8 +54,6 @@ class DoubleWord extends React.Component{
             if(registeredSymbol !== ""){
                 let alternatives = GeneratePopUpBtnAlternatives(registeredSymbol);
 
-                console.log("registered: ", registeredSymbol, "anna: ", alternatives.anna);
-
                 if(registeredSymbol === alternatives.symbol1)
                     return { color: "blue" };
                 else if(registeredSymbol === alternatives.symbol2)
