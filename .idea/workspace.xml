@@ -3,20 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="92406c54-c6dc-4d55-b76a-7b6f13eb8c44" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/volume-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/volume-icon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/database/TableComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/database/TableComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/database/search/SearchComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/database/search/SearchComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/database/textWindow/DoubleWord.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/database/textWindow/DoubleWord.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/database/textWindow/DoubleWordPopUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/database/textWindow/DoubleWordPopUp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/database/textWindow/TextWindowWordComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/database/textWindow/TextWindowWordComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/graph/FilterViewComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/graph/FilterViewComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/graph/GraphPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/graph/GraphPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/graph/TestDataFromInformersText.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/Sociolinguistics.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Sociolinguistics.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/database/database.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/database/database.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/database/textWindow.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/database/textWindow.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/database/textWindow/TextWindowComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/database/textWindow/TextWindowComponent.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,6 +173,7 @@
       <workItem from="1575921020732" duration="3052000" />
       <workItem from="1576824870306" duration="493000" />
       <workItem from="1576825371796" duration="12444000" />
+      <workItem from="1576850405616" duration="598000" />
     </task>
     <servers />
   </component>

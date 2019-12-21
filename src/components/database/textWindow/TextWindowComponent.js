@@ -128,6 +128,7 @@ class Result extends React.Component {
 
                                     if(needBuildWordList){
                                         this.addWordInLocalStorage(infNumber);
+                                        this.addWordInLocalStorage(infNumber);
                                     }
 
                                     index = this.state.inf1.id.includes(infNumber) ? clickableWordCountInf1 + 2: clickableWordCountInf2 + 2;
