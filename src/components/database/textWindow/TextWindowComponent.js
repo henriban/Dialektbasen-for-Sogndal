@@ -202,7 +202,7 @@ class Result extends React.Component {
                 <div className="resultContainer" onMouseDown={this._onMouseMove.bind(this)}>
 
                     <div className="textWindowHeader">
-                        <button className="closeButton" onClick={this.onCloseClick}>x</button>
+                        <button className="closeButton" onClick={this.onCloseClick}><img src="./close.svg" alt="#"/></button>
                     </div>
 
                     <div className="textWindowContent">

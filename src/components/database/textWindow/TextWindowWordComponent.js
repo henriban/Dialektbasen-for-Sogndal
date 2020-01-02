@@ -65,7 +65,7 @@ class Word extends React.Component{
             }
         }
 
-        return { color: "black" };
+        return { color: "pink" };
     }
 
     //TODO: showPopUp globally (only on window at the time)

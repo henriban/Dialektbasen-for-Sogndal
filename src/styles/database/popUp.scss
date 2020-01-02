@@ -1,3 +1,5 @@
+@import './../variables';
+
 .popUpWrapper{
     position: fixed; 
 
@@ -8,10 +10,10 @@
     flex-direction: column;
     align-items: center;
 
-    background-color: #dbdbdb;
+    background-color: $popup-background-color;
     border-radius: 5px;
 
-    box-shadow: 0 0 1px #222222;
+    box-shadow: 0 0 1px $box-shadow-color-dark;
 }
 
 #closePopUpIcon{
@@ -19,15 +21,15 @@
     right: 0;
 
     padding: 3px 15px;
-    background: #ff122d;
+    background: $close-button-background-color;
+    border: 1px solid $close-button-border-color;
     border-radius: 2px;
-    border: 1px solid #ec5f47;
     cursor: pointer;
-    color: #FAFAFA;
+    color: $close-button-text-color;
 }
 
 #closePopUpIcon:hover{
-    background: #ff3c52;
+    background: $close-button-background-color-hover;
 }
 
 .popUpButtonContainer{
@@ -48,21 +50,21 @@
 }
 
 .defaultButton{
-    background-color: #F1F1F1;
-    border: 1px solid #BBB;
+    background-color: $popup-default-button-background;
+    border: 1px solid $popup-default-button-border-color;
 }
 
 .defaultButton:Hover{
-    background-color: #E6E6E6;
+    background-color: $popup-default-button-background-hover;
     cursor: pointer;
 }
 
 .activeButton{
-    background-color: #c5c5c5;
-    border: 1px solid #BBB;
+    background-color: $popup-active-button-background;
+    border: 1px solid $popup-default-button-border-color;
 }
 
 .activeButton:Hover{
-    background-color: #BBB; 
+    background-color: $popup-default-button-border-color; 
     cursor: pointer;
 }

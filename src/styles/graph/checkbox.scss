@@ -13,6 +13,8 @@
     min-width: 160px;
 }
    
+@import './../variables';
+
 .childCheckbox{
     position: relative;
     left: 12px;
@@ -26,6 +28,6 @@
     margin: 10px 10px;
 
     background: #fafafa;
-    box-shadow: 0 0 5px #888888;
+    box-shadow: 0 0 5px $box-shadow-color;
     border-radius: 5px;
 }

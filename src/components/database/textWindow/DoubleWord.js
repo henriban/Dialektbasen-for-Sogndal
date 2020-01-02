@@ -63,7 +63,7 @@ class DoubleWord extends React.Component{
             }
         }
 
-        return { color: "black" };
+        return { color: "purple" };
     }
 
     //TODO: showPopUp globally (only on window at the time)

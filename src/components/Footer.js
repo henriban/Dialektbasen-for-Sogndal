@@ -21,7 +21,7 @@ class Footer extends React.Component{
                         Ida Torkildsen
                     </div>
                 </div>
-
+                <button onClick={() => {localStorage.clear()}}>Delete all</button>
             </div>
         );
     }

@@ -1,5 +1,14 @@
 /* _______ General _______ */
 $main-text-color: #333;
+$wrapper-background-color: #fafafa;
+
+$close-button-background-color: #ff122d;
+$close-button-background-color-hover: #ff3c52;
+$close-button-border-color: #ec5f47;
+$close-button-text-color: #fafafa;
+
+$box-shadow-color: #888;
+$box-shadow-color-dark: #222;
 
 /* _______ Navbar _______ */
 $navbar-active-border-color: #889aec;
@@ -8,3 +17,11 @@ $navbar-background-color-hover: #f3f4fa;
 $navbar-shadow-color: #888;
 
 $footer-background-color: #dee2f6;
+
+/* _______ PopUp _______ */
+$popup-background-color: #dbdbdb;
+$popup-active-button-background: #c5c5c5;
+
+$popup-default-button-border-color: #BBB;
+$popup-default-button-background: #F1F1F1;
+$popup-default-button-background-hover: #E6E6E6;

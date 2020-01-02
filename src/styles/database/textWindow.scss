@@ -1,3 +1,5 @@
+@import './../variables';
+
 .resultBackground{
   position: fixed;
   top: 0;
@@ -15,12 +17,17 @@
   display: flex;
   align-self: flex-end;
 
+  height: 27px;
+
   padding: 5px 25px;
-  background: #ff122d;
+  background: $close-button-background-color;
   border-radius: 2px;
-  border: 1px solid #ec5f47;
+  border: 1px solid $close-button-border-color;
   cursor: pointer;
-  color: #FAFAFA;
+
+  img{
+    width: 15px;
+  }
 }
 
 .closeButton:hover{

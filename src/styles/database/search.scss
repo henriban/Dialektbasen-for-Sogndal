@@ -1,3 +1,5 @@
+@import './../variables';
+
 .selectWrapper{
   position: relative;
   margin: 10px 0;
@@ -7,7 +9,7 @@
   flex-wrap: wrap;
 
   background: #fafafa;
-  box-shadow: 0 0 5px #888888;
+  box-shadow: 0 0 5px $box-shadow-color;
   border-radius: 5px;
 }
 
