@@ -21,19 +21,24 @@
 }  
   
 .graphLabel{ 
+    margin: 0;
+    padding: 5px 0 5px 5px;
     width: 100%;  
     background-color: #e4e4e4;
-    padding: 5px 0;
-    margin: 0;
-    box-shadow: 0 1px #ddd;
+    box-shadow: 0 1px $box-shadow-color-light;
+    font-weight: bold;
+
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
 }
 
 .graphSearchArea{
     margin: 10px auto;
     width: 80%;
 
-    background: #fafafa;
-    box-shadow: 0 0 5px #888888;
+    background: $wrapper-background-color;
+    box-shadow: 0 0 5px $box-shadow-color;
     border-radius: 5px;
 }
 
@@ -52,15 +57,15 @@
     }
 
     .explanation1{
-        background-color: #4AACC5;
+        background-color: $explanation-color-1;
     }
 
     .explanation2{
-        background-color: #77a033;
+        background-color: $explanation-color-2;
     }
 
     .explanation3{
-        background-color: #e07676;
+        background-color: $explanation-color-3;
     }
 }
 

@@ -1,26 +1,28 @@
+@import './../variables';
+
 table{
     margin: 10px auto;
     width: 100%;
     max-height: 50px;
 
     border-radius: 5px;
-    background: #e4e4e4;
+    background: $table-background-color;
 
     overflow: auto;
 }
 
 thead{
-    background: #e4e4e4;
+    background: $table-background-color;
 }
 
 .row{
-    background: #fafafa;
+    background: $row-background-color;
     cursor: pointer;
     text-align: center;
 }
 
 .row:hover{
-    background: #e6e6e6;
+    background: $row-background-color-hover;
 }
 
 th, td{
@@ -30,7 +32,7 @@ th, td{
 
 th:hover{
     cursor: pointer;
-    background: #d7d7d7;
+    background: $table-header-background-color-hover;
 }
 
 .notFoundDiv{
@@ -44,8 +46,8 @@ th:hover{
     margin: auto;
     min-height: 50px;
 
-    background: #fafafa;
-    border: 2px solid #e4e4e4;
+    background: $row-background-color;
+    border: 2px solid $table-background-color;
 
     overflow: auto;
 }

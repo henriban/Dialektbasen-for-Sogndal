@@ -6,8 +6,14 @@ class InformantInfoText extends React.Component{
 
         let inf = this.props.informant;
 
+        let cssClass = "infoText"
+
+        if(this.props.showInformantInfo != null){
+            cssClass = "infoText animationTest " + (this.props.showInformantInfo ? "animationTest2" : "animationTest");
+        }
+
         return(
-            <div className="infoText">
+            <div className={cssClass}>
                 <span>Informant: {inf.id.split("p")[0]}</span>
                 <span>Opptakstidspunkt: {inf.date_of_recording} </span>
                 <span>Fødd i tidbolken: {inf.birth} </span>

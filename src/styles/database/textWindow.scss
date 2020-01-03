@@ -31,9 +31,8 @@
 }
 
 .closeButton:hover{
-  background: #ff3c52;
+  background: $close-button-background-color-hover;
 }
-
 
 .resultContainer{
   display: flex;
@@ -45,10 +44,10 @@
   min-width: 1000px;
   width: 65%;
 
-  background-color: #FAFAFA;
+  background-color: $wrapper-background-color;
   border-radius: 5px;
 
-  box-shadow: 0 0 1px #222222;
+  box-shadow: 0 0 1px $box-shadow-color-dark;
 }
 
 .textWindowContent{
@@ -64,14 +63,29 @@
   height: 30px;
 }
 
-.firstInfPanel{
+.informantInfoPanel{
   margin-left: 20px;
-  //margin: 0 10px 0 20px;
   width: 32%;
+  min-width: 280px;
 
   display: flex;
   align-content: flex-start;
   flex-wrap: wrap;
+}
+
+.secondInfPanel{
+  cursor: pointer;
+  width: 90%;
+  background: $second-inf-background;
+  border-radius: 5px;
+  border: 1px solid $second-inf-border-color;
+  padding: 10px;
+  margin-top: 5px;
+  min-width: 280px;
+}
+
+.secondInfPanel .infoText{
+  margin-bottom: 0;
 }
 
 .infoText{
@@ -105,16 +119,15 @@
   margin: 3px 0;
 }
 
-.secondInfPanel{
-  cursor: pointer;
-  width: 90%;
-  background: #e6e6e6;
-  border-radius: 5px;
-  border: 1px solid #d7d7d7;
-  padding: 10px;
-  margin-top: 5px;
+.animationTest{
+  height: 0px;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-.secondInfPanel .infoText{
-  margin-bottom: 0;
+.animationTest2{
+  height: 203px;
 }

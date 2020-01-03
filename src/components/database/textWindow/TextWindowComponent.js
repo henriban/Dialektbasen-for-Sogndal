@@ -1,22 +1,14 @@
 import React from 'react';
 
-import Informers from '../../../data/informers';
-
 import InformantInfoText from './InformantInfoTextComponent';
-import DoubleWord from './DoubleWord';
-import Word from './TextWindowWordComponent';
+import Text from './Text';
 
+import Informers from '../../../data/informers';
 import '../../../styles/database/textWindow.scss';
 
-const REGEX = new RegExp("([@#*¤%¨‘~+§{}])", "g");
-
-let infToStore;
+let audioPlayer;
 let isLocalStorageSet;
 let needBuildWordList = false;
-let clickableWordCountInf1;
-let clickableWordCountInf2;
-
-let audioPlayer;
 
 class Result extends React.Component {       
 
@@ -24,7 +16,7 @@ class Result extends React.Component {
         super(props);
         this.onCloseClick = this.onCloseClick.bind(this);
 
-        infToStore = Informers.find(x => x.id === this.props.inf).audio.split(".")[0];
+        let infToStore = Informers.find(x => x.id === this.props.inf).audio.split(".")[0];
         let splitInfToStore = infToStore.split("inf_")[1].split("og");
         let inf1 = Informers.find(inf => inf.id === splitInfToStore[0]);
         let inf2 = Informers.find(inf => inf.id === splitInfToStore[1]);
@@ -50,6 +42,15 @@ class Result extends React.Component {
             localStorage.setItem(this.state.inf2.id, JSON.stringify([]));
             needBuildWordList = true;
         }
+    }
+
+    // TODO: cannot read property id of undefined
+    isInformersLocalStorageSet() {
+        let localStorageInf1 = localStorage.getItem(this.state.inf1.id);
+        let localStorageInf2 = localStorage.getItem(this.state.inf2.id);
+
+        return localStorageInf1 != null && localStorageInf1.length > 0 
+            && localStorageInf2 != null && localStorageInf2.length > 0;
     }
 
     componentWillMount(){
@@ -83,113 +84,22 @@ class Result extends React.Component {
         }else if (event.code === "Space"){
             event.preventDefault();
             audioPlayer.paused ? audioPlayer.play() : audioPlayer.pause();
+        }else if (event.code === "ArrowRight"){
+            audioPlayer.currentTime += 5;
+        }else if (event.code === "ArrowLeft"){
+            audioPlayer.currentTime -= 5;
         }
     };
-
-    // TODO: cannot read property id of undefined
-    isInformersLocalStorageSet() {
-        return localStorage.getItem(this.state.inf1.id) != null && localStorage.getItem(this.state.inf1.id).length > 0 &&
-            localStorage.getItem(this.state.inf2.id) != null && localStorage.getItem(this.state.inf2.id).length > 0;
-    }
-
-    addWordInLocalStorage(infID){
-        let wordList = JSON.parse(localStorage.getItem(infID));
-        if(wordList != null){
-            wordList.push("");
-        }
-
-        localStorage.setItem(infID, JSON.stringify(wordList));
-    }
-
-    generateText(){
-
-        const text = this.state.inf1.text;
-
-        let key = 0;
-        clickableWordCountInf1 = 0;
-        clickableWordCountInf2 = 0;
-
-        let index = 0;
-        let infNumber = "";
-
-        return(
-            // Splits the line on br and check if line contains a symbol.
-            <div>{text.split("\n").map(line => {
-
-                infNumber = this.findInformerNumber(line, infNumber);
-
-                if(line.match(REGEX)) {
-                    return <div key={key++}>{
-                        line.split(" ")
-                            .map(word => {
-                                // if(word.indexOf(word.match(REGEX)) !== -1){
-
-                                if(this.doWordContainTwoSymbol(word)){
-
-                                    if(needBuildWordList){
-                                        this.addWordInLocalStorage(infNumber);
-                                        this.addWordInLocalStorage(infNumber);
-                                    }
-
-                                    index = this.state.inf1.id.includes(infNumber) ? clickableWordCountInf1 + 2: clickableWordCountInf2 + 2;
-
-                                    return <DoubleWord key={key++}
-                                                 wordIndex={index - 1}
-                                                 word={word}
-
-                                                 inf={infNumber}
-                                                 mouseX={this.state.x}
-                                                 mouseY={this.state.y}/>;
-
-                                } else if(this.doWordContainSymbol(word)){
-
-                                    if(needBuildWordList){
-                                        this.addWordInLocalStorage(infNumber);
-                                    }
-
-                                    index = this.state.inf1.id.includes(infNumber) ? ++clickableWordCountInf1 : ++clickableWordCountInf2;
-
-                                    return <Word key={key++}
-                                                 wordIndex={index - 1}
-                                                 word={word}
-
-                                                 inf={infNumber}
-                                                 mouseX={this.state.x}
-                                                 mouseY={this.state.y}/>;
-                                }else{
-                                    return <span key={key++}>{word} </span>
-                                }
-                            })
-                    }</div>
-                } else {
-                    return <div key={key++}>{line}</div>
-                }
-            })}
+    
+    showSecondInformer(showSecondInf) {
+        // if(showSecondInf){
+            return <div className="secondInfPanel" onClick={() => this.onInfClick()}>
+                <span><b>{this.state.inf2.id.split("p")[0]}: {this.state.inf2.age.split(" ")[0]} {this.state.inf2.gender.toLowerCase()} frå {this.state.inf2.place}</b></span>
+                <InformantInfoText informant={this.state.inf2} showInformantInfo={this.state.showSecondInf}/>
             </div>
-        );
-    }
-
-    findInformerNumber(line, previousInfNumber) {
-
-        let infNumberStr = line.split(":")[0].trim();
-
-        if(infNumberStr != null && infNumberStr.split(" ").length === 1){
-            if(Number(infNumberStr)){
-                return this.state.inf1.id.includes(infNumberStr) ? this.state.inf1.id : this.state.inf2.id;
-            }
-        }
-        return previousInfNumber;
-    }
-
-    doWordContainSymbol(word){
-        return word.indexOf(word.match(REGEX)) !== -1;
-    }
-
-    doWordContainTwoSymbol(word){
-        if(word.match(REGEX)){
-            return word.match(REGEX).length === 2;
-        }
-        return false;
+        // }else {
+        //     return <span className="secondInfPanel" onClick={() => this.onInfClick()}><b>{this.state.inf2.id.split("p")[0]}: {this.state.inf2.age.split(" ")[0]} {this.state.inf2.gender.toLowerCase()} frå {this.state.inf2.place}</b></span>
+        // }
     }
 
     render(){
@@ -206,18 +116,22 @@ class Result extends React.Component {
                     </div>
 
                     <div className="textWindowContent">
-                        <div className="firstInfPanel">
+                        <div className="informantInfoPanel">
                             <h2 id="headline">{this.state.inf1.age.split(" ")[0]} {this.state.inf1.gender.toLowerCase()} frå {this.state.inf1.place}</h2>
                             <InformantInfoText informant={this.state.inf1}/>
 
                             {this.state.inf2 != null ? this.showSecondInformer(this.state.showSecondInf) : null}
-
                         </div>
 
                         <div className="text">
-                            {this.generateText()}
-                            {needBuildWordList = false}
+                            <Text 
+                                inf1={this.state.inf1}
+                                inf2={this.state.inf2}
+                                x={this.state.x}
+                                y={this.state.y}
+                                needBuildWordList={needBuildWordList}/>
                         </div>
+                        {needBuildWordList = false}
                     </div>
 
                     <audio id="audioPlayer"
@@ -227,17 +141,6 @@ class Result extends React.Component {
                 </div>
             </div>
         )
-    }
-
-    showSecondInformer(showSecondInf) {
-        if(showSecondInf){
-            return <div className="secondInfPanel" onClick={() => this.onInfClick()}>
-                <span><b>{this.state.inf2.id.split("p")[0]}: {this.state.inf2.age.split(" ")[0]} {this.state.inf2.gender.toLowerCase()} frå {this.state.inf2.place}</b></span>
-                <InformantInfoText informant={this.state.inf2}/>
-            </div>
-        }else {
-            return <span className="secondInfPanel" onClick={() => this.onInfClick()}><b>{this.state.inf2.id.split("p")[0]}: {this.state.inf2.age.split(" ")[0]} {this.state.inf2.gender.toLowerCase()} frå {this.state.inf2.place}</b></span>
-        }
     }
 }
 

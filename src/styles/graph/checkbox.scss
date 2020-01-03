@@ -1,3 +1,5 @@
+@import './../variables';
+
 .checkboxSearchWrapper{
     display: flex;
     flex-wrap: wrap;
@@ -12,8 +14,6 @@
     width: 18%; 
     min-width: 160px;
 }
-   
-@import './../variables';
 
 .childCheckbox{
     position: relative;
@@ -27,7 +27,7 @@
 .traitsSelection{
     margin: 10px 10px;
 
-    background: #fafafa;
+    background: $wrapper-background-color;
     box-shadow: 0 0 5px $box-shadow-color;
     border-radius: 5px;
 }
