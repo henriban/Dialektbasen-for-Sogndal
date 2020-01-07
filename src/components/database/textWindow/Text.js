@@ -56,7 +56,7 @@ class Text extends React.Component{
 
         return(
             // Splits the line on br and check if line contains a symbol.
-            <div>{text.split("\n").map(line => {
+            <div className="text">{text.split("\n").map(line => {
 
                 infNumber = this.findInformerNumber(line, infNumber);
 

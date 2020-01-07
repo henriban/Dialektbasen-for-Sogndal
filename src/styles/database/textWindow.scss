@@ -1,15 +1,94 @@
 @import './../variables';
 
-.resultBackground{
+.textWindowBackground{
   position: fixed;
   top: 0;
+
   visibility: visible;
 
   width: 100%;
-  height: 200%;
+  height: 100%;
   z-index: 100;
 
   background: rgba(34, 34, 34, 0.75);
+}
+
+.textWindowWrapper{
+  // display: flex;
+  // flex-wrap: wrap;
+  // flex-direction: column;
+  margin: 50px auto;
+
+  min-width: 1000px;
+  width: 65%;
+  height: 78%;
+
+  overflow: auto;
+
+  background-color: $wrapper-background-color;
+  border-radius: 5px;
+  box-shadow: 0 0 1px $box-shadow-color-dark;
+}
+
+.textWindowHeader{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 30px;
+}
+
+.textWindowContent{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex: 1;
+}
+
+.textWindowFooter{
+  display: flex;
+  align-items: center;
+
+  width: 95%;
+  margin: auto;
+
+  audio{
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+  }
+}
+
+/* ____ Text ____ */
+
+.text{
+  margin: 10px 0 10px 10px;
+
+  /*display: flex;*/
+  /*flex-wrap: nowrap;*/
+  justify-content: space-around;
+
+  // min-width: 650px;
+  width: 65%;
+  max-height: $text-content-height;
+
+  overflow: auto;
+}
+
+.text div{
+  margin: 3px 0;
+}
+
+.secondInfAnimationStart{
+  height: 0px;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.secondInfAnimationEnd{
+  height: 203px;
 }
 
 .closeButton{
@@ -45,128 +124,16 @@
   }
 }
 
-.resultContainer{
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-
-  margin: 50px auto auto;
-
-  min-width: 1000px;
-  width: 65%;
-
-  background-color: $wrapper-background-color;
-  border-radius: 5px;
-
-  box-shadow: 0 0 1px $box-shadow-color-dark;
-}
-
-.textWindowHeader{
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  height: 30px;
-}
-
-.textWindowContent{
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-
-.textWindowFooter{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 100%;
-  margin: auto;
-
-  .deleteLocalStorage{
-    position: relative;
-    top: -50px;
-    width: 100px;
-    height: 50px;
-    background-color: $wrapper-background-color;
-    box-shadow: 1px 1px 2px #ddd;
-    border-radius: 5px;
-
-    display: inline-block;
-
-    button{
-      width: 100%;
-      cursor: pointer;
-      
-    }
-    
+@media only screen and (max-width: 1025px) {
+  .resultContainer{
+    min-width: 99%;
   }
-}
 
-.informantInfoPanel{
-  margin-left: 20px;
-  width: 32%;
-  min-width: 280px;
+  .informantInfoPanel{
+    width: 10%;
+  }
 
-  display: flex;
-  align-content: flex-start;
-  flex-wrap: wrap;
-}
-
-.secondInfPanel{
-  cursor: pointer;
-  width: 90%;
-  background: $second-inf-background;
-  border-radius: 5px;
-  border: 1px solid $second-inf-border-color;
-  padding: 10px;
-  margin-top: 5px;
-  min-width: 280px;
-}
-
-.secondInfPanel .infoText{
-  margin-bottom: 0;
-}
-
-.infoText{
-  display: flex;
-  align-content: flex-start;
-  flex-wrap: wrap;
-
-  margin-bottom: 15px;
-}
-
-.infoText span{
-  width: 100%;
-  margin: 2px 0;
-}
-
-.text{
-  margin: 10px 0 10px 10px;
-
-  /*display: flex;*/
-  /*flex-wrap: nowrap;*/
-  justify-content: space-around;
-
-  width: 65%;
-
-  max-height: 530px;
-
-  overflow: auto;
-}
-
-.text div{
-  margin: 3px 0;
-}
-
-.animationTest{
-  height: 0px;
-  overflow: hidden;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-.animationTest2{
-  height: 203px;
+  .text{
+    width: 90%;
+  }
 }

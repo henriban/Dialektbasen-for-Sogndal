@@ -1,0 +1,32 @@
+@import './../variables';
+
+.deleteLocalStorageWrapper{
+    position: relative;
+    display: inline-block;
+  }
+
+  .deleteLocalStorage{
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: -75px;
+    z-index: 101;
+    width: 165px;
+    
+    background-color: $wrapper-background-color;
+    box-shadow: 5px 8px 16px 0px $box-shadow-color;
+
+    button{
+      width: 100%;
+      padding: 10px 15px;
+
+      cursor: pointer;
+      border: none;
+      background-color: $wrapper-background-color; 
+      text-align: left;
+    } 
+
+    button:hover{
+      background-color: #ddd;
+    }
+  }

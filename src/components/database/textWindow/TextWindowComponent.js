@@ -1,7 +1,8 @@
 import React from 'react';
 
-import InformantInfoText from './InformantInfoTextComponent';
+import InformantInfoPanel from './InformantInfoPanel';
 import Text from './Text';
+import DeleteLocalStorage from './DeleteLocalStorage';
 
 import Informers from '../../../data/informers';
 import '../../../styles/database/textWindow.scss';
@@ -33,20 +34,27 @@ class Result extends React.Component {
             y: 0,
             inf1: inf1,
             inf2: inf2,
-            showDeleteLocalStorage: false
         };
 
         isLocalStorageSet = this.isInformersLocalStorageSet();
 
         if(!isLocalStorageSet){
             localStorage.setItem(this.state.inf1.id, JSON.stringify([]));
+            
+            if(this.state.inf2 !== undefined)
             localStorage.setItem(this.state.inf2.id, JSON.stringify([]));
+
             needBuildWordList = true;
         }
     }
 
     isInformersLocalStorageSet() {
         let localStorageInf1 = localStorage.getItem(this.state.inf1.id);
+
+        if(this.state.inf2 === undefined){
+            return localStorageInf1 != null && localStorageInf1.length > 0 
+        }
+
         let localStorageInf2 = localStorage.getItem(this.state.inf2.id);
 
         return localStorageInf1 != null && localStorageInf1.length > 0 
@@ -70,26 +78,8 @@ class Result extends React.Component {
         this.props.onCloseClick(0);
     }
 
-    onDeleteClick(){
-        this.setState({
-            showDeleteLocalStorage: !this.state.showDeleteLocalStorage
-        })
-    }
-
-    deleteAllLocalStorage(){
-        console.log("All")
-    }
-
-    deleteInformersLocalStorage(){
-        console.log("1")
-    }
-
     _onMouseMove(e) {
         this.setState({ x: e.clientX, y: e.clientY });
-    }
-
-    onInfClick(e){
-        this.setState({ showSecondInf: !this.state.showSecondInf});
     }
 
     onKeyPushed  = (event) => {
@@ -105,61 +95,42 @@ class Result extends React.Component {
         }
     };
     
-    showSecondInformer(showSecondInf) {
-        // if(showSecondInf){
-            return <div className="secondInfPanel" onClick={() => this.onInfClick()}>
-                <span><b>{this.state.inf2.id.split("p")[0]}: {this.state.inf2.age.split(" ")[0]} {this.state.inf2.gender.toLowerCase()} frå {this.state.inf2.place}</b></span>
-                <InformantInfoText informant={this.state.inf2} showInformantInfo={this.state.showSecondInf}/>
-            </div>
-        // }else {
-        //     return <span className="secondInfPanel" onClick={() => this.onInfClick()}><b>{this.state.inf2.id.split("p")[0]}: {this.state.inf2.age.split(" ")[0]} {this.state.inf2.gender.toLowerCase()} frå {this.state.inf2.place}</b></span>
-        // }
-    }
-
     render(){
 
         const url = require("../../../static/" + this.state.inf1.audio);
 
         return(
-            <div className="resultBackground" >
+            <div className="textWindowBackground" >
 
-                <div className="resultContainer" onMouseDown={this._onMouseMove.bind(this)}>
+                <div className="textWindowWrapper" onMouseDown={this._onMouseMove.bind(this)}>
 
                     <div className="textWindowHeader">
                         <button className="closeButton" onClick={this.onCloseClick}><img src="./close.svg" alt="#"/></button>
                     </div>
 
                     <div className="textWindowContent">
-                        <div className="informantInfoPanel">
-                            <h2 id="headline">{this.state.inf1.age.split(" ")[0]} {this.state.inf1.gender.toLowerCase()} frå {this.state.inf1.place}</h2>
-                            <InformantInfoText informant={this.state.inf1}/>
+                        <InformantInfoPanel 
+                            inf1={this.state.inf1}
+                            inf2={this.state.inf2}/>
 
-                            {this.state.inf2 != null ? this.showSecondInformer(this.state.showSecondInf) : null}
-                        </div>
-
-                        <div className="text">
-                            <Text 
-                                inf1={this.state.inf1}
-                                inf2={this.state.inf2}
-                                x={this.state.x}
-                                y={this.state.y}
-                                needBuildWordList={needBuildWordList}/>
-                        </div>
+                        <Text 
+                            inf1={this.state.inf1}
+                            inf2={this.state.inf2}
+                            x={this.state.x}
+                            y={this.state.y}
+                            needBuildWordList={needBuildWordList}/>
+                        
                         {needBuildWordList = false}
                     </div>
 
                     <div className="textWindowFooter">
-                        <audio id="audioPlayer"
+                        <audio  id="audioPlayer"
                                 src={url}
-                                style={{width : 1000, margin: "auto", padding: 10}}
                                 controls controlsList="nodownload"/>
 
-                        { this.state.showDeleteLocalStorage && 
-                            <div className="deleteLocalStorage">
-                                <button onClick={() => this.deleteAllLocalStorage()}>Slett alle</button>
-                                <button onClick={() => this.deleteInformersLocalStorage(this.state.inf1, this.state.inf2)}>Slett {this.state.inf1.id} og {this.state.inf2.id} </button>
-                            </div>}
-                        <button className="deleteButton" onClick={this.onDeleteClick.bind(this)}><img src="./delete.svg" alt="#"/></button>
+                        <DeleteLocalStorage 
+                            inf1={this.state.inf1} 
+                            inf2={this.state.inf2}/>
                     </div>
 
                 </div>

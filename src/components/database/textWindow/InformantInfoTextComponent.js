@@ -9,7 +9,7 @@ class InformantInfoText extends React.Component{
         let cssClass = "infoText"
 
         if(this.props.showInformantInfo != null){
-            cssClass = "infoText animationTest " + (this.props.showInformantInfo ? "animationTest2" : "animationTest");
+            cssClass = "infoText secondInfAnimationStart " + (this.props.showInformantInfo ? "secondInfAnimationEnd" : "");
         }
 
         return(
