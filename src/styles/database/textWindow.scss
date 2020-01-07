@@ -34,6 +34,17 @@
   background: $close-button-background-color-hover;
 }
 
+.deleteButton{
+
+  cursor: pointer;
+  border: none;
+  background-color: $wrapper-background-color;
+
+  img{
+    width: 25px;
+  }
+}
+
 .resultContainer{
   display: flex;
   justify-content: flex-start;
@@ -50,17 +61,45 @@
   box-shadow: 0 0 1px $box-shadow-color-dark;
 }
 
+.textWindowHeader{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 30px;
+}
+
 .textWindowContent{
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
 
-.textWindowHeader{
+.textWindowFooter{
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+
   width: 100%;
-  height: 30px;
+  margin: auto;
+
+  .deleteLocalStorage{
+    position: relative;
+    top: -50px;
+    width: 100px;
+    height: 50px;
+    background-color: $wrapper-background-color;
+    box-shadow: 1px 1px 2px #ddd;
+    border-radius: 5px;
+
+    display: inline-block;
+
+    button{
+      width: 100%;
+      cursor: pointer;
+      
+    }
+    
+  }
 }
 
 .informantInfoPanel{

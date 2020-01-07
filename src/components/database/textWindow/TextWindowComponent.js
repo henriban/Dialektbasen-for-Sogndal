@@ -32,7 +32,8 @@ class Result extends React.Component {
             x: 0,
             y: 0,
             inf1: inf1,
-            inf2: inf2
+            inf2: inf2,
+            showDeleteLocalStorage: false
         };
 
         isLocalStorageSet = this.isInformersLocalStorageSet();
@@ -44,7 +45,6 @@ class Result extends React.Component {
         }
     }
 
-    // TODO: cannot read property id of undefined
     isInformersLocalStorageSet() {
         let localStorageInf1 = localStorage.getItem(this.state.inf1.id);
         let localStorageInf2 = localStorage.getItem(this.state.inf2.id);
@@ -68,6 +68,20 @@ class Result extends React.Component {
     onCloseClick(e){
         e.preventDefault();
         this.props.onCloseClick(0);
+    }
+
+    onDeleteClick(){
+        this.setState({
+            showDeleteLocalStorage: !this.state.showDeleteLocalStorage
+        })
+    }
+
+    deleteAllLocalStorage(){
+        console.log("All")
+    }
+
+    deleteInformersLocalStorage(){
+        console.log("1")
     }
 
     _onMouseMove(e) {
@@ -134,10 +148,20 @@ class Result extends React.Component {
                         {needBuildWordList = false}
                     </div>
 
-                    <audio id="audioPlayer"
-                        src={url}
-                        style={{width : 1000, margin: "auto", padding: 10}}
-                        controls controlsList="nodownload"/>
+                    <div className="textWindowFooter">
+                        <audio id="audioPlayer"
+                                src={url}
+                                style={{width : 1000, margin: "auto", padding: 10}}
+                                controls controlsList="nodownload"/>
+
+                        { this.state.showDeleteLocalStorage && 
+                            <div className="deleteLocalStorage">
+                                <button onClick={() => this.deleteAllLocalStorage()}>Slett alle</button>
+                                <button onClick={() => this.deleteInformersLocalStorage(this.state.inf1, this.state.inf2)}>Slett {this.state.inf1.id} og {this.state.inf2.id} </button>
+                            </div>}
+                        <button className="deleteButton" onClick={this.onDeleteClick.bind(this)}><img src="./delete.svg" alt="#"/></button>
+                    </div>
+
                 </div>
             </div>
         )

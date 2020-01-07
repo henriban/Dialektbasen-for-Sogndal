@@ -64,7 +64,6 @@ class Text extends React.Component{
                     return <div key={key++}>{
                         line.split(" ")
                             .map(word => {
-                                // if(word.indexOf(word.match(REGEX)) !== -1){
 
                                 if(this.doWordContainTwoSymbol(word)){
 
@@ -73,8 +72,7 @@ class Text extends React.Component{
                                         this.addWordInLocalStorage(infNumber);
                                     }
 
-                                    index = this.props.inf1.id.includes(infNumber) ? clickableWordCountInf1 + 2: clickableWordCountInf2 + 2;
-                                    if(infNumber === "02p") console.log("Double", index - 1)
+                                    index = this.props.inf1.id.includes(infNumber) ? clickableWordCountInf1 += 2: clickableWordCountInf2 += 2;
 
                                     return <DoubleWord key={key++}
                                                  wordIndex={index - 1}
@@ -91,7 +89,6 @@ class Text extends React.Component{
                                     }
 
                                     index = this.props.inf1.id.includes(infNumber) ? ++clickableWordCountInf1 : ++clickableWordCountInf2;
-                                    if(infNumber === "02p") console.log("Word", index - 1)
 
                                     return <Word key={key++}
                                                  wordIndex={index - 1}
