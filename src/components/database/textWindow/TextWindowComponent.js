@@ -34,6 +34,7 @@ class Result extends React.Component {
             y: 0,
             inf1: inf1,
             inf2: inf2,
+            showInformantPanel: true
         };
 
         isLocalStorageSet = this.isInformersLocalStorageSet();
@@ -67,10 +68,22 @@ class Result extends React.Component {
 
     componentDidMount(){
         audioPlayer = document.getElementById("audioPlayer");
+        window.addEventListener("resize", this.updateDimensions.bind(this));
     }
 
+    /*  Can't perform a React state update on an unmounted component. This is a no-op, but it indicates a memory leak in your application. To fix, cancel all subscriptions and asynchronous tasks in the componentWillUnmount method.
+    in Result (at DatabasePage.js:71 */
     componentWillUnmount(){
         document.removeEventListener("keydown", this.onKeyPushed);
+    }
+
+    updateDimensions(){
+        
+        if(window.innerWidth >= 1025){
+            this.setState({
+                showInformantPanel: true
+            })
+        }
     }
 
     onCloseClick(e){
@@ -89,12 +102,18 @@ class Result extends React.Component {
             event.preventDefault();
             audioPlayer.paused ? audioPlayer.play() : audioPlayer.pause();
         }else if (event.code === "ArrowRight"){
+            event.preventDefault()
             audioPlayer.currentTime += 5;
         }else if (event.code === "ArrowLeft"){
+            event.preventDefault()
             audioPlayer.currentTime -= 5;
         }
     };
     
+    toggleShowInformantPanel(){
+        this.setState({ showInformantPanel: !this.state.showInformantPanel})
+    }
+
     render(){
 
         const url = require("../../../static/" + this.state.inf1.audio);
@@ -111,7 +130,13 @@ class Result extends React.Component {
                     <div className="textWindowContent">
                         <InformantInfoPanel 
                             inf1={this.state.inf1}
-                            inf2={this.state.inf2}/>
+                            inf2={this.state.inf2}
+                            showInformantPanel={this.state.showInformantPanel}/>
+
+                        <div className="informantInfoPanelHideButton" onClick={this.toggleShowInformantPanel.bind(this)}>
+                            { this.state.showInformantPanel && <img src="./back.svg" alt="#" width="20"/>}
+                            { !this.state.showInformantPanel && <img src="./next.svg" alt="#" width="20"/>}
+                        </div>
 
                         <Text 
                             inf1={this.state.inf1}

@@ -2,9 +2,12 @@
 
 .footerWrapper{
 
+  display: flex;
+  align-items: center;
+
   margin-top: 50px;
   background-color: $footer-background-color;
-  height: 150px;
+  min-height: 170px;
   text-align: center;
   border-top: .5px solid $navbar-active-border-color;
 

@@ -52,7 +52,7 @@ class Text extends React.Component{
         let index = 0;
         let infNumber = "";
 
-        let needBuildWordList = this.props.needBuildWordList;
+        let needBuildWordList = localStorage.getItem(this.props.inf1.id) !== null ? this.props.needBuildWordList : true;
 
         return(
             // Splits the line on br and check if line contains a symbol.

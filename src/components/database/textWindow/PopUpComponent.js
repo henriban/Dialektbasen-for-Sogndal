@@ -50,6 +50,7 @@ class popUp extends React.Component {
     }
 
     getActiveButtonFromLocalStorage(){
+        
         let symbol = JSON.parse(localStorage.getItem(this.state.inf))[this.props.wordIndex];
 
         if(symbol === this.state.btn1_symbol1){
@@ -62,12 +63,6 @@ class popUp extends React.Component {
     }
 
     buttonClicked(symbol){
-
-        // To distinguish between the different "Anna"
-        // if(symbol === "Anna"){
-        //     symbol = symbol + "_" + this.state.btn1 + "_" + this.state.btn2;
-        // }
-
         this.props.registerButtonClicked(symbol, this.state.inf);
     }
 

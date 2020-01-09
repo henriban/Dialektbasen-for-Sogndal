@@ -14,15 +14,17 @@ import Footer from './components/Footer';
 class App extends Component {
   render() {
     return (
-        <div>
+        <div className="app"> 
             {/*<LogoNavbar /> */}
             <Navbar/>
-            <Switch>
-                <Route exact path='/' component={Home}/>
-                <Route path='/sosiolingvistikk' component={Sociolinguistics} />
-                <Route path='/database' component={Database}/>
-                <Route path='/graf' component={Graph}/>
-            </Switch>
+            <div className="content">
+              <Switch>
+                  <Route exact path='/' component={Home}/>
+                  <Route path='/sosiolingvistikk' component={Sociolinguistics} />
+                  <Route path='/database' component={Database}/>
+                  <Route path='/graf' component={Graph}/>
+              </Switch>
+            </div>
             <Footer />
         </div>
     );

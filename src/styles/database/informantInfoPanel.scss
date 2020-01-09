@@ -4,15 +4,13 @@
 .informantInfoPanel{
   margin-left: 20px;
   width: 32%;
-  min-width: 280px;
-  max-height: $text-content-height + 10px;
+  min-width: 350px;
+
+  height: $text-window-content-height;
+  max-height: $text-window-content-height;
 
   display: flex;
   justify-content: flex-start;
-}
-
-.informantInfoPanelWrapper{
-  display: flex;
   align-content: flex-start;
   flex-wrap: wrap;
 
@@ -28,11 +26,9 @@
   border-radius: 5px;
   border: 1px solid $second-inf-border-color;
   padding: 10px;
-  margin-top: 5px;
+  margin-top: 15px;
   min-width: 280px;
-}
 
-.secondInfPanel .infoText{
   margin-bottom: 0;
 }
 
@@ -41,27 +37,15 @@
   align-content: flex-start;
   flex-wrap: wrap;
 
-  margin-bottom: 15px;
+  span{
+    width: 100%;
+    margin: 2px 0;
+  }
 }
 
-.infoText span{
-  width: 100%;
-  margin: 2px 0;
-}
-
-.informantInfoPanelHideButton{
-  // background-color: $wrapper-background-color;
-  background-color: #fbfbfb;
-  border: none;
-}
-
-.informantInfoPanelHideButton:hover{
-  cursor: pointer;
-  background-color: #eee;
-}
-
-.informantInfoPanelWrapperAnimationStart{
+.informantInfoPanelAnimationStart{
   width: 0%;
+  min-width: 0;
   overflow: hidden;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -69,6 +53,21 @@
   transition: all 0.5s ease-in-out;
 }
 
-.informantInfoPanelWrapperAnimationEnd{
-  width: 100%;
+.informantInfoPanelAnimationEnd{
+  width: 32%;
+  min-width: 350px;
 }
+
+.secondInfAnimationStart{
+  height: 0px;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.secondInfAnimationEnd{
+  height: 203px;
+}
+

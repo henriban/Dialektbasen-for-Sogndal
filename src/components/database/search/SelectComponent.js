@@ -9,7 +9,6 @@ class Select extends React.Component {
 
     handleChange = (selectedOption) => {
         this.setState({ selectedOption });
-        // console.log(`Option selected:`, selectedOption);
 
         if(selectedOption != null){
             this.props.onSelectUpdate(this.props.res, selectedOption.value);

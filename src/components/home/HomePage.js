@@ -97,18 +97,18 @@ class Home extends React.Component {
                         <li>
                             Infinitiv <br/>
                             Eksempelord: å finna <br/>
-                            Variantar: a-infinitiv {this.generateAudioSpan("<finna>", "a-infinitiv.mp3" )} – e-infinitiv {this.generateAudioSpan("<finne>", "e-infinitiv.mp3" )} – anna
+                            Variantar: a-infinitiv {this.generateAudioSpan("finna", "a-infinitiv.mp3" )} – e-infinitiv {this.generateAudioSpan("finne", "e-infinitiv.mp3" )} – anna
                         </li>
                         <li>
                             Diftongering av gamalnorsk lang a, <i>á</i> <br/>
                             Eksempelord: båt <br/>
-                            Variantar: {this.generateAudioSpan("<ao-lyd>", "ao-lyd.mp3" )} – {this.generateAudioSpan("<å-lyd>", "å-lyd.mp3" )} – anna
+                            Variantar: {this.generateAudioSpan("ao-lyd", "ao-lyd.mp3" )} – {this.generateAudioSpan("å-lyd", "å-lyd.mp3" )} – anna
                         </li>
                         <li>
                             Bunden form eintal av sterke hokjønnsord og bunden form fleirtal av
                             inkjekjønnsord <br/>
                             Eksempelord: bygda, husa <br/>
-                            Variantar: i-ending {this.generateAudioSpan("<bygdi>", "i-ending hokjønn.mp3" )} {this.generateAudioSpan("<husi>", "i-ending inkjekjønn.mp3" )}  - a-ending {this.generateAudioSpan("<bygda>", "a-ending hokjønn.mp3" )} {this.generateAudioSpan("<husa>", "a-ending inkjekjønn.mp3" )} - anna
+                            Variantar: i-ending {this.generateAudioSpan("bygdi", "i-ending hokjønn.mp3" )} {this.generateAudioSpan("husi", "i-ending inkjekjønn.mp3" )}  - a-ending {this.generateAudioSpan("bygda", "a-ending hokjønn.mp3" )} {this.generateAudioSpan("husa", "a-ending inkjekjønn.mp3" )} - anna
                         </li>
                         <li>
                             Bunden form fleirtal av hankjønnsord og hokjønnsord <i>–ane/ene</i><br/>

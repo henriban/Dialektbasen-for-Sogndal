@@ -14,16 +14,14 @@
 }
 
 .textWindowWrapper{
-  // display: flex;
-  // flex-wrap: wrap;
-  // flex-direction: column;
+  display: flex;
+  flex-direction: column;
   margin: 50px auto;
-
+  
   min-width: 1000px;
   width: 65%;
-  height: 78%;
-
-  overflow: auto;
+  height: 80%;
+  max-height: 662px;
 
   background-color: $wrapper-background-color;
   border-radius: 5px;
@@ -39,9 +37,11 @@
 
 .textWindowContent{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: nowrap;
   flex: 1;
+  max-height: $text-window-content-height;
+  overflow: auto;
 }
 
 .textWindowFooter{
@@ -61,34 +61,22 @@
 /* ____ Text ____ */
 
 .text{
-  margin: 10px 0 10px 10px;
+  // margin: 10px 0 10px 10px;
 
   /*display: flex;*/
   /*flex-wrap: nowrap;*/
   justify-content: space-around;
 
   // min-width: 650px;
-  width: 65%;
-  max-height: $text-content-height;
+  width: 100%;
+  // max-height: $text-window-content-height;
+  height: $text-window-content-height;
 
   overflow: auto;
 }
 
 .text div{
   margin: 3px 0;
-}
-
-.secondInfAnimationStart{
-  height: 0px;
-  overflow: hidden;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-.secondInfAnimationEnd{
-  height: 203px;
 }
 
 .closeButton{
@@ -124,16 +112,35 @@
   }
 }
 
+/* ____ Informant Panel Hide Button ____ */
+.informantInfoPanelHideButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin: auto;
+  margin-right: 10px;
+
+  height: $text-window-content-height;
+
+  background-color: $wrapper-background-color;
+  // background-color: #fbfbfb;
+  border: none;
+  visibility: hidden;
+}
+
+.informantInfoPanelHideButton:hover{
+  cursor: pointer;
+  background-color: #eee;
+}
+
 @media only screen and (max-width: 1025px) {
-  .resultContainer{
+  
+  .textWindowWrapper{
     min-width: 99%;
   }
 
-  .informantInfoPanel{
-    width: 10%;
-  }
-
-  .text{
-    width: 90%;
+  .informantInfoPanelHideButton{
+    visibility: visible;
   }
 }

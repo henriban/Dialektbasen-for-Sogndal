@@ -63,13 +63,12 @@ class DoubleWord extends React.Component{
             }
         }
 
-        return { color: "purple" };
+        return { color: "black" };
     }
 
     //TODO: showPopUp globally (only on window at the time)
     render(){
 
-        // let symbol = this.state.word.match(REGEX)[0];
         let symbol = this.state.symbol;
         let splitWord = this.divideWord();
 

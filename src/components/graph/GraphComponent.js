@@ -1,5 +1,5 @@
 import React from 'react';
-import { VictoryGroup, VictoryChart, VictoryBar, VictoryAxis, VictoryLabel } from 'victory';
+import { VictoryGroup, VictoryChart, VictoryBar, VictoryAxis } from 'victory';
   
 class graph extends React.Component{
 
@@ -26,15 +26,10 @@ class graph extends React.Component{
     getVerticalTickValue(){
         let highestValue = 0;
         this.props.data.map(data => data.map(value => highestValue = value.y > highestValue ? value.y : highestValue));
-
+        
         if(highestValue < 3){
-            return [0, 1, 2]
+            return  [1, 2, 3]
         }
-        else if(highestValue < 2){
-            return [0, 1, 2]
-        }
-
-        return [highestValue]
     }
 
     render() {
@@ -49,20 +44,27 @@ class graph extends React.Component{
                     <div className="colorExplanation explanation3"/> <span>anna</span>
 
                 </div>
-                <VictoryChart domainPadding={50}>
-
-                    <VictoryLabel>
-
-                    </VictoryLabel>
+                <VictoryChart domainPadding={50} style={{parent: { height: "90%"}}}>
                     {/* Generate bar charts from number of different variables (items in data list)*/}
                     <VictoryGroup offset={20} colorScale={["#4AACC5", "#77a033", "#e07676"]}>
 
                         {this.props.data.map(data => {
-                            return(<VictoryBar key={key++} data={data} animate={{ duration: 500 }} style={{data: { width: 12 }}}/>);
+                            return(
+                                <VictoryBar 
+                                    key={key++} 
+                                    data={data} 
+                                    animate={{ duration: 500 }} 
+                                    style={{data: { width: 12 }}}/>);
                         })}
                     </VictoryGroup>
-                    <VictoryAxis tickValues={this.props.tickValues} tickFormat={this.formatTickFormat()}/>
-                    <VictoryAxis dependentAxis tickValues={this.getVerticalTickValue()} tickFormat={(tick) => `${Math.round(tick)}`}/>
+                    <VictoryAxis 
+                        // tickValues={this.props.tickValues} 
+                        tickFormat={this.formatTickFormat()}/>
+                    <VictoryAxis 
+                        dependentAxis 
+                        tickValues={this.getVerticalTickValue()} 
+                        // tickFormat={(tick) => `${Math.round(tick)}`}
+                        />
 
                 </VictoryChart>
                 <br/>
