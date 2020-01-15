@@ -133,9 +133,32 @@ class Home extends React.Component {
                         eit alternativ som avvik frå dei to andre variantane. For variabel 1 kan det t.d.
                         tenkjast at verbet ikkje får noka ending (t.d. å seia &gt; å sei), for variabel 2 kan
                         det tenkjast at språkbrukaren brukar a (t.d, skap). For variabel 3 kan det henda
-                        språkbrukaren har endinga <i>-en</i> (t.d. tiden). For dei andre variablane vil <i>anna</i>
-                        vera mest aktuelt som alternativ viss du ikkje oppfattar kva språkbrukarane
-                        seier.
+                        språkbrukaren har endinga <i>-en</i> (t.d. tiden). For dei andre variablane 
+                        vil <i>anna</i> vera mest aktuelt som alternativ viss du ikkje oppfattar kva 
+                        språkbrukarane seier.
+                    </p>
+                    <p>
+                        Nokre av språkbrukarane snakkar nokså fort, så sjølv om du vel å jobba med
+                        eitt språktrekk om gongen, kan det vera vanskeleg å få analysert alle orda utan
+                        pause eller høve til å høyra om att. Viss du trykkjer på mellomromstasten, kan
+                        du stoppa og starta att midt i lydopptaket. Viss du bruker piltastane, kan du
+                        hoppa med intervallar på fem sekund fram eller fem sekund tilbake gjennom
+                        heile lydopptaket.
+                    </p>
+                    <p>
+                        Den analysen du har gjort, kan endrast ved at du går inn att i den same boksen
+                        og vel eit anna avkryssingsalternativ. Arbeidet du har gjort, vert lagra på den
+                        maskinen du har jobba på og blir heller ikkje borte sjølv om du går ut or
+                        programmet og loggar deg inn att på denne maskinen seinare. Viss du derimot
+                        vil sletta den analysen du har gjort, kan du trykkja på søppelbøtta nede i høgre
+                        hjørnet. Då får du spørsmål om du vil sletta analysen på den sida du står på,
+                        eller om du vil sletta alle analysane, dvs. nullstilla, alt du har gjort. Dersom du
+                        likevel ikkje vil sletta, trykkjer du på søppelbøtta på nytt og går vidare. Dersom 
+                        det skulle vera noko som ikkje verkar slik det skal, eller du har andre spørsmål 
+                        til bruk av denne dialektbasen, ta kontakt med underteikna.
+                    </p>
+                    <p>
+                        Lukke til med arbeidet som språkforskar!
                     </p>
                 </div>
             </div>

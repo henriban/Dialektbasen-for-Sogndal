@@ -797,8 +797,8 @@ const informers =
             education: "Grunnskule",
             occupation: "Elev",
             parents_background: "Begge frå Sogndal",
-            audio: "inf_36pog47.mp3",
-            text: Texts.text_36pog47,
+            audio: "inf_36og47.mp3",
+            text: Texts.text_36og47,
             panel: "Trend"
         },
         {
@@ -811,8 +811,8 @@ const informers =
             education: "Vidaregåande",
             occupation: "Tertiær",
             parents_background: "Begge frå Sogndal",
-            audio: "inf_36pog47.mp3",
-            text: Texts.text_36pog47,
+            audio: "inf_36pog48p.mp3",
+            text: Texts.text_36pog48p,
             panel: "Panel"
         },
         {
@@ -1007,8 +1007,8 @@ const informers =
             education: "Grunnskule",
             occupation: "Elev",
             parents_background: "Mor frå Sogndal",
-            audio: "inf_36pog47.mp3",
-            text: Texts.text_36pog47,
+            audio: "inf_36og47.mp3",
+            text: Texts.text_36og47,
             panel: "Trend"
         },
         {
