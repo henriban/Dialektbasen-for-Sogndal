@@ -557,7 +557,7 @@ text_5pog6p : "I: Jammen hen skal dei få ny viss dei skal utvida det då?\n" +
     "vorte for mykje så dei har møtt veggen, og det innrømmer dei òg. Og då@ ser du dei knapt.\n" +
     "6: Eg trur ikkje det at dei hadde det mindre travelt. Det var berre det at dei tenkte ikkje på@ det på@\n" +
     "den måten.\n" +
-    "…………………………………………………………...\n" +
+    "…………………………………………………………\n" +
     "I: No er jo denne her studentveka i gang. Er det noko som bygdefolket er med på òg eller?\n" +
     "6: Det er litt konsertar som er for alle§ då@.\n" +
     "5: Hadde ikkje dei vore på Trudvang no og laga til eitkvart slags arrangement då@?\n" +
