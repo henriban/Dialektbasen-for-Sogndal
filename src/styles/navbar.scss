@@ -1,32 +1,106 @@
 @import './variables';
 
-.navbar{
+.navbar-logo{
   display: flex;
   justify-content: space-around;
+  width: 100%;
   box-shadow: 1px 1px 1px $navbar-shadow-color;
+}
+
+.navbar-logo-images{
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  padding: 5px;
+  
+  .uib-logo{
+    width: 75px;
+  }
+  
+  .dialektbasen-logo{
+    width: 175px;
+  }
+
+  .logo-divider{
+    margin: auto 15px;
+    width: 2px;
+    min-height: 10px;
+    height: 60%;
+    background-color: #eee;
+  }
+
+}
+
+.navbar-logo-items{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
   background-color: $navbar-background-color;
-  min-height: 25px;
 
   .item{
-    width: 100%;
-    padding: 10px;
+    margin: 15px 15px 0 15px;
     text-align: center;
+    height: 25px;
     text-decoration: none;
     font-weight: bold;
     color: $main-text-color;
   }
 
   .item:hover{
-    background-color: $navbar-background-color-hover;
+    // background-color: $navbar-background-color-hover;
+    color: $navbar-active-color;
     // border-bottom: 2px solid #dee2f6;
   }
 
   .active{
     border-bottom: 2px solid $navbar-active-border-color;
+    color: #5071d4;
   }
 }
 
-.navbar-logo{
-  margin: auto;
-  width: 40%;
+@media only screen and (max-width: 710px) {
+  .navbar-logo-images{
+    visibility: hidden;
+    width: 0;
+  }
+
+  .navbar-logo-items{
+    width: 100%;
+  }
 }
+
+
+// .navbar{
+//   display: flex;
+//   justify-content: space-around;
+//   box-shadow: 1px 1px 1px $navbar-shadow-color;
+//   background-color: $navbar-background-color;
+//   min-height: 25px;
+
+//   .item{
+//     width: 100%;
+//     padding: 10px;
+//     text-align: center;
+//     text-decoration: none;
+//     font-weight: bold;
+//     color: $main-text-color;
+//   }
+
+//   .item:hover{
+//     background-color: $navbar-background-color-hover;
+//     // border-bottom: 2px solid #dee2f6;
+//   }
+
+//   .active{
+//     border-bottom: 2px solid $navbar-active-border-color;
+//   }
+// }
+
+// .navbar-logo{
+//   margin: auto;
+//   width: 40%;
+// }

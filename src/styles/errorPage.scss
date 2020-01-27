@@ -1,0 +1,14 @@
+.errorPage{
+    margin: 10px auto;
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+
+    img{
+        width: 50%;
+        min-width: 250px;
+    }
+}

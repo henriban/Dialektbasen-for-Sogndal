@@ -74,9 +74,15 @@ class popUp extends React.Component {
 
         let activeButton = this.getActiveButtonFromLocalStorage();
 
+        // Making sure the popup spawn within the text area
+        let spawnPosition = {
+            left: this.state.mouseX + 230 > window.innerWidth ? this.state.mouseX - 230 : this.state.mouseX,
+            top: this.state.mouseY > 250 ? this.state.mouseY - 130 :this.state.mouseY + 10
+        }
+
         return (
-            <div className="popUpWrapper" style={{left: this.state.mouseX, top: this.state.mouseY > 250 ? this.state.mouseY - 130 :this.state.mouseY + 10 }}>
-                <button id="closePopUpIcon" onClick={() => this.props.onCloseClick()}>x</button>
+            <div className="popUpWrapper" style={spawnPosition}>
+                <button id="closePopUpIcon" onClick={() => this.props.onCloseClick()}><img src="./close.svg" alt="#" width="10"/></button>
                 <p>{this.state.word}</p>
                 <div className="popUpButtonContainer">
                     <button onClick={() => this.buttonClicked(this.state.btn1_symbol1)} className={this.getFocusButton(activeButton, "btn1")}>{this.state.btn1}</button>

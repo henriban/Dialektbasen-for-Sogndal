@@ -75,6 +75,7 @@ class Result extends React.Component {
     in Result (at DatabasePage.js:71 */
     componentWillUnmount(){
         document.removeEventListener("keydown", this.onKeyPushed);
+        window.removeEventListener("resize", this.updateDimensions.bind(this));
     }
 
     updateDimensions(){

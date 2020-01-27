@@ -66,7 +66,7 @@ class DeleteLocalStorage extends React.Component {
     render(){
         return(
             <div className="deleteLocalStorageWrapper">
-                <button className="deleteButton" onClick={this.onDeleteClick.bind(this)}><img src="./delete.svg" alt="#"/></button>
+                <button className="deleteButton" onClick={this.onDeleteClick.bind(this)}><img src="./delete.svg" alt="Tilbakestill"/></button>
                 { this.state.showDeleteLocalStorage && 
                     <div className="deleteLocalStorage">
                         <button onClick={() => this.deleteAllLocalStorage()}>Tilbakestill alle</button>

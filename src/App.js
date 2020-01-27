@@ -6,17 +6,26 @@ import Sociolinguistics from './components/home/Sociolinguistics';
 import Database from './components/database/DatabasePage';
 import Graph from './components/graph/GraphPage';
 
-import Navbar from './components/Navbar';
-// import LogoNavbar from './components/LogoNavbar';
+// import Navbar from './components/Navbar';
+import LogoNavbar from './components/LogoNavbar';
 import Footer from './components/Footer';
 
+import InternetExplorerError from './components/InternetExplorerError';
 
 class App extends Component {
   render() {
+
+    let isIE = navigator.userAgent.indexOf('MSIE') !== -1 
+      || navigator.appVersion.indexOf('Trident/') > -1
+
+    if(isIE){
+      return <InternetExplorerError />
+    }
+
     return (
         <div className="app"> 
-            {/*<LogoNavbar /> */}
-            <Navbar/>
+            <LogoNavbar />
+            {/* <Navbar/> */}
             <div className="content">
               <Switch>
                   <Route exact path='/' component={Home}/>

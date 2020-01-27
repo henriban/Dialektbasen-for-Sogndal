@@ -8,9 +8,12 @@ class Footer extends React.Component{
             <div className="footerWrapper">
                 <div className="footerContent">
                     <div>
+                        <a href="https://www.uib.no/lle">
+                            <img className="footerImage" src="UiB_logo.png" alt="uib_logo" /> <br/>
+                        </a>
+
                         <b>Kontaktinformasjon:</b><br/>
-                        Fagleg ansvarleg for dialektbasen: Ragnhild Lie Anderson <br/>
-                        <a href="https://www.uib.no/personer/Ragnhild.Lie.Anderson">www.uib.no/personer/Ragnhild.Lie.Anderson</a> <br/>
+                        Fagleg ansvarleg for dialektbasen: <a href="https://www.uib.no/personer/Ragnhild.Lie.Anderson">Ragnhild Lie Anderson</a> <br/>
                         E-post: ragnhild.anderson@uib.no <br/>
                     </div>
                     <div>

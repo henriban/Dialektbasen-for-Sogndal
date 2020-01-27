@@ -18,12 +18,14 @@ class Home extends React.Component {
 
         return(
             <div>
-                <div className="startPageImageContainer">
-                    <img className="startPageImage" src="logo_gjennomsiktig.png" alt="sogndal_by_night" />
-                    {/*<img className="logo" src="#" alt="logo"/>*/}
-                </div>
+        
 
                 <div className="about" >
+
+                    <h1>Velkommen til</h1>
+                <div className="startPageImageContainer">
+                    <img className="startPageImage" src="logo_gjennomsiktig.png" alt="dialektbasen_logo" />
+                </div>
 
                     <h2 name="kva">Kva finn du i denne basen?</h2>
 
