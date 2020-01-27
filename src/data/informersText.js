@@ -1015,13 +1015,13 @@ text_13og14 : "13: Det er nok litt forskjell @på mitt, min oppvekst og, og hans
     "13: Ja, gjer det.\n" +
     "I: Ja.\n" +
     "13: Gjer nok det, og eg @måtte nok dra @på skulen aleine. Det var ikkje oppfunne dette her at far\n" +
-    "eller mor skulle @vera med den gongen.\n" +
+    "eller mor skulle *vera med den gongen.\n" +
     "14: Å?\n" +
     "13: Så eg reiste aleine med ein liten heimelaga ryggsekk.\n" +
     "I: Ja.\n" +
     "13: Og kom meg @på skulen, og eg @måtte no antakeleg vis ha klart og gjort greie for meg, for eg\n" +
     "kom no også att om kvelden.\n" +
-    "14: <humrar>\n" +
+    "14: &lt;humrar&gt;\n" +
     "13: Og skuledagen @vår han var nok kanskje litt positiv @på mange @måtar det var. Me hadde ein\n" +
     "lærar som var grundig i dei fag, særleg i dei ¤faga som, som etter eg blei eldre har kanskje sett mest\n" +
     "pris @på.\n" +
@@ -1038,14 +1038,14 @@ text_13og14 : "13: Det er nok litt forskjell @på mitt, min oppvekst og, og hans
     "13: Opna med song og annakvar dag hadde me …, ein dag var det bibelsoge, og den neste dagen\n" +
     "hadde me forklaring.\n" +
     "I: Å. Kva skjedde med dykk viss de ikkje hadde gjort leksene dykkar då?\n" +
-    "13: <kremtar> Vel, eg hugsar ikkje så mykje til det at me, me @måtte ta opp att ~leksene. Eg oppfatta\n" +
+    "13: &lt;kremtar&gt; Vel, eg hugsar ikkje så mykje til det at me, me @måtte ta opp att ~leksene. Eg oppfatta\n" +
     "meg vel den gongen som eg gjer i dag kanskje litt under middels flink, fullstendig klar over det at der\n" +
     "var elevar som var langt, langt mykje betre, men, men. Neivel, me hakka oss nok igjennom det og\n" +
     "\n" +
-    "<nøler>. Både, både forklaring, dette som eg §kalla for ¤forklaringa og bibelsoga var @då @utanåt.\n" +
+    "&lt;nøler&gt;. Både, både forklaring, dette som eg §kalla for ¤forklaringa og bibelsoga var @då @utanåt.\n" +
     "Og ¤salmeversa òg @måtte me *læra oss @utanåt.\n" +
     "14: Det var no noko slik den gongen som eg var òg det med salmevers og slikt noko at du @måtte no\n" +
-    "*læra det @utanåt, men om eg var flinke i det <latter> var eg i §alle fall ikkje.\n" +
+    "*læra det @utanåt, men om eg var flinke i det &lt;latter&gt; var eg i §alle fall ikkje.\n" +
     "13: Eg oppfatta vel litt kontroversielt har gjort i ettertid, det var at me @måtte *begynna å *læra\n" +
     "salmevers @utanåt eigentleg før me hadde lært å *lesa.\n" +
     "I: Å.\n" +
@@ -1058,10 +1058,10 @@ text_13og14 : "13: Det er nok litt forskjell @på mitt, min oppvekst og, og hans
     "I: Nei, kva hugsar du …\n" +
     "14: Det gjer eg ikkje altså.\n" +
     "I: … frå du begynte i skulen?\n" +
-    "14: Nei, akkurat (begynnelsen) det <latter> hugsar eg ikkje, sant å *seia direkte.\n" +
+    "14: Nei, akkurat (begynnelsen) det &lt;latter&gt; hugsar eg ikkje, sant å *seia direkte.\n" +
     "I: Nei, dei første åra?\n" +
     "14: Det første, første dagen og slikt noko det hugsar eg i §alle fall ikkje, men første ¤åra og slikt noko,\n" +
-    "det var no å *læra å *lesa og *skriva og slik, for eg var vel ikkje den største kløpparen <humrar>, trur\n" +
+    "det var no å *læra å *lesa og *skriva og slik, for eg var vel ikkje den største kløpparen &lt;humrar&gt;, trur\n" +
     "eg i §alle fall der. Så det er no så men.\n" +
     "I: Kva de gjorde på i friminuttane og slikt då?\n" +
     "14: Nei, det var no @då @når eg var … Så var det no kome denne plassen som er borte på Notsete\n" +
@@ -1071,7 +1071,7 @@ text_13og14 : "13: Det er nok litt forskjell @på mitt, min oppvekst og, og hans
     "14: Sidan så. Det var no litt friidrett òg trur eg at me dreiv litt slik …\n" +
     "I: Å, ja.\n" +
     "14 :… både gymnastikken og, og elles. Dei hadde liksom sånn, slik sandhole som ein skulle *hoppa\n" +
-    "langt i og *hoppa <stammar> høgde i og slikt noko.",
+    "langt i og *hoppa &lt;stammar&gt; høgde i og slikt noko.",
 
 text_14pog29p: "I: Kva de set pris på med å bu her i Sogndal då?\n" +
     "29: Eg tykkjer me har eigentleg alt her i Sogndal som me har bruk for. Det er jo valdsamt til\n" +
