@@ -475,8 +475,8 @@ const informers =
             education: "Vidaregåande",
             occupation: "Tertiær",
             parents_background: "Far frå Sogndal",
-            audio: "inf_23og24.mp3",
-            text: Texts.text_23og24,
+            audio: "inf_21og22.mp3",
+            text: Texts.text_21og22,
             panel: "Trend"
         },
         {
